@@ -1,5 +1,13 @@
 (function ($) {
   "use strict";
+   /*====Dom is loaded==== */
+   var $loader = document.querySelector('#preloader-background');
+  
+   window.onload = function() {
+     setTimeout(function() {
+       $loader.remove(); 
+     }); 
+   };
   //Hero section
   var heroSection = new Swiper(".mySwiper.hero-section-slider", {
     slidesPerView: 1,
@@ -104,6 +112,33 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  });
+   //////
+   var swiper5 = new Swiper(".mySwiper.financing", {
+    slidesPerView: 1.75,
+    spaceBetween: 10,
+    speed:18000,
+		direction: 'horizontal',
+    loop: true,
+    autoplay: 
+    {
+      delay: 0,
+    },
+    freeMode: true,
+    breakpoints: {
+      1024: {
+        slidesPerView: 4.5,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 3.5,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 2.25,
+      },
+    },
+    
   });
 })(jQuery);
 /*=====Header=====*/
