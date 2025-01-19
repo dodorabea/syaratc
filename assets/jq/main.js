@@ -47,7 +47,7 @@
     slidesPerView: 1,
     spaceBetween: 10,
     speed:18000,
-		direction: 'horizontal',
+    direction: 'horizontal',
     loop: true,
     autoplay: 
     {
