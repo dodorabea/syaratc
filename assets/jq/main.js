@@ -140,6 +140,40 @@
     },
     
   });
+  //////
+  var swiper6 = new Swiper(".mySwiper.sub-slider", {
+    spaceBetween: 10,
+    slidesPerView: 1.25,
+    loop: true,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+      1024: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 2.75,
+      },
+      640: {
+        slidesPerView: 2.25,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-next.sub",
+      prevEl: ".swiper-button-prev.sub",
+    },
+  });
+  var swiper7 = new Swiper(".mySwiper2.cars-main-slider", {
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next.cars-main",
+      prevEl: ".swiper-button-prev.cars-main",
+    },
+    thumbs: {
+      swiper: swiper6,
+    },
+  });
 })(jQuery);
 /*=====Header=====*/
 const menu = document.querySelector(".menu");

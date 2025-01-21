@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Syaratc</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/image/logo/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/logo/fav.png">
+    <!-- bootstrap v5.3.3 css -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="preloader-background">
+        <div id="circle-loader"></div>
+        <img id="centre-logo" src="assets/image/logo/logo.png" alt="logo" />
+    </div>
+    <!-- ============================================================== -->
+    <!-- Header -->
+    <!-- ============================================================== -->
+    <header class="header p-1" id="header">
+        <nav class="navbar container">
+            <section class="navbar__left">
+                <a href="#" class="brand">
+                    <img src="assets/image/logo/logo.png" alt="brand" />
+                </a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+            </section>
+            <section class="navbar__center">
+                <span class="overlay"></span>
+                <div class="menu" id="menu">
+                    <div class="menu__header">
+                        <span class="menu__arrow"><i class="fa fa-chevron-left"></i></span>
+                        <span class="menu__title"></span>
+                    </div>
+                    <ul class="menu__inner">
+                        <li class="menu__item position-relative"><a href="index.html" class="menu__link"> الرئيسية </a>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="cars.html" class="menu__link active">سيارات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link">المدونات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link">من نحن</a></li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">العروض</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">الشركات</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">تواصل معنا</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                المزيد
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="submenu megamenu__normal">
+                                <ul class="submenu__list">
+                                    <li><a href="#">الشروط والأحكام</a></li>
+                                    <li><a href="#">سياسة الخصوصية</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link mobile-screen">
+                                English
+                                <img src="assets/image/icon/lang.svg" alt="icon" />
+                            </a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="navbar__right">
+                <a href="#" class="btn btn-language d-flex gap-1 align-items-center">
+                    <span>English</span>
+                    <img src="assets/image/icon/lang.svg" alt="icon" />
+                </a>
+            </section>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- breadcrumb Section -->
+    <!-- ============================================================== -->
+    <!-- <section class="breadcrumb m-0">
+        <div class="container">
+            <div class="breadcrumb-item">
+                <h3 class="d-flex align-items-center gap-2">
+                    <img src="assets/image/icon/title-star.svg" alt="icon" />
+                    <span>HYUNDAI-اكسنت-2025-فليت</span>
+                </h3>
+                <img class="shape img-fluid mt-1" src="assets/image/icon/Shape.svg" alt="shape" />
+                <ul class="mt-4 d-flex align-items-center gap-2">
+                    <li class="d-flex align-items-center gap-1">
+                        <a href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="d-flex align-items-center gap-1">
+                        <a href="cars.html">سيارات</a>
+                    </li>
+                    <li class="d-flex align-items-center gap-1">
+                        <span>HYUNDAI-اكسنت-2025-فليت</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <!-- ============================================================== -->
+    <!-- cars details info -->
+    <!-- ============================================================== -->
+    <section class="car-details-section">
+        <div class="container">
+            <div class="row row-gap-3">
+                <div class="col-lg-8 col-md-7 col-sm-12">
+                    <!-- Swiper -->
+                    <div  class="swiper cars-main-slider mySwiper2 mb-4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-box d-flex align-items-center justify-content-center">
+                                    <img src="assets/image/cars/cars-one.png" alt="image" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="slide-box d-flex align-items-center justify-content-center">
+                                    <img src="assets/image/cars/cars-two.png" alt="image" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="slide-box d-flex align-items-center justify-content-center">
+                                    <img src="assets/image/cars/cars-three.png" alt="image" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="slide-box d-flex align-items-center justify-content-center">
+                                    <img src="assets/image/cars/cars-four.png" alt="image" />
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                        <div class="swiper-button-next cars-main"></div>
+                        <div class="swiper-button-prev cars-main"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper sub-slider mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="sub-slider-box d-flex align-items-center justify-content-center">
+                                    <img src="assets/image/cars/cars-one.png" alt="image"/>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="sub-slider-box d-flex align-items-center justify-content-center">
+                                    <img src="assets/image/cars/cars-two.png" alt="image"/>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="sub-slider-box d-flex align-items-center justify-content-center">
+                                    <img src="assets/image/cars/cars-three.png" alt="image"/>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="sub-slider-box d-flex align-items-center justify-content-center">
+                                    <img src="assets/image/cars/cars-four.png" alt="image"/>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                        <div class="swiper-button-next sub"></div>
+                        <div class="swiper-button-prev sub"></div>
+                    </div>
+
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-5 col-sm-12">
+                    <div class="car-details-description">
+                        <div class="header-part">
+                            <div class="d-flex flex-wrap row-gap-2 align-items-center justify-content-between">
+                               <div class="flex-grow-1">
+                                    <h4>هونداي توسان 2019</h4>
+                                    <span class="d-block">فئه اولي</span>
+                               </div>
+                               <div class="tags-status">
+                                <span class="status new d-flex align-items-center justify-content-center">جديده</span>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="item d-flex flex-column row-gap-2">
+                            <span class="price d-block">السعر</span>
+                            <div class="d-flex flex-wrap row-gap-2 align-items-center gap-2">
+                                <h2>665,000 <span>ر.س</span></h2>
+                                <del>665,000 <span>ر.س</span></del>
+                            </div>
+                            <p class="d-flex align-items-center gap-2 price-tax">
+                                <i class="fa fa-check-circle"></i>
+                                <span>السعر شامل الضريبة </span>
+                            </p>
+                        </div>
+                        <!---->
+                        <div class="item d-flex flex-column row-gap-3">
+                            <p class="description-item">
+                                يمكنك تقديم طلب لشراء السيارة كاش عن طريق ملئ الفورم الخاصة بطلب سيارة كاش . 
+                            </p>
+                            <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center w-100">شراء السيارة كاش</a>
+                        </div>
+                        <!---->
+                        <div class="item d-flex flex-column row-gap-3">
+                            <h6>لا تملك ثمن السيارة كاملا ؟! </h6>
+                            <p class="description-item">
+                                لا تقلق يمكننا مساعدتك عن طريق تمويل سيارة احلامك.امليء نموذج طلب التمويل وسوف نتواصل مع .
+                            </p>
+                            <a href="#" class="btn btn-outline-secondary d-flex align-items-center justify-content-center w-100">طلب تمويل السيارة</a>
+                        </div>
+                        <!---->
+                        <div class="item">
+                            <h6 class=" mb-1">تواصل معنا :</h6>
+                            <div class="item-contact-us d-flex flex-wrap justify-content-between align-items-center gap-3">
+                                <div>
+                                    <span>عن طريق الواتساب</span>
+                                    <a href="#" class="d-flex align-items-center gap-2 text-center">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <span class="d-block mt-1">920004250</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <span>الاتطال المباشر</span>
+                                    <a href="#" class="d-flex align-items-center gap-2 text-center">
+                                        <i class="fa fa-phone"></i>
+                                        <span class="d-block mt-1">920004250</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- Footer -->
+    <!-- ============================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="top-footer">
+                <div class="row row-gap-3">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-logo mb-2">
+                            <img class="d-block" src="assets/image/logo/logo.png" alt="logo" />
+                        </div>
+                        <p class="describtion">
+                            بدأت شركة سيارتك نشاطها في عام 2018 بالكثير من الخبرة و الشغف في مجال السيارات و على أمل أن
+                            تكون ضمن أفضل الشركات التمويلية محليا وعلى مستوى الشرق الوسط..
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h5 class="main-title mb-3">تصفح موقعنا</h5>
+                        <ul class="two-column-list">
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    الرئيسية
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    من نحن
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    تواصل معنا
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    الشروط والأحكام
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    العروض المميزة للسيارات
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    التواصل الاجتماعي
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    سيارات
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    المدونات
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-subscribe d-flex flex-column gap-3">
+                            <h5 class="main-title">الاشتراك في النشرة الإخبارية</h5>
+                            <div class="input-group align-items-center gap-2 px-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-transparent border-0 p-0">
+                                        <img src="assets/image/icon/sms.svg" alt="icom" />
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control bg-transparent border-0 p-0"
+                                    placeholder="ادخل البريد الالكتروني...">
+                            </div>
+                            <button
+                                class="btn btn-subscribe w-100 d-flex align-items-center justify-content-center gap-2">
+                                <span>اشترك الان</span>
+                                <i class="fa fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer d-flex flex-wrap align-items-center">
+                <p>كل حقوق محفوظة © 2025 سيارتك</p>
+                <ul class="social-media d-flex align-items-center gap-3">
+                    <li>
+                        <span>تواصل معنا: </span>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/fb.svg" alt="icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/insta.svg" alt="icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/twitter.svg" alt="icon" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--JQuery Js-->
+    <script src="assets/jq/jQuery.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/swiper/js/swiper.min.js"></script>
+    <!--Main Js-->
+    <script src="assets/jq/main.js"></script>
+      <!-- Initialize Swiper -->
+  <script>
+   
+  </script>
+</body>
+
+</html>
