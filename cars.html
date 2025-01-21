@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Syaratc</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/image/logo/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/logo/fav.png">
+    <!-- bootstrap v5.3.3 css -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+    <!--Bootstrap Select style for this page-->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-select/css/Bootstrap-select.css">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="preloader-background">
+        <div id="circle-loader"></div>
+        <img id="centre-logo" src="assets/image/logo/logo.png" alt="logo" />
+    </div>
+    <!-- ============================================================== -->
+    <!-- Header -->
+    <!-- ============================================================== -->
+    <header class="header p-1" id="header">
+        <nav class="navbar container">
+            <section class="navbar__left">
+                <a href="#" class="brand">
+                    <img src="assets/image/logo/logo.png" alt="brand" />
+                </a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+            </section>
+            <section class="navbar__center">
+                <span class="overlay"></span>
+                <div class="menu" id="menu">
+                    <div class="menu__header">
+                        <span class="menu__arrow"><i class="fa fa-chevron-left"></i></span>
+                        <span class="menu__title"></span>
+                    </div>
+                    <ul class="menu__inner">
+                        <li class="menu__item position-relative"><a href="index.html" class="menu__link"> الرئيسية </a>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="cars.html" class="menu__link">سيارات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link">المدونات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link">من نحن</a></li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">العروض</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">الشركات</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">تواصل معنا</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                المزيد
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="submenu megamenu__normal">
+                                <ul class="submenu__list">
+                                    <li><a href="#">الشروط والأحكام</a></li>
+                                    <li><a href="#">سياسة الخصوصية</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link mobile-screen">
+                                English
+                                <img src="assets/image/icon/lang.svg" alt="icon" />
+                            </a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="navbar__right">
+                <a href="#" class="btn btn-language d-flex gap-1 align-items-center">
+                    <span>English</span>
+                    <img src="assets/image/icon/lang.svg" alt="icon" />
+                </a>
+            </section>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- breadcrumb Section -->
+    <!-- ============================================================== -->
+     <section class="breadcrumb m-0">
+        <div class="container">
+            <div class="breadcrumb-item">
+                <h3 class="d-flex align-items-center gap-2">
+                    <img src="assets/image/icon/title-star.svg" alt="icon"/>
+                    <span>ابحث عن سيارتك</span>
+                </h3>
+                <img class="shape img-fluid mt-1" src="assets/image/icon/Shape.svg" alt="shape"/>
+                <ul class="mt-4 d-flex align-items-center gap-2">
+                    <li>
+                        <a href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="d-flex align-items-center gap-2">
+                        <i class="fa fa-caret-left"></i>
+                        <span>ابحث عن سيارتك</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </section>
+    <!-- ============================================================== -->
+    <!-- special-car -->
+    <!-- ============================================================== -->
+    <section class="special-products bg-white">
+        <div class="container">
+            <div class="filteration-form mb-3">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="form-acordion">
+                        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <i class="fa fa-filter"></i>
+                          <span>ابحث عن سيارة احلامك</span>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="form-acordion" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="row row-gap-3">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="form-group d-block">
+                                    <label class="form-label d-block mb-2">الماركة</label>
+                                    <select class="selectpicker">
+                                        <option>ميتسوبيشي -MITSUBISHI</option>
+                                        <option>شيري -CHERY</option>
+                                        <option>فورد -FORD</option>
+                                        <option>دودج -DODGE</option>
+                                    </select>       
+                                </div>                 
+                            </div>
+                            <!---->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="form-group d-block">
+                                    <label class="form-label d-block mb-2">الموديل</label>
+                                    <select class="selectpicker">
+                                        <option>ميتسوبيشي -MITSUBISHI</option>
+                                        <option>شيري -CHERY</option>
+                                        <option>فورد -FORD</option>
+                                        <option>دودج -DODGE</option>
+                                    </select>       
+                                </div>                 
+                            </div>
+                            <!---->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="form-group d-block">
+                                    <label class="form-label d-block mb-2">الفئة</label>
+                                    <select class="selectpicker">
+                                        <option>ميتسوبيشي -MITSUBISHI</option>
+                                        <option>شيري -CHERY</option>
+                                        <option>فورد -FORD</option>
+                                        <option>دودج -DODGE</option>
+                                    </select>       
+                                </div>                 
+                            </div>
+                            <!---->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="form-group d-block">
+                                    <label class="form-label d-block mb-2">ترتيب حسب</label>
+                                    <select class="selectpicker">
+                                        <option>ميتسوبيشي -MITSUBISHI</option>
+                                        <option>شيري -CHERY</option>
+                                        <option>فورد -FORD</option>
+                                        <option>دودج -DODGE</option>
+                                    </select>       
+                                </div>                 
+                            </div>
+                            <!---->
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center mt- w-100">
+                                    ابحث عن السيارة
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-gap-3">
+                <div class="col-lg-4 cl-md-6 col-sm-12">
+                    <div class="card card-car overflow-hidden p-0">
+                        <div class="card-header border-0 position-relative overflow-hidden p-0">
+                            <img class="img-fluid" src="assets/image/cars/test.PNG" alt="image" />
+                            <span class="badge-span d-flex align-items-center justify-content-center  ">عرض مميز</span>
+                        </div>
+                        <div class="card-body pb-2 d-flex flex-column row-gap-2 bg-transparent border-0">
+                            <h5>هونداى كريتا 2024-سمارات</h5>
+                            <div class="price">
+                                <span class="amount">
+                                    83,450.00
+                                    <span>ر.س</span>
+                                </span>
+                                <del>بدلا من 120000 </del>
+                            </div>
+                        </div>
+                        <div class="card-footer pt-0 pb-3 bg-transparent border-0">
+                            <a href="#" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                                <span>المزيد من تفاصيل</span>
+                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 cl-md-6 col-sm-12">
+                    <div class="card card-car overflow-hidden p-0">
+                        <div class="card-header border-0 position-relative overflow-hidden p-0">
+                            <img class="img-fluid" src="assets/image/cars/default-img.png" alt="image" />
+                        </div>
+                        <div class="card-body pb-2 d-flex flex-column row-gap-2 bg-transparent border-0">
+                            <h5>هونداى كريتا 2024-سمارات</h5>
+                            <div class="price">
+                                <span class="amount">
+                                    83,450.00
+                                    <span>ر.س</span>
+                                </span>
+                                <del>بدلا من 120000 </del>
+                            </div>
+                        </div>
+                        <div class="card-footer pt-0 pb-3 bg-transparent border-0">
+                            <a href="#" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                                <span>المزيد من تفاصيل</span>
+                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 cl-md-6 col-sm-12">
+                    <div class="card card-car overflow-hidden p-0">
+                        <div class="card-header border-0 position-relative overflow-hidden p-0">
+                            <img class="img-fluid" src="assets/image/cars/test2.PNG" alt="image" />
+                            <span class="badge-span d-flex align-items-center justify-content-center  ">عرض مميز</span>
+                        </div>
+                        <div class="card-body pb-2 d-flex flex-column row-gap-2 bg-transparent border-0">
+                            <h5>هونداى كريتا 2024-سمارات</h5>
+                            <div class="price">
+                                <span class="amount">
+                                    83,450.00
+                                    <span>ر.س</span>
+                                </span>
+                                <del>بدلا من 120000 </del>
+                            </div>
+                        </div>
+                        <div class="card-footer pt-0 pb-3 bg-transparent border-0">
+                            <a href="#" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                                <span>المزيد من تفاصيل</span>
+                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 cl-md-6 col-sm-12">
+                    <div class="card card-car overflow-hidden p-0">
+                        <div class="card-header border-0 position-relative overflow-hidden p-0">
+                            <img class="img-fluid" src="assets/image/cars/default-img.png" alt="image" />
+                        </div>
+                        <div class="card-body pb-2 d-flex flex-column row-gap-2 bg-transparent border-0">
+                            <h5>هونداى كريتا 2024-سمارات</h5>
+                            <div class="price">
+                                <span class="amount">
+                                    83,450.00
+                                    <span>ر.س</span>
+                                </span>
+                                <del>بدلا من 120000 </del>
+                            </div>
+                        </div>
+                        <div class="card-footer pt-0 pb-3 bg-transparent border-0">
+                            <a href="#" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                                <span>المزيد من تفاصيل</span>
+                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 cl-md-6 col-sm-12">
+                    <div class="card card-car overflow-hidden p-0">
+                        <div class="card-header border-0 position-relative overflow-hidden p-0">
+                            <img class="img-fluid" src="assets/image/cars/test.PNG" alt="image" />
+                            <span class="badge-span d-flex align-items-center justify-content-center  ">عرض مميز</span>
+                        </div>
+                        <div class="card-body pb-2 d-flex flex-column row-gap-2 bg-transparent border-0">
+                            <h5>هونداى كريتا 2024-سمارات</h5>
+                            <div class="price">
+                                <span class="amount">
+                                    83,450.00
+                                    <span>ر.س</span>
+                                </span>
+                                <del>بدلا من 120000 </del>
+                            </div>
+                        </div>
+                        <div class="card-footer pt-0 pb-3 bg-transparent border-0">
+                            <a href="#" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                                <span>المزيد من تفاصيل</span>
+                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 cl-md-6 col-sm-12">
+                    <div class="card card-car overflow-hidden p-0">
+                        <div class="card-header border-0 position-relative overflow-hidden p-0">
+                            <img class="img-fluid" src="assets/image/cars/default-img.png" alt="image" />
+                        </div>
+                        <div class="card-body pb-2 d-flex flex-column row-gap-2 bg-transparent border-0">
+                            <h5>هونداى كريتا 2024-سمارات</h5>
+                            <div class="price">
+                                <span class="amount">
+                                    83,450.00
+                                    <span>ر.س</span>
+                                </span>
+                                <del>بدلا من 120000 </del>
+                            </div>
+                        </div>
+                        <div class="card-footer pt-0 pb-3 bg-transparent border-0">
+                            <a href="#" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                                <span>المزيد من تفاصيل</span>
+                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+            <div class="row justify-content-center mt-5">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center gap-3">
+                      <li class="page-item">
+                        <a class="page-link d-flex align-items-center justify-content-center" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link d-flex align-items-center justify-content-center active" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link d-flex align-items-center justify-content-center" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link d-flex align-items-center justify-content-center" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link d-flex align-items-center justify-content-center" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- always_help_contact  -->
+    <!-- ============================================================== -->
+   
+    <!-- ============================================================== -->
+    <!-- Footer -->
+    <!-- ============================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="top-footer">
+                <div class="row row-gap-3">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-logo mb-2">
+                            <img class="d-block" src="assets/image/logo/logo.png" alt="logo" />
+                        </div>
+                        <p class="describtion">
+                            بدأت شركة سيارتك نشاطها في عام 2018 بالكثير من الخبرة و الشغف في مجال السيارات و على أمل أن
+                            تكون ضمن أفضل الشركات التمويلية محليا وعلى مستوى الشرق الوسط..
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h5 class="main-title mb-3">تصفح موقعنا</h5>
+                        <ul class="two-column-list">
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    الرئيسية
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    من نحن
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    تواصل معنا
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    الشروط والأحكام
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    العروض المميزة للسيارات
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    التواصل الاجتماعي
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    سيارات
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    المدونات
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-subscribe d-flex flex-column gap-3">
+                            <h5 class="main-title">الاشتراك في النشرة الإخبارية</h5>
+                            <div class="input-group align-items-center gap-2 px-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-transparent border-0 p-0">
+                                        <img src="assets/image/icon/sms.svg" alt="icom" />
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control bg-transparent border-0 p-0"
+                                    placeholder="ادخل البريد الالكتروني...">
+                            </div>
+                            <button
+                                class="btn btn-subscribe w-100 d-flex align-items-center justify-content-center gap-2">
+                                <span>اشترك الان</span>
+                                <i class="fa fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer d-flex flex-wrap align-items-center">
+                <p>كل حقوق محفوظة © 2025 سيارتك</p>
+                <ul class="social-media d-flex align-items-center gap-3">
+                    <li>
+                        <span>تواصل معنا: </span>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/fb.svg" alt="icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/insta.svg" alt="icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/twitter.svg" alt="icon" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--JQuery Js-->
+    <script src="assets/jq/jQuery.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/swiper/js/swiper.min.js"></script>
+    <!--Bootstrap Select script for this page-->
+    <script src="assets/bootstrap-select/js/Bootstrap-select.js"></script>
+    <!--Main Js-->
+    <script src="assets/jq/main.js"></script>
+
+</body>
+
+</html>

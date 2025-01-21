@@ -1545,6 +1545,19 @@ html[dir=ltr] .badge-span {
   text-overflow: ellipsis;
 }
 
+.pagination .page-link {
+  border: 1px solid #2b2e91 !important;
+  border-radius: 0px !important;
+  width: 35px;
+  height: 35px;
+  color: #2b2e91 !important;
+}
+.pagination .page-link.active {
+  background: #ff5800 !important;
+  border: #ff5800 !important;
+  color: #ffffff !important;
+}
+
 /*-----------------------
     preloader 
 -------------------------*/
@@ -2064,6 +2077,92 @@ html[dir=ltr] #preloader-background {
 }
 
 /*-----------------------
+    Forms
+-------------------------*/
+.form-group .bootstrap-select, .form-horizontal .bootstrap-select, .form-inline .bootstrap-select {
+  width: 100% !important;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+  text-align: initial;
+}
+
+.bootstrap-select > .dropdown-toggle {
+  border: 1px solid #DADADA;
+  background: #fff !important;
+  min-height: 50px;
+  border-radius: 10px;
+  box-shadow: unset !important;
+  border-color: #DADADA !important;
+  outline: 0 !important;
+}
+
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select > select.mobile-device:focus + .dropdown-toggle {
+  background: #fff !important;
+  outline: 0 !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: var(--bs-dropdown-link-active-color);
+  text-decoration: none;
+  background-color: #2b2e91;
+}
+
+.form-label {
+  font-size: 16px;
+  color: #262626;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+
+.filteration-form .btn-primary {
+  min-height: 35px;
+  font-size: 18px;
+}
+.filteration-form .accordion-button {
+  background: #2b2e91;
+  color: #fff;
+  border: 0;
+  font-size: 19px;
+  box-shadow: unset !important;
+}
+.filteration-form .accordion-button::after {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7495%) hue-rotate(108deg) brightness(107%) contrast(100%);
+}
+
+/*-----------------------
+    breadcrumb
+-------------------------*/
+.breadcrumb {
+  padding: 60px 0;
+  background: #F4F7F8;
+}
+.breadcrumb .breadcrumb-item h3 {
+  color: #2b2e91;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.breadcrumb .breadcrumb-item h3 img {
+  width: 18px;
+}
+html[dir=rtl] .breadcrumb .shape {
+  padding-right: 1.75rem;
+}
+html[dir=ltr] .breadcrumb .shape {
+  padding-left: 1.75rem;
+}
+.breadcrumb ul li a {
+  font-size: 16px;
+  font-size: 600;
+  color: #262626;
+}
+.breadcrumb ul li i {
+  color: #ff5800;
+}
+.breadcrumb ul li span {
+  color: #ff5800;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+
+/*-----------------------
     statistics-section
 -------------------------*/
 .statistics-section {
@@ -2092,7 +2191,7 @@ html[dir=ltr] #preloader-background {
   border-radius: 24px;
 }
 .statistics-item span img {
-  filter: brightness(0) saturate(100%) invert(40%) sepia(31%) saturate(5243%) hue-rotate(1deg) brightness(102%) contrast(105%);
+  height: 40px;
 }
 .statistics-item .statistics-desc h4 {
   color: rgba(0, 0, 0, 0.8705882353);
