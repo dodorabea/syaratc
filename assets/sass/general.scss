@@ -858,6 +858,64 @@ $breakpoint: 992px;
     }
 }
 /*-----------------------
+    main-cars-hero
+-------------------------*/
+.main-cars-hero{
+    padding: 60px 0;
+
+    .hero-col{
+        .main-hero-item{
+            padding: 12px;
+            .image{
+                width: 55px;
+                height: 55px;
+                border-radius: 12px;
+                border: 1px solid rgba(26, 137, 30, .078);
+                img{
+                    width: 30px;
+                }
+            }
+            .text{
+                h6{
+                    font-size: 1rem;
+                    display: -webkit-box;
+                    line-clamp: 1;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-family: $font-family-Bold;
+                }
+                p{
+                    font-size: 0.984rem;
+                    display: -webkit-box;
+                    line-clamp: 1;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: map_get($theme-colors, descText);
+                }
+            }
+        }
+       // Loop for colors
+        @for $i from 1 through 5 {
+            &:nth-child(5n + #{$i}) {
+                .main-hero-item{
+                    background: nth((
+                        linear-gradient(211.63deg, rgba(5, 134, 165, .04) 1.98%, rgba(5, 134, 165, .012) 99.12%),  
+                        linear-gradient(212.11deg, rgba(173, 43, 101, .04) 2.23%, rgba(173, 43, 101, .012) 100%),  
+                        linear-gradient(211.47deg, rgba(254, 114, 1, .04) 1.98%, rgba(254, 114, 1, .012) 98.9%),  
+                        linear-gradient(211.47deg, rgba(44, 140, 255, .04) 2.19%, rgba(44, 140, 255, .012) 97.29%),  
+                        linear-gradient(213.91deg, rgba(26, 137, 30, .04) .12%, rgba(26, 137, 30, .012) 98.82%)  
+                    ), $i);
+                }
+            }
+        }
+    }
+    
+}
+/*-----------------------
     Forms
 -------------------------*/
 .form-group .bootstrap-select, .form-horizontal .bootstrap-select, .form-inline .bootstrap-select{
@@ -955,6 +1013,7 @@ $breakpoint: 992px;
 -------------------------*/
 .statistics-section {
     background: map_get($theme-colors, footerBg);
+    border-top: 1px solid map_get($theme-colors, bordercolor);
     border-bottom: 1px solid map_get($theme-colors, bordercolor);
     padding: 40px 0 40px 0;
 
@@ -1128,6 +1187,9 @@ $breakpoint: 992px;
         height: 80px;
         border-radius: 16px;
         margin: 0 auto 1rem auto;
+        img{
+            width: 40px;
+        }
     }
 
     .text {
@@ -1297,6 +1359,46 @@ $breakpoint: 992px;
     p{
         color:  map_get($theme-colors, grayColor);
         font-size: 18px;
+    }
+}
+/*-----------------------
+    Common Question
+-------------------------*/
+.common-question{
+    padding: 45px 0;
+    background: linear-gradient(104.39deg, rgba(235, 240, 244, 0.2) -7.11%, rgba(250, 251, 252, 0.4) 118.38%);
+    .accordion-button{
+        border: 0;
+        background: transparent;
+        box-shadow: none !important;
+        &::after{
+            background-size: 15px;
+        }
+    }
+   .accordion-item {
+        box-shadow: none !important;
+        background: #F9F9F9;
+        border: 1px solid #E9E9E9;
+        border-radius: 16px;
+    }
+    .accordion-header{
+        .accordion-button{
+            color: #000000DE;
+            font-size: 18px;
+            font-family: $font-family-Bold;
+        }
+    }
+    .accordion-button:not(.collapsed){
+        color: #000000DE;
+    }
+    .accordion-body {
+        padding-top: 0;
+        p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 28px;
+            color: #777E90;
+        }
     }
 }
 /*-----------------------

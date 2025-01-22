@@ -2153,6 +2153,60 @@ html[dir=ltr] #preloader-background {
 }
 
 /*-----------------------
+    main-cars-hero
+-------------------------*/
+.main-cars-hero {
+  padding: 60px 0;
+}
+.main-cars-hero .hero-col .main-hero-item {
+  padding: 12px;
+}
+.main-cars-hero .hero-col .main-hero-item .image {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  border: 1px solid rgba(26, 137, 30, 0.078);
+}
+.main-cars-hero .hero-col .main-hero-item .image img {
+  width: 30px;
+}
+.main-cars-hero .hero-col .main-hero-item .text h6 {
+  font-size: 1rem;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.main-cars-hero .hero-col .main-hero-item .text p {
+  font-size: 0.984rem;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-cars-hero .hero-col:nth-child(5n+1) .main-hero-item {
+  background: linear-gradient(211.63deg, rgba(5, 134, 165, 0.04) 1.98%, rgba(5, 134, 165, 0.012) 99.12%);
+}
+.main-cars-hero .hero-col:nth-child(5n+2) .main-hero-item {
+  background: linear-gradient(212.11deg, rgba(173, 43, 101, 0.04) 2.23%, rgba(173, 43, 101, 0.012) 100%);
+}
+.main-cars-hero .hero-col:nth-child(5n+3) .main-hero-item {
+  background: linear-gradient(211.47deg, rgba(254, 114, 1, 0.04) 1.98%, rgba(254, 114, 1, 0.012) 98.9%);
+}
+.main-cars-hero .hero-col:nth-child(5n+4) .main-hero-item {
+  background: linear-gradient(211.47deg, rgba(44, 140, 255, 0.04) 2.19%, rgba(44, 140, 255, 0.012) 97.29%);
+}
+.main-cars-hero .hero-col:nth-child(5n+5) .main-hero-item {
+  background: linear-gradient(213.91deg, rgba(26, 137, 30, 0.04) 0.12%, rgba(26, 137, 30, 0.012) 98.82%);
+}
+
+/*-----------------------
     Forms
 -------------------------*/
 .form-group .bootstrap-select, .form-horizontal .bootstrap-select, .form-inline .bootstrap-select {
@@ -2258,6 +2312,7 @@ html[dir=ltr] .breadcrumb ul li:not(:last-child)::after {
 -------------------------*/
 .statistics-section {
   background: #F4F7F8;
+  border-top: 1px solid #E9E9E9;
   border-bottom: 1px solid #E9E9E9;
   padding: 40px 0 40px 0;
 }
@@ -2409,6 +2464,9 @@ html[dir=ltr] .breadcrumb ul li:not(:last-child)::after {
   border-radius: 16px;
   margin: 0 auto 1rem auto;
 }
+.why-online-section-card .icon img {
+  width: 40px;
+}
 .why-online-section-card .text h4 {
   font-family: "Tajawal-Bold", sans-serif;
   color: #262626;
@@ -2557,6 +2615,45 @@ html[dir=ltr] .breadcrumb ul li:not(:last-child)::after {
 .about-hero-section p {
   color: #718479;
   font-size: 18px;
+}
+
+/*-----------------------
+    Common Question
+-------------------------*/
+.common-question {
+  padding: 45px 0;
+  background: linear-gradient(104.39deg, rgba(235, 240, 244, 0.2) -7.11%, rgba(250, 251, 252, 0.4) 118.38%);
+}
+.common-question .accordion-button {
+  border: 0;
+  background: transparent;
+  box-shadow: none !important;
+}
+.common-question .accordion-button::after {
+  background-size: 15px;
+}
+.common-question .accordion-item {
+  box-shadow: none !important;
+  background: #F9F9F9;
+  border: 1px solid #E9E9E9;
+  border-radius: 16px;
+}
+.common-question .accordion-header .accordion-button {
+  color: rgba(0, 0, 0, 0.8705882353);
+  font-size: 18px;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.common-question .accordion-button:not(.collapsed) {
+  color: rgba(0, 0, 0, 0.8705882353);
+}
+.common-question .accordion-body {
+  padding-top: 0;
+}
+.common-question .accordion-body p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 28px;
+  color: #777E90;
 }
 
 /*-----------------------
