@@ -173,7 +173,7 @@
     watchSlidesProgress: true,
     breakpoints: {
       0: {
-        slidesPerView: 1.5,
+        slidesPerView: 2,
     },
     400: {
         slidesPerView: 2.5,
