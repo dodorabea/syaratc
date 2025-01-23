@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <!-- meta tag -->
     <meta charset="utf-8">
@@ -13,6 +14,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/image/logo/fav.png">
     <!-- bootstrap v5.3.3 css -->
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+    <!-- AOS animation css -->
+    <link rel="stylesheet" type="text/css" href="assets/AOS/aos.css">
     <!--Bootstrap Select style for this page-->
     <link rel="stylesheet" type="text/css" href="assets/bootstrap-select/css/Bootstrap-select.css">
     <!--Font-awesome-->
@@ -26,6 +29,7 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
     <div id="preloader-background">
         <div id="circle-loader"></div>
@@ -61,7 +65,7 @@
                         <!---->
                         <li class="menu__item"><a href="#" class="menu__link">المدونات</a></li>
                         <!---->
-                        <li class="menu__item"><a href="#" class="menu__link">من نحن</a></li>
+                        <li class="menu__item"><a href="about.html" class="menu__link">من نحن</a></li>
                         <!---->
                         <li class="menu__item">
                             <a href="#" class="menu__link">العروض</a>
@@ -107,7 +111,43 @@
     <!-- ============================================================== -->
     <!-- breadcrumb Section -->
     <!-- ============================================================== -->
-     <section class="breadcrumb m-0">
+    <section class="offers-section">
+        <div class="container">
+            <ul class="breadcrumb-list mb-4 d-flex align-items-center gap-2">
+                <li class="d-flex align-items-center gap-1">
+                    <a href="index.html">الرئيسية</a>
+                </li>
+                <li class="d-flex align-items-center gap-1">
+                    <span>ابحث عن سيارتك</span>
+                </li>
+            </ul>
+        </div>
+        <div class="container position-relative">
+            <!-- Swiper -->
+            <div class="swiper mySwiper swiperOffers">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="offer-box overflow-hidden">
+                            <img class="img-fluid w-100 h-100" src="assets/image/slider/two.jpg" alt="images"/>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="offer-box overflow-hidden">
+                            <img class="img-fluid w-100 h-100" src="assets/image/slider/three.PNG" alt="images"/>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- breadcrumb Section -->
+    <!-- ============================================================== -->
+    <!-- <section class="breadcrumb m-0">
         <div class="container">
             <div class="breadcrumb-item">
                 <h3 class="d-flex align-items-center gap-2">
@@ -125,7 +165,7 @@
                 </ul>
             </div>
         </div>
-     </section>
+     </section> -->
     <!-- ============================================================== -->
     <!-- special-car -->
     <!-- ============================================================== -->
@@ -134,71 +174,75 @@
             <div class="filteration-form mb-3">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="form-acordion">
-                        <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          <i class="fa fa-filter"></i>
-                          <span>ابحث عن سيارة احلامك</span>
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="form-acordion" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <div class="row row-gap-3">
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="form-group d-block">
-                                    <label class="form-label d-block mb-2">الماركة</label>
-                                    <select class="selectpicker">
-                                        <option>ميتسوبيشي -MITSUBISHI</option>
-                                        <option>شيري -CHERY</option>
-                                        <option>فورد -FORD</option>
-                                        <option>دودج -DODGE</option>
-                                    </select>       
-                                </div>                 
+                        <h2 class="accordion-header" id="form-acordion">
+                            <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <i class="fa fa-filter"></i>
+                                <span>ابحث عن سيارة احلامك</span>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="form-acordion"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row row-gap-3">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-group d-block">
+                                            <label class="form-label d-block mb-2">الماركة</label>
+                                            <select class="selectpicker">
+                                                <option>ميتسوبيشي -MITSUBISHI</option>
+                                                <option>شيري -CHERY</option>
+                                                <option>فورد -FORD</option>
+                                                <option>دودج -DODGE</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-group d-block">
+                                            <label class="form-label d-block mb-2">الموديل</label>
+                                            <select class="selectpicker">
+                                                <option>ميتسوبيشي -MITSUBISHI</option>
+                                                <option>شيري -CHERY</option>
+                                                <option>فورد -FORD</option>
+                                                <option>دودج -DODGE</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-group d-block">
+                                            <label class="form-label d-block mb-2">الفئة</label>
+                                            <select class="selectpicker">
+                                                <option>ميتسوبيشي -MITSUBISHI</option>
+                                                <option>شيري -CHERY</option>
+                                                <option>فورد -FORD</option>
+                                                <option>دودج -DODGE</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-group d-block">
+                                            <label class="form-label d-block mb-2">ترتيب حسب</label>
+                                            <select class="selectpicker">
+                                                <option>ميتسوبيشي -MITSUBISHI</option>
+                                                <option>شيري -CHERY</option>
+                                                <option>فورد -FORD</option>
+                                                <option>دودج -DODGE</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <a href="#"
+                                            class="btn btn-primary d-flex align-items-center justify-content-center mt- w-100">
+                                            ابحث عن السيارة
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <!---->
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="form-group d-block">
-                                    <label class="form-label d-block mb-2">الموديل</label>
-                                    <select class="selectpicker">
-                                        <option>ميتسوبيشي -MITSUBISHI</option>
-                                        <option>شيري -CHERY</option>
-                                        <option>فورد -FORD</option>
-                                        <option>دودج -DODGE</option>
-                                    </select>       
-                                </div>                 
-                            </div>
-                            <!---->
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="form-group d-block">
-                                    <label class="form-label d-block mb-2">الفئة</label>
-                                    <select class="selectpicker">
-                                        <option>ميتسوبيشي -MITSUBISHI</option>
-                                        <option>شيري -CHERY</option>
-                                        <option>فورد -FORD</option>
-                                        <option>دودج -DODGE</option>
-                                    </select>       
-                                </div>                 
-                            </div>
-                            <!---->
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="form-group d-block">
-                                    <label class="form-label d-block mb-2">ترتيب حسب</label>
-                                    <select class="selectpicker">
-                                        <option>ميتسوبيشي -MITSUBISHI</option>
-                                        <option>شيري -CHERY</option>
-                                        <option>فورد -FORD</option>
-                                        <option>دودج -DODGE</option>
-                                    </select>       
-                                </div>                 
-                            </div>
-                            <!---->
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center mt- w-100">
-                                    ابحث عن السيارة
-                                </a>
-                            </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
                 </div>
             </div>
@@ -212,7 +256,7 @@
                     </li>
                     <li class="d-flex align-items-center gap-3">
                         <span>
-                            الشكل الخارجي :  SUV
+                            الشكل الخارجي : SUV
                         </span>
                         <a href="#"><i class="fa fa-close"></i></a>
                     </li>
@@ -236,7 +280,8 @@
                             </div>
                         </div>
                         <div class="card-footer pt-0 pb-3 bg-transparent border-0">
-                            <a href="card-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                            <a href="card-details.html"
+                                class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
                                 <span>المزيد من تفاصيل</span>
                                 <img src="assets/image/icon/arrow-left.svg" alt="icon" />
                             </a>
@@ -260,7 +305,8 @@
                             </div>
                         </div>
                         <div class="card-footer pt-0 pb-3 bg-transparent border-0">
-                            <a href="card-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                            <a href="card-details.html"
+                                class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
                                 <span>المزيد من تفاصيل</span>
                                 <img src="assets/image/icon/arrow-left.svg" alt="icon" />
                             </a>
@@ -285,7 +331,8 @@
                             </div>
                         </div>
                         <div class="card-footer pt-0 pb-3 bg-transparent border-0">
-                            <a href="card-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                            <a href="card-details.html"
+                                class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
                                 <span>المزيد من تفاصيل</span>
                                 <img src="assets/image/icon/arrow-left.svg" alt="icon" />
                             </a>
@@ -309,7 +356,8 @@
                             </div>
                         </div>
                         <div class="card-footer pt-0 pb-3 bg-transparent border-0">
-                            <a href="card-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                            <a href="card-details.html"
+                                class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
                                 <span>المزيد من تفاصيل</span>
                                 <img src="assets/image/icon/arrow-left.svg" alt="icon" />
                             </a>
@@ -334,7 +382,8 @@
                             </div>
                         </div>
                         <div class="card-footer pt-0 pb-3 bg-transparent border-0">
-                            <a href="card-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                            <a href="card-details.html"
+                                class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
                                 <span>المزيد من تفاصيل</span>
                                 <img src="assets/image/icon/arrow-left.svg" alt="icon" />
                             </a>
@@ -358,7 +407,8 @@
                             </div>
                         </div>
                         <div class="card-footer pt-0 pb-3 bg-transparent border-0">
-                            <a href="card-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
+                            <a href="card-details.html"
+                                class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
                                 <span>المزيد من تفاصيل</span>
                                 <img src="assets/image/icon/arrow-left.svg" alt="icon" />
                             </a>
@@ -370,23 +420,29 @@
             <div class="row justify-content-center mt-5">
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center gap-3">
-                      <li class="page-item">
-                        <a class="page-link d-flex align-items-center justify-content-center" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                      </li>
-                      <li class="page-item"><a class="page-link d-flex align-items-center justify-content-center active" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link d-flex align-items-center justify-content-center" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link d-flex align-items-center justify-content-center" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link d-flex align-items-center justify-content-center" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </li>
+                        <li class="page-item">
+                            <a class="page-link d-flex align-items-center justify-content-center" href="#"
+                                aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a
+                                class="page-link d-flex align-items-center justify-content-center active" href="#">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link d-flex align-items-center justify-content-center"
+                                href="#">2</a></li>
+                        <li class="page-item"><a class="page-link d-flex align-items-center justify-content-center"
+                                href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link d-flex align-items-center justify-content-center" href="#"
+                                aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
                     </ul>
-                  </nav>
+                </nav>
             </div>
         </div>
     </section>
@@ -513,6 +569,8 @@
     <script src="assets/swiper/js/swiper.min.js"></script>
     <!--Bootstrap Select script for this page-->
     <script src="assets/bootstrap-select/js/Bootstrap-select.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/AOS/aos.js"></script>
     <!--Main Js-->
     <script src="assets/jq/main.js"></script>
 
