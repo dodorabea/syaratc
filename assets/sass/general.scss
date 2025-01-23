@@ -160,6 +160,7 @@ h6 {
     &:hover,&:first-child:active{
         color: map_get($theme-colors, secondary);
         img{
+            @include rtl(transform, scaleX(-1), scaleX(1));
             filter: brightness(0) saturate(100%) invert(15%) sepia(81%) saturate(1909%) hue-rotate(223deg) brightness(99%) contrast(95%);
         }
     }
@@ -953,12 +954,14 @@ $breakpoint: 992px;
         font-size: 18px;
     }
     .accordion-button{
-        background: #F9F9F9;
-        border: 1px solid #E9E9E9;
+        background: #FDFDFD;
         color: map_get($theme-colors, dark);
         border: 0;
         font-size: 18px;
         box-shadow: unset !important;
+    }
+    .accordion-body{
+        border-top: 1px solid #E9E9E9;
     }
     .accordion-button::after{
         background-size: 16px;
@@ -1250,12 +1253,12 @@ $breakpoint: 992px;
     padding: 45px 0;
     background: linear-gradient(104.39deg, rgba(235, 240, 244, 0.2) -7.11%, rgba(250, 251, 252, 0.4) 118.38%);
 }
-
 .card {
     &.card-car {
         border: 1px solid map_get($theme-colors, bordercolor);
         border-radius: 16px;
-
+        -webkit-transition: all 1s ease-out;
+        transition: all 1s ease-out;
         .card-header {
             border-radius: 16px 16px 0 0;
 
@@ -1268,7 +1271,6 @@ $breakpoint: 992px;
                 height: 100%;
             }
         }
-
         .card-body {
             h5 {
                 display: -webkit-box;
@@ -1298,10 +1300,11 @@ $breakpoint: 992px;
                 }
             }
         }
+        &:hover{
+            border: 1px solid map_get($theme-colors, primary);
+        }
     }
-
 }
-
 /*-----------------------
     financing-partners 
 -------------------------*/
@@ -1315,7 +1318,36 @@ $breakpoint: 992px;
         }
     }
 }
-
+/*-----------------------
+    cars-details 
+-------------------------*/
+.cars-details{
+    padding: 0 0 20px 0;
+    .accordion-item{
+        border: 1px solid #E9E9E9;
+        border-radius: 16px !important;
+        .accordion-button{
+            border-radius: 16px 16px 0 0;
+            font-family: $font-family-Bold;
+        }
+    }
+    .table{
+        border-color: transparent;
+    }
+    .table-striped>tbody>tr:nth-of-type(even)>* {
+        --bs-table-color-type: var(--bs-table-striped-color);
+        --bs-table-bg-type: #FDFDFD;
+    }
+    .table-striped>tbody>tr:nth-of-type(odd)>* {
+        --bs-table-color-type: var(--bs-table-striped-color);
+        --bs-table-bg-type: unset;
+    }
+    tbody {
+        td{
+            padding: 16px 24px;
+        }
+    }
+}
 /*-----------------------
     always_help_contact 
 -------------------------*/
@@ -1410,7 +1442,7 @@ $breakpoint: 992px;
     padding: 60px 0;
     .cars-main-slider{
         .slide-box{
-            padding: 1rem;
+            padding: 0;
             border: 1px solid #E9E9E9;
             background: #FDFDFD;
             border-radius: 16px;
@@ -1431,13 +1463,15 @@ $breakpoint: 992px;
     }
     .sub-slider{
         .sub-slider-box{
-            padding: 1rem;
+            padding: 0;
             height: 100px;
             border: 1px solid #E9E9E9;
             border-radius: 8px;
             opacity: 0.6;
+            overflow: hidden;
             img{
                 height: 100%;
+                width: 100%;
             }
         }
        
@@ -1608,6 +1642,119 @@ html[dir="ltr"]{
     .swiper-button-next, .swiper-button-prev{
         top: 50%;
     }
+}
+/*-----------------------
+    Blogs
+-------------------------*/
+.blogs-section{
+    padding: 60px 0;
+    .card-blog{
+        -webkit-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+        .header-part{
+            height: 275px;
+            border-radius: 8px;
+            border: 1px solid #E9E9E9;
+            
+        }
+        .body-part{
+            position: relative;
+            .date{
+                font-size: 14px;
+                color: map_get($theme-colors, primary);
+            }
+            h5{
+                color: map_get($theme-colors, dark);
+                display: -webkit-box;
+                line-clamp: 1;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis; 
+                line-height: 2rem;
+                font-family: $font-family-Bold;
+            }
+            p{
+                font-size: 0.894rem;
+                color: map_get($theme-colors, grayColor);
+                display: -webkit-box;
+                line-clamp: 2;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis; 
+                min-height: 42px;
+            }
+           
+        }
+       
+       
+    }
+    
+}
+/*-----------------------
+    blog-details
+-------------------------*/
+.blog-details{
+    padding: 60px 0;
+    background: #fff;
+    .sub-info{
+        h4{
+            color: #000000DE;
+            font-family: $font-family-Bold;
+        }
+        .date{
+            font-size: 14px;
+            color: map_get($theme-colors, primary);
+        }
+        ul{
+            li{
+                i{
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &.fa-facebook{
+                        background: #3B5998;
+                    }
+                    &.fa-x-twitter{
+                        background: #000;
+                    }
+                    &.fa-instagram{
+                        background: #d6249f;
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                    }
+                    &.fa-linkedin-in{
+                        background: #0077B5;
+                    }
+                }
+            }
+        }
+        .site-name{
+            color: map_get($theme-colors, secondary);
+            font-family: $font-family-Bold;
+        }
+    }
+    .header-part{
+        @media (min-width: 992px){
+            height: 280px;
+        }
+       
+    }
+    .body-part{
+        padding: 16px;
+        p{
+            font-size: 16px;
+            color: #000000DE;
+            margin-bottom: 1rem;
+        }
+    }
+   
 }
 /*-----------------------
     Footer Styles
