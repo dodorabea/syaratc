@@ -167,20 +167,26 @@
   //////
   var swiper6 = new Swiper(".mySwiper.sub-slider", {
     spaceBetween: 10,
-    slidesPerView: 1.25,
+    slidesPerView: 1,
     loop: true,
     freeMode: true,
     watchSlidesProgress: true,
     breakpoints: {
-      1024: {
+      0: {
+        slidesPerView: 1.5,
+    },
+    400: {
+        slidesPerView: 2.5,
+    },
+    880: {
+        slidesPerView: 3,
+    },
+    1025: {
         slidesPerView: 4,
-      },
-      768: {
-        slidesPerView: 2.75,
-      },
-      640: {
-        slidesPerView: 2.25,
-      },
+    },
+    1366: {
+        slidesPerView: 4,
+    }
     },
     navigation: {
       nextEl: ".swiper-button-next.sub",
