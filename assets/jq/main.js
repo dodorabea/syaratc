@@ -174,19 +174,19 @@
     breakpoints: {
       0: {
         slidesPerView: 2,
-    },
-    400: {
+      },
+      400: {
         slidesPerView: 2.5,
-    },
-    880: {
+      },
+      880: {
         slidesPerView: 3,
-    },
-    1025: {
+      },
+      1025: {
         slidesPerView: 4,
-    },
-    1366: {
+      },
+      1366: {
         slidesPerView: 4,
-    }
+      },
     },
     navigation: {
       nextEl: ".swiper-button-next.sub",
@@ -210,6 +210,15 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  });
+  //////////////
+  $(document).ready(function () {
+    // Check if select2 is defined and if the element exists
+    if ($.fn.select2 && $(".single-select").length) {
+      $(".single-select").select2({
+        allowClear: true,
+      });
+    } 
   });
 })(jQuery);
 /*=====Header=====*/
