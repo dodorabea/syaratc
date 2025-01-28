@@ -2630,16 +2630,26 @@ html[dir=ltr] .breadcrumb-list li:not(:last-child)::after {
   border-radius: 16px;
   transition: all 1s ease-out;
 }
+@media (min-width: 768px) {
+  .card.card-car {
+    height: 100%;
+  }
+}
 .card.card-car .card-header {
   border-radius: 16px 16px 0 0;
 }
 @media (min-width: 768px) {
   .card.card-car .card-header {
     height: 260px;
+    min-height: 260px;
+    max-height: 260px;
   }
 }
 .card.card-car .card-header img {
   width: 100%;
+  height: 100%;
+}
+.card.card-car .card-body {
   height: 100%;
 }
 .card.card-car .card-body h5 {
@@ -2666,6 +2676,31 @@ html[dir=ltr] .breadcrumb-list li:not(:last-child)::after {
 }
 .card.card-car:hover {
   border: 1px solid #ff5800;
+}
+
+.info-cars-list li img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info-cars-list li span {
+  border-radius: 0.25rem;
+  background-color: #f2f4f7;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  min-height: 24px;
+  font-size: 12px;
+  color: #2b2e91;
+}
+.info-cars-list li span a {
+  color: #2b2e91;
+}
+html[dir=rtl] .info-cars-list li span i {
+  padding-left: 5px;
+}
+html[dir=ltr] .info-cars-list li span i {
+  padding-right: 5px;
 }
 
 /*-----------------------
@@ -3125,6 +3160,208 @@ html[dir=rtl] .offers-section .swiper-rtl .swiper-button-next {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8705882353);
   margin-bottom: 1rem;
+}
+
+/*-----------------------
+    request-car-purchase
+-------------------------*/
+.request-car-purchase {
+  padding: 40px 0;
+}
+.request-car-purchase .title h3 {
+  font-size: 17px;
+  color: #ff5800;
+}
+.request-car-purchase .title h3 img {
+  width: 16px;
+}
+.request-car-purchase .title p {
+  font-size: 24px;
+  color: #000;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.request-car-purchase .cars-details,
+.request-car-purchase .payment-form {
+  background: #FDFDFD;
+  border-radius: 16px;
+  border: 1px solid #E9E9E9;
+}
+.request-car-purchase .cars-details .card-header,
+.request-car-purchase .payment-form .card-header {
+  padding: 16px 16px;
+  background: #F9F9F9;
+  border-bottom: 1px solid #E9E9E9;
+}
+.request-car-purchase .cars-details .card-header h6,
+.request-car-purchase .payment-form .card-header h6 {
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.request-car-purchase .cars-details .card-footer,
+.request-car-purchase .payment-form .card-footer {
+  padding: 12px 16px;
+}
+.request-car-purchase .cars-details .card-footer h5,
+.request-car-purchase .payment-form .card-footer h5 {
+  font-size: 18px;
+  color: #262626;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.request-car-purchase .cars-details .card-footer .price .amount,
+.request-car-purchase .payment-form .card-footer .price .amount {
+  font-size: 1.25rem;
+  color: #2b2e91;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.request-car-purchase .cars-details .card-footer .price .amount span,
+.request-car-purchase .payment-form .card-footer .price .amount span {
+  font-family: "Tajawal-Regular", sans-serif;
+  font-size: 0.849rem;
+}
+.request-car-purchase .cars-details .card-footer .price del,
+.request-car-purchase .payment-form .card-footer .price del {
+  color: #9EB5C1;
+}
+.request-car-purchase .cars-details .card-body {
+  height: 381px;
+}
+.request-car-purchase .payment-form .card-body {
+  padding: 16px;
+}
+.request-car-purchase .payment-form .card-body .form-control {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+html[dir=rtl] .request-car-purchase .payment-form .card-body .form-control .form-control {
+  padding-left: 32px !important;
+}
+html[dir=ltr] .request-car-purchase .payment-form .card-body .form-control .form-control {
+  padding-right: 32px !important;
+}
+.request-car-purchase .payment-form .card-body .input-group-text::after {
+  position: absolute;
+  top: unset;
+  bottom: unset;
+  height: 100%;
+  width: 1px;
+  background: #aaa;
+  content: "";
+}
+html[dir=rtl] .request-car-purchase .payment-form .card-body .input-group-text::after {
+  right: -7px;
+  left: unset;
+}
+html[dir=ltr] .request-car-purchase .payment-form .card-body .input-group-text::after {
+  right: unset;
+  left: -7px;
+}
+@media (min-width: 768px) {
+  .request-car-purchase .payment-form .card-body .input-group {
+    display: flex;
+  }
+}
+@media (max-width: 767.98px) {
+  .request-car-purchase .payment-form .card-body .input-group {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.request-car-purchase .payment-form .button-action .btn-primary {
+  font-size: 18px;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+
+.mobile-input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #f3f3f3;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.mobile-input-group .input-group-text {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555555 !important;
+  position: relative;
+}
+
+.form-check-input {
+  box-shadow: none !important;
+  outline: 0 !important;
+  border-color: #718479;
+}
+
+.form-check-input:checked {
+  border-color: #ff5800;
+  background-color: #ff5800;
+  border-color: #ff5800;
+}
+
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+}
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.fileUpload {
+  border: 1px solid #2b2e91;
+  border-left: 0;
+  border-radius: 0;
+  min-height: 40px;
+}
+
+.h-div-input {
+  min-height: 40px;
+}
+
+.f-input {
+  min-height: 40px;
+  background-color: white;
+  border: 1px solid gray;
+  width: 100%;
+  max-width: 400px;
+  float: left;
+  padding: 0 14px;
+}
+
+.nav-tabs .nav-item {
+  flex-grow: 1;
+}
+.nav-tabs .nav-link {
+  border: 1px solid #E9E9E9;
+  min-height: 48px;
+  background: #fff;
+  padding: 0 1rem;
+  color: #9EB5C1;
+  border-radius: 0;
+  width: 100%;
+}
+.nav-tabs .nav-link.active {
+  background: #2b2e91;
+  border: 1px solid #2b2e91;
+  color: #ffffff;
+  font-family: "Tajawal-Bold", sans-serif;
 }
 
 /*-----------------------

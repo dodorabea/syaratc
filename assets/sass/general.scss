@@ -1380,12 +1380,18 @@ $breakpoint: 992px;
         border-radius: 16px;
         -webkit-transition: all 1s ease-out;
         transition: all 1s ease-out;
+        
+        @media (min-width: 768px) {
+            height: 100%;
+        }
 
         .card-header {
             border-radius: 16px 16px 0 0;
 
             @media (min-width: 768px) {
                 height: 260px;
+                min-height: 260px;
+                max-height: 260px;
             }
 
             img {
@@ -1395,6 +1401,7 @@ $breakpoint: 992px;
         }
 
         .card-body {
+            height: 100%;
             h5 {
                 display: -webkit-box;
                 line-clamp: 1;
@@ -1429,7 +1436,30 @@ $breakpoint: 992px;
         }
     }
 }
-
+.info-cars-list{
+    li{
+        img{
+            width: 24px;
+            height: 24px;
+            object-fit: cover;
+        }
+        span{
+            border-radius: .25rem;
+            background-color: #f2f4f7;
+            padding-left: .5rem;
+            padding-right: .5rem;
+            min-height: 24px;
+            font-size: 12px;
+            color: map_get($theme-colors, secondary);
+            a{
+                color: map_get($theme-colors, secondary);
+            }
+            i{
+                @include property_dir('padding', 'left', 5px);
+            }
+        }
+    }
+}
 /*-----------------------
     financing-partners 
 -------------------------*/
@@ -1975,6 +2005,193 @@ html[dir="ltr"] {
         }
     }
 
+}
+/*-----------------------
+    request-car-purchase
+-------------------------*/
+.request-car-purchase{
+    padding: 40px 0;
+    .title{
+        h3{
+            font-size: 17px;
+            color: map_get($theme-colors, primary);
+            img{
+                width: 16px;
+            }
+        }
+        p{
+            font-size: 24px;
+            color: #000;
+            font-family: $font-family-Bold;
+        }
+    }
+    .cars-details,
+    .payment-form{
+        background: #FDFDFD;
+        border-radius: 16px;
+        border: 1px solid #E9E9E9;
+        .card-header{
+            padding: 16px 16px;
+            background: #F9F9F9;
+            border-bottom: 1px solid #E9E9E9;
+            h6{
+                font-family: $font-family-Bold;
+            }
+        }
+        .card-footer{
+            padding: 12px 16px;
+            h5 {
+                font-size: 18px;
+                color: map_get($theme-colors, dark);
+                font-family: $font-family-Bold;
+            }
+
+            .price {
+                .amount {
+                    font-size: 1.25rem;
+                    color: map_get($theme-colors, secondary);
+                    font-family: $font-family-Bold;
+
+                    span {
+                        font-family: $font-family-base;
+                        font-size: 0.849rem;
+                    }
+                }
+
+                del {
+                    color: #9EB5C1;
+                }
+            }
+        }
+    }
+    .cars-details{
+        .card-body{
+            height: 381px;
+        }
+        
+    }
+    .payment-form{
+        .card-body{
+            padding: 16px;
+            .form-control{
+                background-color: #fff;
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                outline: 0 !important;
+                box-shadow: none !important;
+                .form-control{
+                    @include property_dir('padding', 'left', 32px !important);
+                }
+            }
+            .input-group-text::after {
+                @include position( absolute , unset, -7px, unset, unset);
+                height: 100%;
+                width: 1px;
+                background: #aaa;
+                content: '';
+            }
+            .input-group{
+                @media (min-width: 768px){
+                    display: flex;
+                }
+                @media (max-width: 767.98px){
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .button-action{
+            .btn-primary{
+                font-size: 18px;
+                border-radius: 0;
+                padding: 0.5rem 1rem;
+                font-family: $font-family-Bold;
+            }
+        }
+    }
+}
+.mobile-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #f3f3f3;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.mobile-input-group .input-group-text {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555555 !important;
+    position: relative;
+}
+
+.form-check-input{
+    box-shadow: none !important;
+    outline: 0 !important;
+    border-color: map_get($theme-colors, grayColor);
+}
+.form-check-input:checked {
+    border-color: map_get($theme-colors, primary);
+    background-color: map_get($theme-colors, primary);
+    border-color: map_get($theme-colors, primary);
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.fileUpload{
+    border: 1px solid map_get($theme-colors, secondary);
+    border-left: 0;
+	border-radius: 0;
+    min-height: 40px;
+}
+.h-div-input{
+    min-height: 40px;
+}
+.f-input{
+	min-height: 40px;
+	background-color: white;
+	border: 1px solid gray;
+	width: 100%;
+	max-width: 400px;
+	float: left;
+	padding: 0 14px;
+}
+.nav-tabs{
+    .nav-item{
+        flex-grow: 1;
+    }
+    .nav-link{
+        border: 1px solid #E9E9E9;
+        min-height: 48px;
+        background: #fff;
+        padding: 0 1rem;
+        color: #9EB5C1;
+        border-radius: 0;
+        width: 100%;
+        &.active{
+            background: map_get($theme-colors, secondary);
+            border: 1px solid map_get($theme-colors, secondary);
+            color: map_get($theme-colors, white);
+            font-family: $font-family-Bold;
+        }
+    }
 }
 
 /*-----------------------

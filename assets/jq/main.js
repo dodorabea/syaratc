@@ -49,8 +49,8 @@
   var swiper = new Swiper(".mySwiper.special-car-slider", {
     slidesPerView: 1,
     spaceBetween: 10,
-    // autoplay: true,
-    // loop: true,
+    autoplay: true,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next.special-car-slider",
       prevEl: ".swiper-button-prev.special-car-slider",
@@ -98,6 +98,8 @@
   var swiper3 = new Swiper(".mySwiper.why-online", {
     slidesPerView: 1,
     spaceBetween: 10,
+    autoplay: true,
+    loop: true,
     breakpoints: {
       1024: {
         slidesPerView: 3,
@@ -120,6 +122,7 @@
   var swiper4 = new Swiper(".mySwiper.brand-slider", {
     slidesPerView: 1,
     spaceBetween: 10,
+    autoplay: true,
     loop: true,
     breakpoints: {
       1024: {
@@ -169,6 +172,7 @@
     spaceBetween: 10,
     slidesPerView: 1,
     loop: true,
+    autoplay: true,
     freeMode: true,
     watchSlidesProgress: true,
     breakpoints: {
@@ -195,6 +199,7 @@
   });
   var swiper7 = new Swiper(".mySwiper2.cars-main-slider", {
     spaceBetween: 10,
+    autoplay: true,
     loop: true,
     navigation: {
       nextEl: ".swiper-button-next.cars-main",
@@ -220,6 +225,16 @@
       });
     } 
   });
+
+  ///////////
+ // Attach event listeners to all file input elements
+ document.querySelectorAll(".uploadBtn").forEach((uploadBtn) => {
+  uploadBtn.addEventListener("change", function () {
+    const fileName = this.value.replace("C:\\fakepath\\", ""); // Get the file name
+    const uploadFileInput = this.closest(".input-group").querySelector(".uploadFile"); // Find the corresponding text input
+    uploadFileInput.value = fileName; // Set the file name in the text input
+  });
+});
 })(jQuery);
 /*=====Header=====*/
 const menu = document.querySelector(".menu");
