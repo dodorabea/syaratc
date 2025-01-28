@@ -211,6 +211,8 @@
   });
   //////
   var swiper8 = new Swiper(".mySwiper.swiperOffers", {
+    autoplay: true,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -223,18 +225,19 @@
       $(".single-select").select2({
         allowClear: true,
       });
-    } 
+    }
   });
 
   ///////////
- // Attach event listeners to all file input elements
- document.querySelectorAll(".uploadBtn").forEach((uploadBtn) => {
-  uploadBtn.addEventListener("change", function () {
-    const fileName = this.value.replace("C:\\fakepath\\", ""); // Get the file name
-    const uploadFileInput = this.closest(".input-group").querySelector(".uploadFile"); // Find the corresponding text input
-    uploadFileInput.value = fileName; // Set the file name in the text input
+  // Attach event listeners to all file input elements
+  document.querySelectorAll(".uploadBtn").forEach((uploadBtn) => {
+    uploadBtn.addEventListener("change", function () {
+      const fileName = this.value.replace("C:\\fakepath\\", ""); // Get the file name
+      const uploadFileInput =
+        this.closest(".input-group").querySelector(".uploadFile"); // Find the corresponding text input
+      uploadFileInput.value = fileName; // Set the file name in the text input
+    });
   });
-});
 })(jQuery);
 /*=====Header=====*/
 const menu = document.querySelector(".menu");
