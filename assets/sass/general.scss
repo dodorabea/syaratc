@@ -2193,7 +2193,80 @@ html[dir="ltr"] {
         }
     }
 }
-
+/*-----------------------
+    Contact Section
+-------------------------*/
+.contact-section{
+    padding: 40px 0;
+    .contact-info{
+        background: #ffffff;
+        border: 1px solid #E9E9E9;
+        border-radius: 24px;
+        padding: 32px 16px;
+        h5{
+            font-size: 24px;
+            margin-bottom: 0;
+            font-family: $font-family-Bold;
+        }
+        p{
+            font-size: 16px;
+            color: map_get($theme-colors, grayColor);
+        }
+        .item{
+            .icon{
+                width: 35px;
+                min-width: 35px;
+                max-width: 35px;
+                height: 35px;
+                border-radius: 100%;
+                color: map_get($theme-colors, white);
+                background: map_get($theme-colors, primary);
+                i{
+                    font-size: 14px;
+                }
+            }
+            p,a{
+                font-size: 17px;
+                color: #00000099;
+                &:hover{
+                    color: map_get($theme-colors, secondary);
+                }
+            }
+        }
+    }
+    .contact-form{
+        background: #ffffff;
+        border: 1px solid #E9E9E9;
+        border-radius: 24px;
+        padding: 32px 16px;
+        .title{
+            font-family: $font-family-Bold;
+            color: #000;
+        }
+    }
+    .form-control{
+        background-color: #fff;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        outline: 0 !important;
+        box-shadow: none !important;
+        resize: unset;
+        .form-control{
+            @include property_dir('padding', 'left', 32px !important);
+        }
+    }
+    .input-group-text::after {
+        @include position( absolute , unset, -7px, unset, unset);
+        height: 100%;
+        width: 1px;
+        background: #aaa;
+        content: '';
+    }
+    .btn-secondary{
+        min-height: 45px;
+        font-family: $font-family-Bold;
+    }
+}
 /*-----------------------
     Footer Styles
 -------------------------*/

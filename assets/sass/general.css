@@ -3365,6 +3365,92 @@ html[dir=ltr] .request-car-purchase .payment-form .card-body .input-group-text::
 }
 
 /*-----------------------
+    Contact Section
+-------------------------*/
+.contact-section {
+  padding: 40px 0;
+}
+.contact-section .contact-info {
+  background: #ffffff;
+  border: 1px solid #E9E9E9;
+  border-radius: 24px;
+  padding: 32px 16px;
+}
+.contact-section .contact-info h5 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.contact-section .contact-info p {
+  font-size: 16px;
+  color: #718479;
+}
+.contact-section .contact-info .item .icon {
+  width: 35px;
+  min-width: 35px;
+  max-width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  color: #ffffff;
+  background: #ff5800;
+}
+.contact-section .contact-info .item .icon i {
+  font-size: 14px;
+}
+.contact-section .contact-info .item p, .contact-section .contact-info .item a {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.contact-section .contact-info .item p:hover, .contact-section .contact-info .item a:hover {
+  color: #2b2e91;
+}
+.contact-section .contact-form {
+  background: #ffffff;
+  border: 1px solid #E9E9E9;
+  border-radius: 24px;
+  padding: 32px 16px;
+}
+.contact-section .contact-form .title {
+  font-family: "Tajawal-Bold", sans-serif;
+  color: #000;
+}
+.contact-section .form-control {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: 0 !important;
+  box-shadow: none !important;
+  resize: unset;
+}
+html[dir=rtl] .contact-section .form-control .form-control {
+  padding-left: 32px !important;
+}
+html[dir=ltr] .contact-section .form-control .form-control {
+  padding-right: 32px !important;
+}
+.contact-section .input-group-text::after {
+  position: absolute;
+  top: unset;
+  bottom: unset;
+  height: 100%;
+  width: 1px;
+  background: #aaa;
+  content: "";
+}
+html[dir=rtl] .contact-section .input-group-text::after {
+  right: -7px;
+  left: unset;
+}
+html[dir=ltr] .contact-section .input-group-text::after {
+  right: unset;
+  left: -7px;
+}
+.contact-section .btn-secondary {
+  min-height: 45px;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+
+/*-----------------------
     Footer Styles
 -------------------------*/
 .footer {
