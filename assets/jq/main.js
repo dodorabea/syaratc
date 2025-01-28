@@ -211,8 +211,13 @@
   });
   //////
   var swiper8 = new Swiper(".mySwiper.swiperOffers", {
-    autoplay: true,
+    slidesPerView: 1,
+    effect: "fade",
     loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+    speed: 2000,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
