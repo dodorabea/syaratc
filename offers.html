@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <!-- meta tag -->
     <meta charset="utf-8">
@@ -17,7 +16,7 @@
     <!-- AOS animation css -->
     <link rel="stylesheet" type="text/css" href="assets/AOS/aos.css">
     <!--Bootstrap Select style for this page-->
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap-select/css/Bootstrap-select.css">
+    <link href="assets/select/css/select2.min.css" rel="stylesheet" />
     <!--Font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <!-- Swiper Slider css -->
@@ -63,12 +62,12 @@
                         <!---->
                         <li class="menu__item"><a href="cars.html" class="menu__link">سيارات</a></li>
                         <!---->
-                        <li class="menu__item"><a href="blogs.html" class="menu__link active">المدونات</a></li>
+                        <li class="menu__item"><a href="blogs.html" class="menu__link">المدونات</a></li>
                         <!---->
                         <li class="menu__item"><a href="about.html" class="menu__link">من نحن</a></li>
                         <!---->
                         <li class="menu__item">
-                            <a href="offers.html" class="menu__link">العروض</a>
+                            <a href="offers.html" class="menu__link active">العروض</a>
                         </li>
                         <!---->
                         <li class="menu__item">
@@ -80,7 +79,7 @@
                         </li>
                         <!---->
                         <li class="menu__item menu__dropdown position-relative">
-                            <a class="menu__link">
+                            <a  class="menu__link">
                                 المزيد
                                 <i class="fa fa-chevron-down"></i>
                             </a>
@@ -118,7 +117,7 @@
                     <a href="index.html">الرئيسية</a>
                 </li>
                 <li class="d-flex align-items-center gap-1">
-                    <span>المدونات</span>
+                    <span>نموذج طلب شراء سيارة</span>
                 </li>
             </ul>
         </div>
@@ -128,13 +127,13 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="offer-box overflow-hidden">
-                            <img class="img-fluid w-100 h-100" src="assets/image/slider/two.jpg" alt="images"/>
+                            <img class="img-fluid w-100 h-100" src="assets/image/slider/two.jpg" alt="images" />
                         </div>
                     </div>
                     <!---->
                     <div class="swiper-slide">
                         <div class="offer-box overflow-hidden">
-                            <img class="img-fluid w-100 h-100" src="assets/image/slider/three.PNG" alt="images"/>
+                            <img class="img-fluid w-100 h-100" src="assets/image/slider/three.PNG" alt="images" />
                         </div>
                     </div>
                     <!---->
@@ -145,144 +144,127 @@
         </div>
     </section>
     <!-- ============================================================== -->
-    <!-- Blogs -->
+    <!-- Offers -->
     <!-- ============================================================== -->
-    <section class="blogs-section" data-aos="zoom-in">
+    <section class="offers-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card-blog h-100">
-                        <div class="header-part position-relative overflow-hidden mb-3">
-                            <img class="img-fluid w-100 h-100" src="assets/image/cars/blog-one.PNG" alt="image"/>
-                        </div>
-                        <div class="body-part d-flex flex-column">
-                            <div class="date d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i>
-                                <span>31 Dec 2024</span>
+            <div class="title-section mb-4">
+                <div class="d-flex align-items-center gap-1 justify-content-center mb-2">
+                    <img src="assets/image/icon/title-star.svg" alt="icon"/>
+                    <span>العروض المميزه</span>
+                    <img src="assets/image/icon/title-star.svg" alt="icon"/>
+                </div>
+                <h4 class="text-center">عروض مميزه للأفراد و الشركات</h4>
+            </div>
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-6 col-md-10 col-sm-12">
+                    <ul class="nav nav-tabs gap-3 row-gap-3 border-0 mb-3 justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active d-flex align-items-center justify-content-center" id="one-tab" data-bs-toggle="tab" data-bs-target="#one"
+                                type="button" role="tab" aria-controls="one" aria-selected="true">عروض للأفراد</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link d-flex align-items-center justify-content-center" id="two-tab" data-bs-toggle="tab" data-bs-target="#two"
+                                type="button" role="tab" aria-controls="two" aria-selected="false">عروض للشركات</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                    <div class="row align-items-center row-gap-3 mb-5">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="offers-section-text d-flex flex-column align-items-start row-gap-3">
+                                <!--code script in the end of page-->
+                                <ul id="demo" class="demo-count-down d-flex flex-wrap align-items-center gap-2">
+                                    <li class="circle seconds"></li>
+                                    <li class="circle minutes"></li>
+                                    <li class="circle hours"></li>
+                                    <li class="circle days"></li>
+                                    <li>
+                                        <span>أيام متبقي علي انتهاء العرض</span>
+                                    </li>
+                                </ul>
+                                <h5>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص</h5>
+                                <p>
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،
+                                </p>
+                                <a class="btn btn-primary w-auto d-flex align-items-center gap-2">
+                                    <span> أطلبها الأن </span>
+                                    <i class="fa fa-share"></i>
+                                </a>
                             </div>
-                            <h5 class="mb-2">عش شغف السرعة ومتعة المغامرة مع سيارات رياضية عالية الأداء</h5>
-                            <p class="mb-1">
-                                تعد السيارات الرياضية عالية الأداء خيارًا مفضلًا لدى شريحة كبيرة من الشباب السعودي، حيث يبحثون دائمًا عن كل ما هو مختلف
-                            </p>
-                            <a href="blog-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
-                                <span>اكمل القراءة</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon">
-                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="offers-section-image overflow-hidden">
+                                <img class="img-fluid w-100 h-100" src="assets/image/cars/offer.PNG" alt="image"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center row-gap-3 mb-5">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="offers-section-text d-flex flex-column align-items-start row-gap-3">
+                                <h5>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص</h5>
+                                <p>
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،
+                                </p>
+                                <a class="btn btn-primary w-auto d-flex align-items-center gap-2">
+                                    <span> أطلبها الأن </span>
+                                    <i class="fa fa-share"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="offers-section-image overflow-hidden">
+                                <img class="img-fluid w-100 h-100" src="assets/image/cars/offer.PNG" alt="image"/>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!---->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card-blog h-100">
-                        <div class="header-part position-relative overflow-hidden mb-3">
-                            <img class="img-fluid w-100 h-100" src="assets/image/cars/blog-two.PNG" alt="image"/>
-                        </div>
-                        <div class="body-part d-flex flex-column">
-                            <div class="date d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i>
-                                <span>31 Dec 2024</span>
+                <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                    <div class="row align-items-center row-gap-3 mb-5">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="offers-section-text d-flex flex-column align-items-start row-gap-3">
+                                <h5>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص</h5>
+                                <p>
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،
+                                </p>
+                                <a class="btn btn-primary w-auto d-flex align-items-center gap-2">
+                                    <span> أطلبها الأن </span>
+                                    <i class="fa fa-share"></i>
+                                </a>
                             </div>
-                            <h5 class="mb-2">ما هي أفضل سيارة عائلية</h5>
-                            <p class="mb-1">
-                                قائمة بأفضل أنواع السيارات العائلية التي تمنحك قيمة عالية مقابل سعر
-                            </p>
-                            <a href="blog-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
-                                <span>اكمل القراءة</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon">
-                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="offers-section-image overflow-hidden">
+                                <img class="img-fluid w-100 h-100" src="assets/image/cars/offer.PNG" alt="image"/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!---->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card-blog h-100">
-                        <div class="header-part position-relative overflow-hidden mb-3">
-                            <img class="img-fluid w-100 h-100" src="assets/image/cars/default-img.png" alt="image"/>
-                        </div>
-                        <div class="body-part d-flex flex-column">
-                            <div class="date d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i>
-                                <span>31 Dec 2024</span>
+                    <div class="row align-items-center row-gap-3 mb-5">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="offers-section-text d-flex flex-column align-items-start row-gap-3">
+                                <h5>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص</h5>
+                                <p>
+                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،
+                                </p>
+                                <a class="btn btn-primary w-auto d-flex align-items-center gap-2">
+                                    <span> أطلبها الأن </span>
+                                    <i class="fa fa-share"></i>
+                                </a>
                             </div>
-                            <h5 class="mb-2">ما هي أفضل سيارة عائلية</h5>
-                            <p class="mb-1">
-                                قائمة بأفضل أنواع السيارات العائلية التي تمنحك قيمة عالية مقابل سعر
-                            </p>
-                            <a href="blog-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
-                                <span>اكمل القراءة</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon">
-                            </a>
                         </div>
-                    </div>
-                </div>
-                <!---->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card-blog h-100">
-                        <div class="header-part position-relative overflow-hidden mb-3">
-                            <img class="img-fluid w-100 h-100" src="assets/image/cars/blog-three.PNG" alt="image"/>
-                        </div>
-                        <div class="body-part d-flex flex-column">
-                            <div class="date d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i>
-                                <span>31 Dec 2024</span>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="offers-section-image overflow-hidden">
+                                <img class="img-fluid w-100 h-100" src="assets/image/cars/offer.PNG" alt="image"/>
                             </div>
-                            <h5 class="mb-2">عش شغف السرعة ومتعة المغامرة مع سيارات رياضية عالية الأداء</h5>
-                            <p class="mb-1">
-                                تعد السيارات الرياضية عالية الأداء خيارًا مفضلًا لدى شريحة كبيرة من الشباب السعودي، حيث يبحثون دائمًا عن كل ما هو مختلف
-                            </p>
-                            <a href="blog-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
-                                <span>اكمل القراءة</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!---->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card-blog h-100">
-                        <div class="header-part position-relative overflow-hidden mb-3">
-                            <img class="img-fluid w-100 h-100" src="assets/image/cars/blog-two.PNG" alt="image"/>
-                        </div>
-                        <div class="body-part d-flex flex-column">
-                            <div class="date d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i>
-                                <span>31 Dec 2024</span>
-                            </div>
-                            <h5 class="mb-2">ما هي أفضل سيارة عائلية</h5>
-                            <p class="mb-1">
-                                قائمة بأفضل أنواع السيارات العائلية التي تمنحك قيمة عالية مقابل سعر
-                            </p>
-                            <a href="blog-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
-                                <span>اكمل القراءة</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!---->
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                    <div class="card-blog h-100">
-                        <div class="header-part position-relative overflow-hidden mb-3">
-                            <img class="img-fluid w-100 h-100" src="assets/image/cars/blog-one.PNG" alt="image"/>
-                        </div>
-                        <div class="body-part d-flex flex-column">
-                            <div class="date d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i>
-                                <span>31 Dec 2024</span>
-                            </div>
-                            <h5 class="mb-2">ما هي أفضل سيارة عائلية</h5>
-                            <p class="mb-1">
-                                قائمة بأفضل أنواع السيارات العائلية التي تمنحك قيمة عالية مقابل سعر
-                            </p>
-                            <a href="blog-details.html" class="btn btn-link-more d-flex align-items-center gap-2 w-100 p-0">
-                                <span>اكمل القراءة</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon">
-                            </a>
                         </div>
                     </div>
                 </div>
                 <!---->
             </div>
+           
         </div>
     </section>
     <!-- ============================================================== -->
@@ -407,12 +389,32 @@
     <!-- Swiper JS -->
     <script src="assets/swiper/js/swiper.min.js"></script>
     <!--Bootstrap Select script for this page-->
-    <script src="assets/bootstrap-select/js/Bootstrap-select.js"></script>
+    <script src="assets/select/js/select2.min.js"></script>
     <!-- AOS JS -->
     <script src="assets/AOS/aos.js"></script>
     <!--Main Js-->
     <script src="assets/jq/main.js"></script>
+    <script>
+        var countDownDate = new Date("Dec 31, 2025 15:37:25").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+document.querySelector(".days").innerHTML = days;
+document.querySelector(".hours").innerHTML = hours;
+document.querySelector(".minutes").innerHTML = minutes;
+document.querySelector(".seconds").innerHTML = seconds;
 
+if (distance < 0) {
+  clearInterval(x);
+  document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+    </script>
 </body>
 
 </html>

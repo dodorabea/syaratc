@@ -2169,7 +2169,6 @@ html[dir="ltr"] {
 	background-color: white;
 	border: 1px solid gray;
 	width: 100%;
-	max-width: 400px;
 	float: left;
 	padding: 0 14px;
 }
@@ -2266,6 +2265,132 @@ html[dir="ltr"] {
         min-height: 45px;
         font-family: $font-family-Bold;
     }
+}
+/*-----------------------
+    offers-section
+-------------------------*/
+.offers-section{
+    .title-section{
+        span{
+            color: map_get($theme-colors, primary);
+            font-size: 16px;
+        }
+        img{
+            width: 14px;
+        }
+        h4{
+            color: #000;
+            font-family: $font-family-Bold;
+        }
+    }
+    .tab-content{
+        .row{
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    
+    .offers-section-text{
+        h5{
+            font-family: $font-family-Bold;
+        }
+        p{
+            font-family: $font-family-base;
+        }
+        .demo-count-down{
+            font-size: 16px;
+            color: map_get($theme-colors, secondary);
+            font-family: $font-family-Bold;
+            li{
+                position: relative;
+                @include property_dir('padding', 'left', 1rem);
+                &::after
+                {
+                    @include position( absolute , 0, unset, 0, 0);
+                    content: ":";
+                    color: #000;
+
+                }
+                &:last-child{
+                    font-size: 14px;
+                    color: map_get($theme-colors, grayColor);
+                    font-family: $font-family-base;
+                    &::after
+                    {
+                        content: unset;
+                    } 
+                }
+            }
+        }
+    }
+    .offers-section-image{
+        height: 340px;
+        border-radius: 16px;
+    }
+}
+/*-----------------------
+    company-section
+-------------------------*/
+.company-section{
+    padding: 40px 0;
+    .title-section{
+        span{
+            color: map_get($theme-colors, primary);
+            font-size: 16px;
+        }
+        img{
+            width: 14px;
+        }
+        h4{
+            color: #000;
+            font-family: $font-family-Bold;
+        }
+    }
+    .payment-form{
+        .card-body{
+            padding: 24px;
+            .form-control{
+                background-color: #fff;
+                border: 1px solid #aaa;
+                border-radius: 4px;
+                outline: 0 !important;
+                box-shadow: none !important;
+                .form-control{
+                    @include property_dir('padding', 'left', 32px !important);
+                }
+            }
+            .input-group-text::after {
+                @include position( absolute , unset, -7px, unset, unset);
+                height: 100%;
+                width: 1px;
+                background: #aaa;
+                content: '';
+            }
+            .input-group{
+                @media (min-width: 768px){
+                    display: flex;
+                }
+                @media (max-width: 767.98px){
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .button-action{
+            .btn-primary{
+                font-size: 18px;
+                border-radius: 0;
+                padding: 0.5rem 1rem;
+                font-family: $font-family-Bold;
+            }
+        }
+    }
+}
+.form-check-input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
 }
 /*-----------------------
     Footer Styles

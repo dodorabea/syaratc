@@ -3340,7 +3340,6 @@ html[dir=ltr] .request-car-purchase .payment-form .card-body .input-group-text::
   background-color: white;
   border: 1px solid gray;
   width: 100%;
-  max-width: 400px;
   float: left;
   padding: 0 14px;
 }
@@ -3448,6 +3447,145 @@ html[dir=ltr] .contact-section .input-group-text::after {
 .contact-section .btn-secondary {
   min-height: 45px;
   font-family: "Tajawal-Bold", sans-serif;
+}
+
+/*-----------------------
+    offers-section
+-------------------------*/
+.offers-section .title-section span {
+  color: #ff5800;
+  font-size: 16px;
+}
+.offers-section .title-section img {
+  width: 14px;
+}
+.offers-section .title-section h4 {
+  color: #000;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.offers-section .tab-content .row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.offers-section .offers-section-text h5 {
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.offers-section .offers-section-text p {
+  font-family: "Tajawal-Regular", sans-serif;
+}
+.offers-section .offers-section-text .demo-count-down {
+  font-size: 16px;
+  color: #2b2e91;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.offers-section .offers-section-text .demo-count-down li {
+  position: relative;
+}
+html[dir=rtl] .offers-section .offers-section-text .demo-count-down li {
+  padding-left: 1rem;
+}
+html[dir=ltr] .offers-section .offers-section-text .demo-count-down li {
+  padding-right: 1rem;
+}
+.offers-section .offers-section-text .demo-count-down li::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  content: ":";
+  color: #000;
+}
+html[dir=rtl] .offers-section .offers-section-text .demo-count-down li::after {
+  right: unset;
+  left: 0;
+}
+html[dir=ltr] .offers-section .offers-section-text .demo-count-down li::after {
+  right: 0;
+  left: unset;
+}
+.offers-section .offers-section-text .demo-count-down li:last-child {
+  font-size: 14px;
+  color: #718479;
+  font-family: "Tajawal-Regular", sans-serif;
+}
+.offers-section .offers-section-text .demo-count-down li:last-child::after {
+  content: unset;
+}
+.offers-section .offers-section-image {
+  height: 340px;
+  border-radius: 16px;
+}
+
+/*-----------------------
+    company-section
+-------------------------*/
+.company-section {
+  padding: 40px 0;
+}
+.company-section .title-section span {
+  color: #ff5800;
+  font-size: 16px;
+}
+.company-section .title-section img {
+  width: 14px;
+}
+.company-section .title-section h4 {
+  color: #000;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.company-section .payment-form .card-body {
+  padding: 24px;
+}
+.company-section .payment-form .card-body .form-control {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+html[dir=rtl] .company-section .payment-form .card-body .form-control .form-control {
+  padding-left: 32px !important;
+}
+html[dir=ltr] .company-section .payment-form .card-body .form-control .form-control {
+  padding-right: 32px !important;
+}
+.company-section .payment-form .card-body .input-group-text::after {
+  position: absolute;
+  top: unset;
+  bottom: unset;
+  height: 100%;
+  width: 1px;
+  background: #aaa;
+  content: "";
+}
+html[dir=rtl] .company-section .payment-form .card-body .input-group-text::after {
+  right: -7px;
+  left: unset;
+}
+html[dir=ltr] .company-section .payment-form .card-body .input-group-text::after {
+  right: unset;
+  left: -7px;
+}
+@media (min-width: 768px) {
+  .company-section .payment-form .card-body .input-group {
+    display: flex;
+  }
+}
+@media (max-width: 767.98px) {
+  .company-section .payment-form .card-body .input-group {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.company-section .payment-form .button-action .btn-primary {
+  font-size: 18px;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+
+.form-check-input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
 }
 
 /*-----------------------
