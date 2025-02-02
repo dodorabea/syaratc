@@ -313,63 +313,91 @@
 })(jQuery);
 /*=====Header=====*/
 const menu = document.querySelector(".menu");
-const menuInner = menu.querySelector(".menu__inner");
-const menuArrow = menu.querySelector(".menu__arrow");
-const menuTitle = menu.querySelector(".menu__title");
+const menuInner = menu?.querySelector(".menu__inner");
+const menuArrow = menu?.querySelector(".menu__arrow");
+const menuTitle = menu?.querySelector(".menu__title");
 const burger = document.querySelector(".burger");
 const overlay = document.querySelector(".overlay");
 
 // Navbar Menu Toggle Function
 function toggleMenu() {
-  menu.classList.toggle("is-active");
-  overlay.classList.toggle("is-active");
+  if (menu && overlay) {
+    menu.classList.toggle("is-active");
+    overlay.classList.toggle("is-active");
+  }
 }
 
 // Show Mobile Submenu Function
 function showSubMenu(children) {
-  subMenu = children.querySelector(".submenu");
-  subMenu.classList.add("is-active");
-  subMenu.style.animation = "slideLeft 0.35s ease forwards";
-  const menuTitle =
-    children.querySelector("i").parentNode.childNodes[0].textContent;
-  menu.querySelector(".menu__title").textContent = menuTitle;
-  menu.querySelector(".menu__header").classList.add("is-active");
+  const subMenu = children.querySelector(".submenu");
+  if (subMenu && menu) {
+    subMenu.classList.add("is-active");
+    subMenu.style.animation = "slideLeft 0.35s ease forwards";
+
+    const menuTitleText = children.querySelector("i")?.parentNode.childNodes[0]?.textContent.trim();
+    const menuTitleElement = menu.querySelector(".menu__title");
+    const menuHeader = menu.querySelector(".menu__header");
+
+    if (menuTitleElement && menuHeader) {
+      menuTitleElement.textContent = menuTitleText || "";
+      menuHeader.classList.add("is-active");
+    }
+  }
 }
 
 // Hide Mobile Submenu Function
 function hideSubMenu() {
-  subMenu.style.animation = "slideRight 0.35s ease forwards";
-  setTimeout(() => {
-    subMenu.classList.remove("is-active");
-  }, 300);
+  const subMenu = document.querySelector(".submenu.is-active");
+  const menuTitleElement = menu?.querySelector(".menu__title");
+  const menuHeader = menu?.querySelector(".menu__header");
 
-  menu.querySelector(".menu__title").textContent = "";
-  menu.querySelector(".menu__header").classList.remove("is-active");
+  if (subMenu) {
+    subMenu.style.animation = "slideRight 0.35s ease forwards";
+    setTimeout(() => {
+      subMenu.classList.remove("is-active");
+    }, 300);
+  }
+
+  if (menuTitleElement && menuHeader) {
+    menuTitleElement.textContent = "";
+    menuHeader.classList.remove("is-active");
+  }
 }
 
 // Toggle Mobile Submenu Function
 function toggleSubMenu(e) {
-  if (!menu.classList.contains("is-active")) {
-    return;
-  }
-  if (e.target.closest(".menu__dropdown")) {
-    const children = e.target.closest(".menu__dropdown");
-    showSubMenu(children);
+  if (menu && menu.classList.contains("is-active")) {
+    const dropdown = e.target.closest(".menu__dropdown");
+    if (dropdown) {
+      showSubMenu(dropdown);
+    }
   }
 }
 
 // Fixed Navbar Menu on Window Resize
 window.addEventListener("resize", () => {
-  if (window.innerWidth >= 768) {
-    if (menu.classList.contains("is-active")) {
-      toggleMenu();
-    }
+  if (window.innerWidth >= 768 && menu?.classList.contains("is-active")) {
+    toggleMenu();
   }
 });
 
-// Initialize All Event Listeners
-burger.addEventListener("click", toggleMenu);
-overlay.addEventListener("click", toggleMenu);
-menuArrow.addEventListener("click", hideSubMenu);
-menuTitle.addEventListener("click", hideSubMenu);
-menuInner.addEventListener("click", toggleSubMenu);
+// Initialize All Event Listeners if Elements Exist
+if (burger) {
+  burger.addEventListener("click", toggleMenu);
+}
+
+if (overlay) {
+  overlay.addEventListener("click", toggleMenu);
+}
+
+if (menuArrow) {
+  menuArrow.addEventListener("click", hideSubMenu);
+}
+
+if (menuTitle) {
+  menuTitle.addEventListener("click", hideSubMenu);
+}
+
+if (menuInner) {
+  menuInner.addEventListener("click", toggleSubMenu);
+}

@@ -1,7 +1,0 @@
-font-family: $font-family-Bold;
- font-family: $font-family-base;
-color: map_get($theme-colors, dark);
- filter: map-get($filter-colors, primary);
-
- @media (min-width: 992px){
-        }
