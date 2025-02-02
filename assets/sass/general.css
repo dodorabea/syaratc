@@ -3779,4 +3779,24 @@ button.back-to-top.show:active {
   box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
+.no-date {
+  margin: 1rem 0;
+  padding: 24px 16px;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+}
+.no-date p {
+  font-family: "Tajawal-Bold", sans-serif;
+}
+@media (min-width: 992px) {
+  .no-date p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .no-date p {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=general.css.map */
