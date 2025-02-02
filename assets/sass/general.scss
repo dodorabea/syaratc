@@ -2881,135 +2881,141 @@ button.back-to-top.show:active {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    padding: 30px 0;
+   
+    @media (min-width: 992px){
+        padding: 30px 0;
+    }
+    @media (max-width: 991.98px){
+        padding: 10px 0;
+    }
+    .card-form {
+        box-shadow: 0px 10px 60px #0000000D;
+        border-radius: 20px;
+        background: #fff;
+        border: 1px solid #fff;
+        padding: 25px 26px;
+        position: relative;
+        z-index: 111;
+    }
+    
+    .register.passwordPage .passwordCard {
+        min-height: 100vh;
+        position: relative;
+        z-index: 111;
+        padding: 32px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 60px #0000000D;
+    }
+    
+    .card-formHeader img {
+        display: block;
+        margin: 0 auto 10px 0px;
+    }
+    
+    .card-formbody .logo-part img {
+        display: block;
+        margin: 0 auto 25px auto;
+        width: 184px;
+    }
+    
+    .card-form .form-part h3 {
+        color: #000000;
+        font-size: 1.25rem;
+        line-height: 19px;
+        text-align: center;
+        font-weight: 100;
+        margin-bottom: 16px;
+        font-family: $font-family-Bold;
+    }
+    .form-part label {
+        display: block;
+        margin-bottom: 10px;
+        color: #000000;
+        font-size: 14px;
+    }
+    .form-part .input-group {
+        border: 1px solid #E2E4E4;
+        border-radius: 27px;
+        height: 54px;
+        align-items: center;
+        background: #F7F7F7;
+        padding: 11px 16px;
+    }
+    
+    .form-part .input-group .form-control {
+        background: transparent;
+        border: 0;
+        padding: 0 10px 0 0;
+        outline: none;
+        box-shadow: none;
+    }
+    
+    .form-part .input-group .form-control:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: transparent;
+    }
+    
+    .form-part .input-group .input-group-prepend .input-group-text {
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        padding-left: 13px;
+        position: relative;
+    }
+    
+    .form-part .input-group .input-group-prepend {
+        width: 28px;
+    }
+    .toggle-password-button span {
+        color: #D8D8D8;
+        font-size: 15px;
+    }
+    ul.haveAccount li p {
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+        margin-bottom: 0;
+    }
+    
+    ul.haveAccount li a,
+    .redend-code a {
+        text-decoration: underline;
+        color: map_get($theme-colors, primary);
+        font-size: 14px;
+        line-height: 18px;
+        padding: 0;
+    }
+    
+    .redend-code a {
+        color: map_get($theme-colors, primary);
+    }
+    
+    .btn-check:checked+.btn,
+    :not(.btn-check)+.btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+        color: var(--bs-btn-active-color);
+        background-color: var(--bs-btn-active-bg);
+        border-color: transparent;
+    }
+    
+    .forget-pass {
+        text-decoration: none !important;
+        text-align: left;
+        display: block;
+    }
+    .btn-primary {
+        border-radius: 90px;
+        -webkit-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+        padding: 13px 0 16px 0;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF !important;
+        font-family: $font-family-Bold;
+    }
 }
 
-.card-form {
-    box-shadow: 0px 10px 60px #0000000D;
-    border-radius: 20px;
-    background: #fff;
-    border: 1px solid #fff;
-    padding: 25px 26px;
-    position: relative;
-    z-index: 111;
-}
-
-.register.passwordPage .passwordCard {
-    min-height: 100vh;
-    position: relative;
-    z-index: 111;
-    padding: 32px;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 60px #0000000D;
-}
-
-.card-formHeader img {
-    display: block;
-    margin: 0 auto 10px 0px;
-}
-
-.card-formbody .logo-part img {
-    display: block;
-    margin: 0 auto 25px auto;
-    width: 184px;
-}
-
-.card-form .form-part h3 {
-    color: #000000;
-    font-size: 1.25rem;
-    line-height: 19px;
-    text-align: center;
-    font-weight: 100;
-    margin-bottom: 16px;
-    font-family: $font-family-Bold;
-}
-.form-part label {
-    display: block;
-    margin-bottom: 10px;
-    color: #000000;
-    font-size: 14px;
-}
-.form-part .input-group {
-    border: 1px solid #E2E4E4;
-    border-radius: 27px;
-    height: 54px;
-    align-items: center;
-    background: #F7F7F7;
-    padding: 11px 16px;
-}
-
-.form-part .input-group .form-control {
-    background: transparent;
-    border: 0;
-    padding: 0 10px 0 0;
-    outline: none;
-    box-shadow: none;
-}
-
-.form-part .input-group .form-control:focus {
-    outline: none;
-    box-shadow: none;
-    border-color: transparent;
-}
-
-.form-part .input-group .input-group-prepend .input-group-text {
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    padding: 0;
-    padding-left: 13px;
-    position: relative;
-}
-
-.form-part .input-group .input-group-prepend {
-    width: 28px;
-}
-.toggle-password-button span {
-    color: #D8D8D8;
-    font-size: 15px;
-}
-ul.haveAccount li p {
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
-    margin-bottom: 0;
-}
-
-ul.haveAccount li a,
-.redend-code a {
-    text-decoration: underline;
-    color: map_get($theme-colors, primary);
-    font-size: 14px;
-    line-height: 18px;
-    padding: 0;
-}
-
-.redend-code a {
-    color: map_get($theme-colors, primary);
-}
-
-.btn-check:checked+.btn,
-:not(.btn-check)+.btn:active,
-.btn:first-child:active,
-.btn.active,
-.btn.show {
-    color: var(--bs-btn-active-color);
-    background-color: var(--bs-btn-active-bg);
-    border-color: transparent;
-}
-
-.forget-pass {
-    text-decoration: none !important;
-    text-align: left;
-    display: block;
-}
-.btn-primary {
-    border-radius: 90px;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
-    padding: 13px 0 16px 0;
-    font-size: 14px;
-    line-height: 19px;
-    color: #FFFFFF !important;
-    font-family: $font-family-Bold;
-}

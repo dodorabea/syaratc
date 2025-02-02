@@ -3974,10 +3974,18 @@ button.back-to-top.show:active {
   min-height: 100vh;
   width: 100%;
   position: relative;
-  padding: 30px 0;
 }
-
-.card-form {
+@media (min-width: 992px) {
+  .register {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .register {
+    padding: 10px 0;
+  }
+}
+.register .card-form {
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.0509803922);
   border-radius: 20px;
   background: #fff;
@@ -3986,8 +3994,7 @@ button.back-to-top.show:active {
   position: relative;
   z-index: 111;
 }
-
-.register.passwordPage .passwordCard {
+.register .register.passwordPage .passwordCard {
   min-height: 100vh;
   position: relative;
   z-index: 111;
@@ -3995,19 +4002,16 @@ button.back-to-top.show:active {
   background: #FFFFFF;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.0509803922);
 }
-
-.card-formHeader img {
+.register .card-formHeader img {
   display: block;
   margin: 0 auto 10px 0px;
 }
-
-.card-formbody .logo-part img {
+.register .card-formbody .logo-part img {
   display: block;
   margin: 0 auto 25px auto;
   width: 184px;
 }
-
-.card-form .form-part h3 {
+.register .card-form .form-part h3 {
   color: #000000;
   font-size: 1.25rem;
   line-height: 19px;
@@ -4016,15 +4020,13 @@ button.back-to-top.show:active {
   margin-bottom: 16px;
   font-family: "Tajawal-Bold", sans-serif;
 }
-
-.form-part label {
+.register .form-part label {
   display: block;
   margin-bottom: 10px;
   color: #000000;
   font-size: 14px;
 }
-
-.form-part .input-group {
+.register .form-part .input-group {
   border: 1px solid #E2E4E4;
   border-radius: 27px;
   height: 54px;
@@ -4032,22 +4034,19 @@ button.back-to-top.show:active {
   background: #F7F7F7;
   padding: 11px 16px;
 }
-
-.form-part .input-group .form-control {
+.register .form-part .input-group .form-control {
   background: transparent;
   border: 0;
   padding: 0 10px 0 0;
   outline: none;
   box-shadow: none;
 }
-
-.form-part .input-group .form-control:focus {
+.register .form-part .input-group .form-control:focus {
   outline: none;
   box-shadow: none;
   border-color: transparent;
 }
-
-.form-part .input-group .input-group-prepend .input-group-text {
+.register .form-part .input-group .input-group-prepend .input-group-text {
   background: transparent;
   border: 0;
   border-radius: 0;
@@ -4055,53 +4054,45 @@ button.back-to-top.show:active {
   padding-left: 13px;
   position: relative;
 }
-
-.form-part .input-group .input-group-prepend {
+.register .form-part .input-group .input-group-prepend {
   width: 28px;
 }
-
-.toggle-password-button span {
+.register .toggle-password-button span {
   color: #D8D8D8;
   font-size: 15px;
 }
-
-ul.haveAccount li p {
+.register ul.haveAccount li p {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
   margin-bottom: 0;
 }
-
-ul.haveAccount li a,
-.redend-code a {
+.register ul.haveAccount li a,
+.register .redend-code a {
   text-decoration: underline;
   color: #ff5800;
   font-size: 14px;
   line-height: 18px;
   padding: 0;
 }
-
-.redend-code a {
+.register .redend-code a {
   color: #ff5800;
 }
-
-.btn-check:checked + .btn,
-:not(.btn-check) + .btn:active,
-.btn:first-child:active,
-.btn.active,
-.btn.show {
+.register .btn-check:checked + .btn,
+.register :not(.btn-check) + .btn:active,
+.register .btn:first-child:active,
+.register .btn.active,
+.register .btn.show {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: transparent;
 }
-
-.forget-pass {
+.register .forget-pass {
   text-decoration: none !important;
   text-align: left;
   display: block;
 }
-
-.btn-primary {
+.register .btn-primary {
   border-radius: 90px;
   transition: all 1s ease-out;
   padding: 13px 0 16px 0;
