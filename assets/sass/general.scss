@@ -2909,7 +2909,7 @@ button.back-to-top.show:active {
     
     .card-formHeader img {
         display: block;
-        margin: 0 auto 10px 0px;
+        margin: 0 auto 16px 0px;
     }
     
     .card-formbody .logo-part img {
@@ -2920,12 +2920,14 @@ button.back-to-top.show:active {
     
     .card-form .form-part h3 {
         color: #000000;
-        font-size: 1.25rem;
-        line-height: 19px;
+        font-size: 1.5rem;
         text-align: center;
-        font-weight: 100;
-        margin-bottom: 16px;
         font-family: $font-family-Bold;
+    }
+    p{
+        color: #000000;
+        font-size: 1.25rem;
+        text-align: center;
     }
     .form-part label {
         display: block;
