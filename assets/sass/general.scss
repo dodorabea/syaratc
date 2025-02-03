@@ -30,6 +30,7 @@ $font-family-Bold: 'Tajawal-Bold',
 }
 
 html {
+    height: 100%;
     -webkit-text-size-adjust: 100%;
     line-height: 1.15;
     scroll-behavior: initial;
@@ -44,6 +45,7 @@ body {
     font-weight: 400;
     background: map_get($theme-colors, mainBgColor);
     font-style: normal;
+    height: 100%;
 
     &.modal-open {
         padding-right: 0 !important;
@@ -2920,14 +2922,24 @@ button.back-to-top.show:active {
     
     .card-form .form-part h3 {
         color: #000000;
-        font-size: 1.5rem;
         text-align: center;
         font-family: $font-family-Bold;
+        @media (min-width: 992px){
+            font-size: 1.5rem;
+        }
+        @media (max-width: 991.98px){
+            font-size: 1.2rem;
+        }
     }
     p{
         color: #000000;
-        font-size: 1.25rem;
         text-align: center;
+        @media (min-width: 992px){
+            font-size: 1.25rem;
+        }
+        @media (max-width: 991.98px){
+            font-size: 0.987rem;
+        }
     }
     .form-part label {
         display: block;
@@ -2947,7 +2959,7 @@ button.back-to-top.show:active {
     .form-part .input-group .form-control {
         background: transparent;
         border: 0;
-        padding: 0 10px 0 0;
+        @include property_dir('padding', 'left', 15px);
         outline: none;
         box-shadow: none;
     }
@@ -2963,8 +2975,15 @@ button.back-to-top.show:active {
         border: 0;
         border-radius: 0;
         padding: 0;
-        padding-left: 13px;
+        font-size: 15px;
         position: relative;
+    }
+    .form-part .input-group .input-group-prepend .input-group-text::after{
+        content: ' ';
+        @include position( absolute , unset, -10px, unset, unset);
+        background: #E2E4E4;
+        height: 100%;
+        width: 1px;
     }
     
     .form-part .input-group .input-group-prepend {

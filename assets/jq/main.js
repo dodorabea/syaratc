@@ -309,7 +309,6 @@
       }
     });
   });
-  
 })(jQuery);
 /*=====Header=====*/
 const menu = document.querySelector(".menu");

@@ -1385,6 +1385,7 @@
 }
 
 html {
+  height: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.15;
   scroll-behavior: initial;
@@ -1399,6 +1400,7 @@ body {
   font-weight: 400;
   background: #FDFBFB;
   font-style: normal;
+  height: 100%;
 }
 body.modal-open {
   padding-right: 0 !important;
@@ -4013,14 +4015,32 @@ button.back-to-top.show:active {
 }
 .register .card-form .form-part h3 {
   color: #000000;
-  font-size: 1.5rem;
   text-align: center;
   font-family: "Tajawal-Bold", sans-serif;
 }
+@media (min-width: 992px) {
+  .register .card-form .form-part h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .register .card-form .form-part h3 {
+    font-size: 1.2rem;
+  }
+}
 .register p {
   color: #000000;
-  font-size: 1.25rem;
   text-align: center;
+}
+@media (min-width: 992px) {
+  .register p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .register p {
+    font-size: 0.987rem;
+  }
 }
 .register .form-part label {
   display: block;
@@ -4039,9 +4059,14 @@ button.back-to-top.show:active {
 .register .form-part .input-group .form-control {
   background: transparent;
   border: 0;
-  padding: 0 10px 0 0;
   outline: none;
   box-shadow: none;
+}
+html[dir=rtl] .register .form-part .input-group .form-control {
+  padding-left: 15px;
+}
+html[dir=ltr] .register .form-part .input-group .form-control {
+  padding-right: 15px;
 }
 .register .form-part .input-group .form-control:focus {
   outline: none;
@@ -4053,8 +4078,25 @@ button.back-to-top.show:active {
   border: 0;
   border-radius: 0;
   padding: 0;
-  padding-left: 13px;
+  font-size: 15px;
   position: relative;
+}
+.register .form-part .input-group .input-group-prepend .input-group-text::after {
+  content: " ";
+  position: absolute;
+  top: unset;
+  bottom: unset;
+  background: #E2E4E4;
+  height: 100%;
+  width: 1px;
+}
+html[dir=rtl] .register .form-part .input-group .input-group-prepend .input-group-text::after {
+  right: -10px;
+  left: unset;
+}
+html[dir=ltr] .register .form-part .input-group .input-group-prepend .input-group-text::after {
+  right: unset;
+  left: -10px;
 }
 .register .form-part .input-group .input-group-prepend {
   width: 28px;
