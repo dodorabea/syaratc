@@ -1385,7 +1385,6 @@
 }
 
 html {
-  height: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.15;
   scroll-behavior: initial;
@@ -1400,7 +1399,6 @@ body {
   font-weight: 400;
   background: #FDFBFB;
   font-style: normal;
-  height: 100%;
 }
 body.modal-open {
   padding-right: 0 !important;
@@ -2380,6 +2378,10 @@ html[dir=ltr] .select2-container--default .select2-selection--multiple.select2-s
 }
 .breadcrumb .breadcrumb-item h3 img {
   width: 18px;
+}
+.breadcrumb .breadcrumb-item p {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
 }
 html[dir=rtl] .breadcrumb .shape {
   padding-right: 1.75rem;
@@ -4144,4 +4146,20 @@ html[dir=ltr] .register .form-part .input-group .input-group-prepend .input-grou
   line-height: 19px;
   color: #FFFFFF !important;
   font-family: "Tajawal-Bold", sans-serif;
+}
+
+/*-----------------------
+    Resuest page 
+-------------------------*/
+.my-request {
+  padding: 40px 0;
+  background: #fff;
+}
+.my-request .icon-part {
+  width: 55px;
+  height: 55px;
+  background: #F4F7F8;
+  border-radius: 100%;
+  font-size: 18px;
+  color: #2b2e91;
 }/*# sourceMappingURL=general.css.map */

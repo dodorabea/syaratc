@@ -30,7 +30,6 @@ $font-family-Bold: 'Tajawal-Bold',
 }
 
 html {
-    height: 100%;
     -webkit-text-size-adjust: 100%;
     line-height: 1.15;
     scroll-behavior: initial;
@@ -45,7 +44,6 @@ body {
     font-weight: 400;
     background: map_get($theme-colors, mainBgColor);
     font-style: normal;
-    height: 100%;
 
     &.modal-open {
         padding-right: 0 !important;
@@ -1087,6 +1085,10 @@ $breakpoint: 992px;
             img {
                 width: 18px;
             }
+        }
+        p{
+            color: #00000099;
+            font-weight: 500;
         }
     }
 
@@ -3037,6 +3039,21 @@ button.back-to-top.show:active {
         line-height: 19px;
         color: #FFFFFF !important;
         font-family: $font-family-Bold;
+    }
+}
+/*-----------------------
+    Resuest page 
+-------------------------*/
+.my-request{
+    padding: 40px 0;
+    background: #fff;
+    .icon-part{
+        width: 55px;
+        height: 55px;
+        background: #F4F7F8;
+        border-radius: 100%;
+        font-size: 18px;
+        color: map_get($theme-colors, secondary);
     }
 }
 

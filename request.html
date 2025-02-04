@@ -56,12 +56,13 @@
                         <span class="menu__title"></span>
                     </div>
                     <ul class="menu__inner">
-                        <li class="menu__item position-relative"><a href="index.html" class="menu__link"> الرئيسية </a>
+                        <li class="menu__item position-relative"><a href="index.html" class="menu__link active">
+                                الرئيسية </a>
                         </li>
                         <!---->
                         <li class="menu__item"><a href="cars.html" class="menu__link">سيارات</a></li>
                         <!---->
-                        <li class="menu__item"><a href="blogs.html" class="menu__link active">المدونات</a></li>
+                        <li class="menu__item"><a href="blogs.html" class="menu__link">المدونات</a></li>
                         <!---->
                         <li class="menu__item"><a href="about.html" class="menu__link">من نحن</a></li>
                         <!---->
@@ -82,7 +83,7 @@
                         </li>
                         <!---->
                         <li class="menu__item menu__dropdown position-relative">
-                            <a  class="menu__link">
+                            <a class="menu__link">
                                 المزيد
                                 <i class="fa fa-chevron-down"></i>
                             </a>
@@ -113,60 +114,107 @@
     <!-- ============================================================== -->
     <!-- breadcrumb Section -->
     <!-- ============================================================== -->
+    <section class="breadcrumb m-0">
+        <div class="container">
+            <div class="breadcrumb-item">
+                <h3 class="d-flex align-items-center gap-2">
+                    <img src="assets/image/icon/title-star.svg" alt="icon" />
+                    <span>طلباتي</span>
+                </h3>
+                <img class="shape img-fluid mt-2 p-0" src="assets/image/icon/Shape.svg" alt="shape" />
+                <p class="mt-1">يظهر هنا جميع الطلبات الخاصة بك.</p>
+            </div>
+        </div>
+    </section>
     <!-- ============================================================== -->
-    <!-- blogs details info -->
+    <!-- Resuest page  -->
     <!-- ============================================================== -->
-    <section class="blog-details">
+    <section class="my-request">
+        <div class="container">
+            <div class="row">
+                <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="one-tab" data-bs-toggle="tab" data-bs-target="#one"
+                            type="button" role="tab" aria-controls="one" aria-selected="true">الطلبات الجديدة</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="two-tab" data-bs-toggle="tab" data-bs-target="#two"
+                            type="button" role="tab" aria-controls="two" aria-selected="false">الطلبات المكتملة</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="three-tab" data-bs-toggle="tab" data-bs-target="#three"
+                            type="button" role="tab" aria-controls="three" aria-selected="false">الطلبات الملغية</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="four-tab" data-bs-toggle="tab" data-bs-target="#four"
+                            type="button" role="tab" aria-controls="four" aria-selected="false">الطلبات المرفوضة</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                        <div class="no-date d-flex flex-column justify-content-center align-items-center row-gap-3">
+                            <img src="assets/image/icon/no-search-result.svg" alt="icon"/>
+                            <p>
+                               لاتوجد طلبات 
+                            </p>
+                        </div>
+                        <!---->
+                        <div class="row row-gap-3">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="my-request-card">
+                                    <div class="header-part">
+                                        <span>طلب جديد</span>
+                                    </div>
+                                    <div class="body-part d-flex flex-wrap gap-2">
+                                        <div class="icon-part d-flex align-items-center justify-content-center">
+                                            <i class="fa-regular fa-folder"></i>
+                                        </div>
+                                        <div class="text-part">
+                                            <h6>طلب تمويل عقاري</h6>
+                                            <p>
+                                                <span class="title">برنامج التمويل</span>
+                                                <span class="name">تمويل البناء الذاتي</span>
+                                            </p>
+                                            <div class="d-flex flex-wrap justify-content-between row-gap-2">
+                                                <p>
+                                                    <span class="title">رقم الطلب :</span>
+                                                    <span class="name">#102550</span>
+                                                </p>
+                                                <p>
+                                                    <span class="title">تاريخ الطلب :</span>
+                                                    <span class="name">8-2-2024</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                        <!---->
+                    </div>
+                    <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+
+
+                        
+                    </div>
+                    <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">..three.</div>
+                    <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="four-tab">..four.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- always_help_contact  -->
+    <!-- ============================================================== -->
+    <section class="always_help_contact">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-9 col-md-11 col-sm-12">
-                    <div class="blog-details-card">
-                        <div class="sub-info mb-4">
-                            <h4 class="mb-2">عش شغف السرعة ومتعة المغامرة مع سيارات رياضية عالية الأداء</h4>
-                            <div class="date d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-calendar"></i>
-                                <span>31 Dec 2024</span>
-                            </div>
-                            <div class="d-flex mt-3 flex-wrap align-items-center justify-content-between row-gap-3">
-                                <p class="site-name">موقع سيارتك</p>
-                                <ul class="d-flex align-items-center gap-2">
-                                    <li>
-                                        <a href="#" class="d-flex align-items-center justify-content-center">
-                                            <i class="fa-brands fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex align-items-center justify-content-center">
-                                            <i class="fa-brands fa-x-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex align-items-center justify-content-center">
-                                            <i class="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex align-items-center justify-content-center">
-                                            <i class="fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="header-part overflow-hidden">
-                            <img class="img-fluid w-100 h-100" src="assets/image/slider/two.jpg" alt="image"/>
-                        </div>
-                        <div class="body-part p-3">
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص 
-                            </p>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص 
-                            </p>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص 
-                            </p>
-                        </div>
+                <div class="col-lg-5 col-md-10 col-sm-12">
+                    <div class="text-center">
+                        <h2 class="mb-4"><span>اتصل بنا</span> للمساعدة دائما</h2>
+                        <a class="btn btn-number d-flex align-items-center justify-content-center w-100"
+                            href="tel:966920004250">920004250</a>
                     </div>
                 </div>
             </div>
@@ -287,6 +335,10 @@
             </div>
         </div>
     </footer>
+    <!-- ============================================================== -->
+    <!-- back-to-top -->
+    <!-- ============================================================== -->
+    <button class="back-to-top" type="button"></button>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <!--JQuery Js-->
@@ -297,10 +349,7 @@
     <script src="assets/AOS/aos.js"></script>
     <!--Main Js-->
     <script src="assets/jq/main.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
 
-    </script>
 </body>
 
 </html>
