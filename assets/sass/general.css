@@ -1603,6 +1603,18 @@ html[dir=ltr] .badge-span {
   color: #fff;
   font-weight: 700;
 }
+html[dir=ltr] .swiper-button-next:after,
+html[dir=ltr] .swiper-rtl .swiper-button-prev:after,
+html[dir=ltr] .swiper-button-prev:after,
+html[dir=ltr] .swiper-rtl .swiper-button-next:after {
+  transform: scaleX(-1);
+}
+html[dir=rtl] .swiper-button-next:after,
+html[dir=rtl] .swiper-rtl .swiper-button-prev:after,
+html[dir=rtl] .swiper-button-prev:after,
+html[dir=rtl] .swiper-rtl .swiper-button-next:after {
+  transform: scaleX(1);
+}
 
 .swiper-pagination.swiper-pagination-fraction {
   font-size: 18px;

@@ -258,6 +258,7 @@ h6 {
     font-size: 14px;
     color: #fff;
     font-weight: 700;
+    @include rtl(transform, scaleX(-1), scaleX(1));
 }
 
 .swiper-pagination.swiper-pagination-fraction {
