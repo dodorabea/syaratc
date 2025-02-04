@@ -3758,12 +3758,12 @@ button.back-to-top {
   transition: all 0.3s ease-in-out;
 }
 html[dir=rtl] button.back-to-top {
-  right: unset;
-  left: 20px;
-}
-html[dir=ltr] button.back-to-top {
   right: 20px;
   left: unset;
+}
+html[dir=ltr] button.back-to-top {
+  right: unset;
+  left: 20px;
 }
 
 button.back-to-top:hover,
@@ -3803,7 +3803,6 @@ button.back-to-top.show {
   background: #fff;
   color: #ff5800;
   font-size: 25px;
-  left: 25px;
   bottom: 50px;
   height: 50px;
   width: 50px;
@@ -4163,11 +4162,92 @@ html[dir=ltr] .register .form-part .input-group .input-group-prepend .input-grou
 /*-----------------------
     Resuest page 
 -------------------------*/
+@media (min-width: 768px) {
+  html[dir=rtl] .my-request .header-part .status {
+    border-bottom-right-radius: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  html[dir=ltr] .my-request .header-part .status {
+    border-bottom-left-radius: 16px;
+  }
+}
+
 .my-request {
   padding: 40px 0;
   background: #fff;
 }
-.my-request .icon-part {
+.my-request .my-request-card {
+  border: 1px solid #E9E9E9;
+  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  .my-request .header-part {
+    position: absolute;
+    top: 0;
+    bottom: unset;
+  }
+  html[dir=rtl] .my-request .header-part {
+    right: unset;
+    left: 0;
+  }
+  html[dir=ltr] .my-request .header-part {
+    right: 0;
+    left: unset;
+  }
+}
+.my-request .header-part .status {
+  min-height: 40px;
+  min-width: 90px;
+  font-size: 14px;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.my-request .header-part .status.new {
+  color: #04C800;
+  background: rgba(4, 200, 0, 0.1019607843);
+}
+.my-request .header-part .status.completed {
+  color: #646464;
+  background: #F6F6F6;
+}
+.my-request .header-part .status.deny {
+  color: #E5B32C;
+  background: #FCF7EA;
+}
+.my-request .header-part .status.reject {
+  color: #DD5656;
+  background: rgba(221, 86, 86, 0.1019607843);
+}
+.my-request .body-part {
+  padding: 16px;
+}
+@media (min-width: 768px) {
+  .my-request .body-part .text-part {
+    width: calc(100% - 65px);
+  }
+}
+.my-request .body-part .text-part h6 {
+  font-size: 22px;
+  color: #2b2e91;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .my-request .body-part .text-part h6 {
+    width: calc(100% - 90px);
+  }
+}
+.my-request .body-part .text-part p {
+  font-size: 15px;
+}
+.my-request .body-part .text-part p .title {
+  color: rgba(0, 0, 0, 0.6);
+}
+.my-request .body-part .text-part p .name {
+  color: #000;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.my-request .body-part .icon-part {
   width: 55px;
   height: 55px;
   background: #F4F7F8;

@@ -2641,7 +2641,7 @@ button.back-to-top {
     color: transparent;
     clear: both;
     visibility: hidden;
-    @include position(fixed, unset, unset, 75px, 20px);
+    @include position(fixed, unset, 20px, 75px, unset);
     cursor: pointer;
     display: block;
     border: none;
@@ -2689,7 +2689,7 @@ button.back-to-top.show {
     background: #fff;
     color: map_get($theme-colors, primary);
     font-size: 25px;
-    left: 25px;
+    
     bottom: 50px;
     height: 50px;
     width: 50px;
@@ -3045,16 +3045,97 @@ button.back-to-top.show:active {
 /*-----------------------
     Resuest page 
 -------------------------*/
+html[dir="rtl"]{
+    .my-request{
+        .header-part{
+            .status{
+                @media (min-width: 768px){
+                    border-bottom-right-radius: 16px;
+                }
+            }
+        }
+    }
+}
+html[dir="ltr"]{
+    .my-request{
+        .header-part{
+            .status{
+                @media (min-width: 768px){
+                    border-bottom-left-radius: 16px;
+                }
+            }
+        }
+    }
+}
 .my-request{
     padding: 40px 0;
     background: #fff;
-    .icon-part{
-        width: 55px;
-        height: 55px;
-        background: #F4F7F8;
-        border-radius: 100%;
-        font-size: 18px;
-        color: map_get($theme-colors, secondary);
+    .my-request-card{
+        border: 1px solid #E9E9E9;
+        border-radius: 16px;
+       
     }
+    .header-part{
+        @media (min-width: 768px){
+            @include position( absolute , 0, unset, unset, 0);
+        }
+        .status{
+            min-height: 40px;
+            min-width: 90px;
+            font-size: 14px;
+            font-family: $font-family-Bold;
+            &.new{
+                color: #04C800;
+                background: #04C8001A;
+            }
+            &.completed{
+                color: #646464;
+                background: #F6F6F6;
+            }
+            &.deny{
+                color: #E5B32C;
+                background: #FCF7EA;
+            }
+            &.reject{
+                color: #DD5656;
+                background: #DD56561A;
+            }
+        }
+    }
+    .body-part{
+        padding: 16px;
+        .text-part{
+            @media (min-width: 768px){
+                width: calc(100% - 65px);
+            }
+            h6{
+                font-size: 22px;
+                color: map_get($theme-colors, secondary);
+                font-weight: 500;
+                @media (min-width: 768px){
+                    width: calc(100% - 90px);
+                }
+            }
+            p{
+                font-size: 15px;
+                .title{
+                    color: #00000099;
+                }
+                .name{
+                    color: #000;
+                    font-family: $font-family-Bold;
+                }
+            }
+        }
+        .icon-part{
+            width: 55px;
+            height: 55px;
+            background: #F4F7F8;
+            border-radius: 100%;
+            font-size: 18px;
+            color: map_get($theme-colors, secondary);
+        }
+    }
+    
 }
 
