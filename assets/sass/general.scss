@@ -3082,6 +3082,7 @@ html[dir="ltr"]{
         .status{
             min-height: 40px;
             min-width: 90px;
+            padding: 0 0.5rem;
             font-size: 14px;
             font-family: $font-family-Bold;
             &.new{
@@ -3099,6 +3100,10 @@ html[dir="ltr"]{
             &.reject{
                 color: #DD5656;
                 background: #DD56561A;
+            }
+            &.under-review{
+                background: #0D6DA11A;
+                color: #0D6DA1;
             }
         }
     }
@@ -3138,4 +3143,156 @@ html[dir="ltr"]{
     }
     
 }
-
+/*-----------------------
+    request-details
+-------------------------*/
+.list-two-col{
+   
+    @media (min-width: 992px){
+        -moz-column-count: 2;
+        -moz-column-gap: 10px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 10px;
+        column-count: 2;
+        column-gap: 10px;
+    }
+    @media (max-width: 991.98px){
+        -moz-column-count: 1;
+        -moz-column-gap: 10px;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 10px;
+        column-count: 1;
+        column-gap: 10px;
+    }
+}
+.accordion-section{
+    .accordion-button
+    {
+        font-size: 18px;
+        font-family: $font-family-Bold;
+        background-color: #F9F9F9;
+        border: 1px solid #E9E9E9;
+        box-shadow: unset;
+        border-radius: 16px 16px 0 0 !important;
+        &::after {
+            background-size: 16px;
+        }
+        &:not(.collapsed){
+            background-color:  #F9F9F9;
+            outline: 0;
+            &::after {
+                background-size: 16px;
+            }
+        }
+    }
+    .accordion-body{
+        border: 1px solid #E9E9E9;
+        border-top: 0;
+    }
+}
+.request-details{
+    padding: 50px 0;
+    &-card{
+        padding: 0;
+        border-radius: 24px;
+        border: 1px solid #E9E9E9;
+        .header-part{
+            padding: 16px 24px;
+            background: #F4F7F8;
+            border-bottom: 1px solid #E9E9E9;
+            .icon-part{
+                width: 40px;
+                min-width: 40px;
+                max-width: 40px;
+                height: 40px;
+                border-radius: 100%;
+                background: #FFFFFF;
+                color: map_get($theme-colors, secondary);
+            }
+            h4{
+                font-size: 18px;
+                color: map_get($theme-colors, secondary);
+                font-family: $font-family-Bold;
+            }
+            .status{
+                font-size: 16px;
+                font-family: $font-family-Bold;
+                &.under-review{
+                    color: #0D6DA1;
+                }
+            }
+        }
+        .body-part{
+            background: #fff;
+            padding: 16px 24px;
+            p{
+                &.sub-title{
+                    font-size: 17px;
+                    color: map_get($theme-colors, secondary);
+                    font-family: $font-family-Bold;   
+                }
+            }
+            h6{
+                &.notes{
+                    color: map_get($theme-colors, secondary); 
+                    @include rtl('text-align',right , left);
+                    font-family: $font-family-Bold;
+                }
+            }
+            p{
+                .title{
+                    font-size: 15px;
+                    color: #00000099;
+                }
+                .name{
+                    font-size: 15px;
+                    color: #000;
+                    font-family: $font-family-Bold;
+                }
+            }
+        }
+        .footer-part{
+            padding: 16px 24px;
+            .btn{
+                min-height: 49px;
+                padding: 0 0.75rem;
+                font-size: 16px;
+                @media (max-width: 768px){
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+}
+.confirmation-modal{
+    .modal-content{
+        @media (min-width: 992px){
+            padding: 40px 40px;
+        }
+        @media (max-width: 991.98px){
+            padding: 24px 24px;
+        }
+    }
+    .modal-header{
+        .modal-title{
+            color: map_get($theme-colors, secondary);
+            font-family: $font-family-Bold;
+        }
+        span{
+            color: map_get($theme-colors, dark);
+        }
+    }
+    .form-control{
+        resize: unset;
+        box-shadow: unset;
+        outline: 0;
+        &:focus{
+            border-color: map_get($theme-colors, primary);
+        }
+    }
+    .btn{
+        min-height: 49px;
+        padding: 0 0.75rem;
+        font-size: 16px;
+    }
+}

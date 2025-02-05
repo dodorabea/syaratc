@@ -4200,6 +4200,7 @@ html[dir=ltr] .register .form-part .input-group .input-group-prepend .input-grou
 .my-request .header-part .status {
   min-height: 40px;
   min-width: 90px;
+  padding: 0 0.5rem;
   font-size: 14px;
   font-family: "Tajawal-Bold", sans-serif;
 }
@@ -4218,6 +4219,10 @@ html[dir=ltr] .register .form-part .input-group .input-group-prepend .input-grou
 .my-request .header-part .status.reject {
   color: #DD5656;
   background: rgba(221, 86, 86, 0.1019607843);
+}
+.my-request .header-part .status.under-review {
+  background: rgba(13, 109, 161, 0.1019607843);
+  color: #0D6DA1;
 }
 .my-request .body-part {
   padding: 16px;
@@ -4254,4 +4259,158 @@ html[dir=ltr] .register .form-part .input-group .input-group-prepend .input-grou
   border-radius: 100%;
   font-size: 18px;
   color: #2b2e91;
+}
+
+/*-----------------------
+    request-details
+-------------------------*/
+@media (min-width: 992px) {
+  .list-two-col {
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .list-two-col {
+    -moz-column-count: 1;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 10px;
+    column-count: 1;
+    column-gap: 10px;
+  }
+}
+
+.accordion-section .accordion-button {
+  font-size: 18px;
+  font-family: "Tajawal-Bold", sans-serif;
+  background-color: #F9F9F9;
+  border: 1px solid #E9E9E9;
+  box-shadow: unset;
+  border-radius: 16px 16px 0 0 !important;
+}
+.accordion-section .accordion-button::after {
+  background-size: 16px;
+}
+.accordion-section .accordion-button:not(.collapsed) {
+  background-color: #F9F9F9;
+  outline: 0;
+}
+.accordion-section .accordion-button:not(.collapsed)::after {
+  background-size: 16px;
+}
+.accordion-section .accordion-body {
+  border: 1px solid #E9E9E9;
+  border-top: 0;
+}
+
+.request-details {
+  padding: 50px 0;
+}
+.request-details-card {
+  padding: 0;
+  border-radius: 24px;
+  border: 1px solid #E9E9E9;
+}
+.request-details-card .header-part {
+  padding: 16px 24px;
+  background: #F4F7F8;
+  border-bottom: 1px solid #E9E9E9;
+}
+.request-details-card .header-part .icon-part {
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  color: #2b2e91;
+}
+.request-details-card .header-part h4 {
+  font-size: 18px;
+  color: #2b2e91;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.request-details-card .header-part .status {
+  font-size: 16px;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.request-details-card .header-part .status.under-review {
+  color: #0D6DA1;
+}
+.request-details-card .body-part {
+  background: #fff;
+  padding: 16px 24px;
+}
+.request-details-card .body-part p.sub-title {
+  font-size: 17px;
+  color: #2b2e91;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.request-details-card .body-part h6.notes {
+  color: #2b2e91;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+html[dir=ltr] .request-details-card .body-part h6.notes {
+  text-align: right;
+}
+html[dir=rtl] .request-details-card .body-part h6.notes {
+  text-align: left;
+}
+.request-details-card .body-part p .title {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.request-details-card .body-part p .name {
+  font-size: 15px;
+  color: #000;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.request-details-card .footer-part {
+  padding: 16px 24px;
+}
+.request-details-card .footer-part .btn {
+  min-height: 49px;
+  padding: 0 0.75rem;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .request-details-card .footer-part .btn {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .confirmation-modal .modal-content {
+    padding: 40px 40px;
+  }
+}
+@media (max-width: 991.98px) {
+  .confirmation-modal .modal-content {
+    padding: 24px 24px;
+  }
+}
+.confirmation-modal .modal-header .modal-title {
+  color: #2b2e91;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.confirmation-modal .modal-header span {
+  color: #262626;
+}
+.confirmation-modal .form-control {
+  resize: unset;
+  box-shadow: unset;
+  outline: 0;
+}
+.confirmation-modal .form-control:focus {
+  border-color: #ff5800;
+}
+.confirmation-modal .btn {
+  min-height: 49px;
+  padding: 0 0.75rem;
+  font-size: 16px;
 }/*# sourceMappingURL=general.css.map */

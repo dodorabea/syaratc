@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Syaratc</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/image/logo/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/logo/fav.png">
+    <!-- bootstrap v5.3.3 css -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+    <!-- AOS animation css -->
+    <link rel="stylesheet" type="text/css" href="assets/AOS/aos.css">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="preloader-background">
+        <div id="circle-loader"></div>
+        <img id="centre-logo" src="assets/image/logo/logo.png" alt="logo" />
+    </div>
+    <!-- ============================================================== -->
+    <!-- Header -->
+    <!-- ============================================================== -->
+    <header class="header p-1" id="header">
+        <nav class="navbar container">
+            <section class="navbar__left">
+                <a href="#" class="brand">
+                    <img src="assets/image/logo/logo.png" alt="brand" />
+                </a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+            </section>
+            <section class="navbar__center">
+                <span class="overlay"></span>
+                <div class="menu" id="menu">
+                    <div class="menu__header">
+                        <span class="menu__arrow"><i class="fa fa-chevron-left"></i></span>
+                        <span class="menu__title"></span>
+                    </div>
+                    <ul class="menu__inner">
+                        <li class="menu__item position-relative"><a href="index.html" class="menu__link active">
+                                الرئيسية </a>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="cars.html" class="menu__link">سيارات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="blogs.html" class="menu__link">المدونات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="about.html" class="menu__link">من نحن</a></li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="offers.html" class="menu__link">العروض</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="request.html" class="menu__link">طلباتي</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="company.html" class="menu__link">الشركات</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="contactus.html" class="menu__link">تواصل معنا</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a class="menu__link">
+                                المزيد
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="submenu megamenu__normal">
+                                <ul class="submenu__list">
+                                    <li><a href="#">الشروط والأحكام</a></li>
+                                    <li><a href="#">سياسة الخصوصية</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link mobile-screen">
+                                English
+                                <img src="assets/image/icon/lang.svg" alt="icon" />
+                            </a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="navbar__right">
+                <a href="#" class="btn btn-language d-flex gap-1 align-items-center">
+                    <span>English</span>
+                    <img src="assets/image/icon/lang.svg" alt="icon" />
+                </a>
+            </section>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- breadcrumb Section -->
+    <!-- ============================================================== -->
+    <!-- <section class="breadcrumb m-0">
+        <div class="container">
+            <div class="breadcrumb-item">
+                <h3 class="d-flex align-items-center gap-2">
+                    <img src="assets/image/icon/title-star.svg" alt="icon" />
+                    <span>طلباتي</span>
+                </h3>
+                <img class="shape img-fluid mt-2 p-0" src="assets/image/icon/Shape.svg" alt="shape" />
+                <p class="mt-1">يظهر هنا جميع الطلبات الخاصة بك.</p>
+            </div>
+        </div>
+    </section> -->
+    <!-- ============================================================== -->
+    <!-- Resuest page  -->
+    <!-- ============================================================== -->
+    <section class="request-details">
+        <div class="container">
+            <div class="row">
+                <div class="request-details-card overflow-hidden">
+                    <div class="header-part d-flex flex-wrap align-items-baseline justify-content-between gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icon-part d-flex align-items-center justify-content-center">
+                                <i class="fa-regular fa-folder"></i>
+                            </div>
+                            <h4>طلب تمويل عقاري</h4>
+                        </div>
+                        <span class="d-block status under-review">جاري المراجعة</span>
+                    </div>
+                    <div class="body-part">
+                        <p class="sub-title mb-3">تم استقبال طلبك بنجاح وجاري العمل عليه و ارسال العروض المناسبه لك.</p>
+                        <div class="list-two-col column-gap-3 row-gap-3">
+                            <p>
+                                <span class="title">رقم الطلب :</span>
+                                <span class="name">#102550</span>
+                            </p>
+                            <p>
+                                <span class="title">تاريخ الطلب :</span>
+                                <span class="name">8-2-2024</span>
+                            </p>
+                            <p>
+                                <span class="title">نوع الطلب:</span>
+                                <span class="name">افراد</span>
+                            </p>
+                            <p>
+                                <span class="title">اسم برنامج التمويل:</span>
+                                <span class="name">تمويل البناء الذاتي</span>
+                            </p>
+                        </div>
+                        <h6 class="notes mt-3 mb-3">يتم الان مراجعه طلب تابعنا باستمرار </h6>
+                        <div class="accordion-section">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item border-0 mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            البيانات الشخصية
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row row-gap-3">
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <p>
+                                                        <span class="title">الاسم :</span>
+                                                        <span class="name">محمد القحطاني </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <p>
+                                                        <span class="title">رقم الهوية:</span>
+                                                        <span class="name">552001252000148</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <p>
+                                                        <span class="title">رقم الجوال:</span>
+                                                        <span class="name">+9665822255</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <p>
+                                                        <span class="title">الجنسيه :</span>
+                                                        <span class="name">سعودي قحطاني</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <p>
+                                                        <span class="title">المدينة :</span>
+                                                        <span class="name">جده</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                                    <p>
+                                                        <span class="title">الوقت المفضل للأتصال :</span>
+                                                        <span class="name">12-4 صباحا</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0 mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            بيانات الراتب
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                                من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                                الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0 mb-3">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            بيانات التمويل
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص
+                                                من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                                                الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="footer-part bg-white">
+                        <div class="d-flex flex-wrap align-items-center column-gap-3 row-gap-3 justify-content-end">
+                            <a href="#"
+                                class="d-flex align-items-center justify-content-center btn btn-outline-primary">التحدث
+                                مع الدعم الفني</a>
+                            <a href="#" class="d-flex align-items-center justify-content-center btn btn-outline-danger"
+                                data-bs-toggle="modal" data-bs-target="#close-order">الغاء الطلب</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- always_help_contact  -->
+    <!-- ============================================================== -->
+    <div class="modal confirmation-modal fade" id="close-order" tabindex="-1" aria-labelledby="close-orderLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header mb-3 p-0 border-0 flex-column justify-content-center">
+                    <h1 class="modal-title text-center fs-5" id="close-orderLabel">هل انت متأكد من الغاء الطلب ؟</h1>
+                    <span class="d-block text-center">في حاله الغاء الطلب لن تتمكن من استعادة مره اخري.</span>
+                </div>
+                <div class="modal-body p-0 pb-3">
+                    <div class="form-group">
+                        <label  class="form-label">سبب الإلغاء</label>
+                        <textarea class="form-control" placeholder="برجاء ذكر سبب الإلغاء... " rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-0">
+                    <button type="button" class="btn btn-outline-dark flex-grow-1" data-bs-dismiss="modal">لا, العودة ومتابعه الطلب</button>
+                    <button type="button" class="btn btn-outline-primary flex-grow-1">نعم, تأكيد الالغاء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- always_help_contact  -->
+    <!-- ============================================================== -->
+    <section class="always_help_contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-10 col-sm-12">
+                    <div class="text-center">
+                        <h2 class="mb-4"><span>اتصل بنا</span> للمساعدة دائما</h2>
+                        <a class="btn btn-number d-flex align-items-center justify-content-center w-100"
+                            href="tel:966920004250">920004250</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- Footer -->
+    <!-- ============================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="top-footer">
+                <div class="row row-gap-3">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-logo mb-2">
+                            <img class="d-block" src="assets/image/logo/logo.png" alt="logo" />
+                        </div>
+                        <p class="describtion">
+                            بدأت شركة سيارتك نشاطها في عام 2018 بالكثير من الخبرة و الشغف في مجال السيارات و على أمل أن
+                            تكون ضمن أفضل الشركات التمويلية محليا وعلى مستوى الشرق الوسط..
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h5 class="main-title mb-3">تصفح موقعنا</h5>
+                        <ul class="two-column-list">
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    الرئيسية
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    من نحن
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    تواصل معنا
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    الشروط والأحكام
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    العروض المميزة للسيارات
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    التواصل الاجتماعي
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    سيارات
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    المدونات
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-subscribe d-flex flex-column gap-3">
+                            <h5 class="main-title">الاشتراك في النشرة الإخبارية</h5>
+                            <div class="input-group align-items-center gap-2 px-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-transparent border-0 p-0">
+                                        <img src="assets/image/icon/sms.svg" alt="icom" />
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control bg-transparent border-0 p-0"
+                                    placeholder="ادخل البريد الالكتروني...">
+                            </div>
+                            <button
+                                class="btn btn-subscribe w-100 d-flex align-items-center justify-content-center gap-2">
+                                <span>اشترك الان</span>
+                                <i class="fa fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer d-flex flex-wrap align-items-center">
+                <p>كل حقوق محفوظة © 2025 سيارتك</p>
+                <ul class="social-media d-flex align-items-center gap-3">
+                    <li>
+                        <span>تواصل معنا: </span>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/fb.svg" alt="icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/insta.svg" alt="icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/twitter.svg" alt="icon" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- ============================================================== -->
+    <!-- back-to-top -->
+    <!-- ============================================================== -->
+    <button class="back-to-top" type="button"></button>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--JQuery Js-->
+    <script src="assets/jq/jQuery.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/swiper/js/swiper.min.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/AOS/aos.js"></script>
+    <!--Main Js-->
+    <script src="assets/jq/main.js"></script>
+
+</body>
+
+</html>
