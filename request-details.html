@@ -257,7 +257,7 @@
                     </div>
                     <div class="footer-part bg-white">
                         <div class="d-flex flex-wrap align-items-center column-gap-3 row-gap-3 justify-content-end">
-                            <a href="#"
+                            <a data-bs-toggle="modal" data-bs-target="#chatModal"
                                 class="d-flex align-items-center justify-content-center btn btn-outline-primary">التحدث
                                 مع الدعم الفني</a>
                             <a href="#" class="d-flex align-items-center justify-content-center btn btn-outline-danger"
@@ -271,7 +271,8 @@
     <!-- ============================================================== -->
     <!-- always_help_contact  -->
     <!-- ============================================================== -->
-    <div class="modal confirmation-modal fade" id="close-order" tabindex="-1" aria-labelledby="close-orderLabel" aria-hidden="true">
+    <div class="modal confirmation-modal fade" id="close-order" tabindex="-1" aria-labelledby="close-orderLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header mb-3 p-0 border-0 flex-column justify-content-center">
@@ -280,13 +281,83 @@
                 </div>
                 <div class="modal-body p-0 pb-3">
                     <div class="form-group">
-                        <label  class="form-label">سبب الإلغاء</label>
+                        <label class="form-label">سبب الإلغاء</label>
                         <textarea class="form-control" placeholder="برجاء ذكر سبب الإلغاء... " rows="4"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer border-0 p-0">
-                    <button type="button" class="btn btn-outline-dark flex-grow-1" data-bs-dismiss="modal">لا, العودة ومتابعه الطلب</button>
+                    <button type="button" class="btn btn-outline-dark flex-grow-1" data-bs-dismiss="modal">لا, العودة
+                        ومتابعه الطلب</button>
                     <button type="button" class="btn btn-outline-primary flex-grow-1">نعم, تأكيد الالغاء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- always_help_contact  -->
+    <!-- ============================================================== -->
+    <div class="modal chat-modal fade" id="chatModal"  tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 flex-column">
+                    <h5 class="modal-title" id="close-orderLabel">بماذا يمكنني مساعدتك؟</h5>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="app-wrapper">
+                        <div class="app-message-body">
+                            <!--Message One-->
+                            <div class="message-wrapper">
+                                <div class="message">
+                                    <span>هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.</span>
+                                </div>
+                                <div class="message-meta">
+                                    <div class="sender-avatar">EA</div>
+                                    <span class="timestamp">7:32 PM</span>
+                                </div>
+                            </div>
+                            <!--Message reply-->
+                            <div class="message-wrapper">
+                                <div class="message">
+                                    <span>كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن</span>
+                                </div>
+                                <div class="message-meta">
+                                    <div class="sender-avatar">DR</div>
+                                    <span class="timestamp">7:34 PM</span>
+                                </div>
+                            </div>
+                            <!--Message Two-->
+                            <div class="message-wrapper">
+                                <div class="message">
+                                    <span>تم الرد</span>
+                                </div>
+                                <div class="message-meta">
+                                    <div class="sender-avatar">EA</div>
+                                    <span class="timestamp">7:32 PM</span>
+                                </div>
+                            </div>
+                            <!--Message reply-->
+                            <div class="message-wrapper">
+                                <div class="message">
+                                    <span>كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن</span>
+                                </div>
+                                <div class="message-meta">
+                                    <div class="sender-avatar">DR</div>
+                                    <span class="timestamp">7:34 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="app-input-area">
+                            <input type="text" placeholder="اكتب رسالتك هنا..." />
+                            <button type="submit">
+                                <svg viewBox="0 0 512 512" x="0px" y="0px" style="enable-background: new 0 0 512 512"
+                                    width="25" height="25" title="paper-plane">
+                                    <path fill=""
+                                        d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
