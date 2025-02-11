@@ -4514,4 +4514,33 @@ html[dir=rtl] .request-details-card .body-part h6.notes {
 }
 .chat-modal .app-input-area button[type=submit]:hover svg {
   fill: #ff5800;
+}
+
+/*-----------------------
+terms-condition-section
+-------------------------*/
+.terms-condition-section {
+  padding: 60px 0;
+}
+.terms-condition-section h1, .terms-condition-section h2, .terms-condition-section h3, .terms-condition-section h4, .terms-condition-section h5, .terms-condition-section h6 {
+  margin-bottom: 1rem;
+  color: #2b2e91;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.terms-condition-section p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1rem;
+}
+.terms-condition-section p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+html[dir=rtl] .terms-condition-section ul, html[dir=rtl] .terms-condition-section ol {
+  padding-right: 1rem;
+}
+html[dir=ltr] .terms-condition-section ul, html[dir=ltr] .terms-condition-section ol {
+  padding-left: 1rem;
+}
+.terms-condition-section ul li, .terms-condition-section ol li {
+  margin-bottom: 0.5rem;
+  color: rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=general.css.map */
