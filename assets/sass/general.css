@@ -4543,4 +4543,58 @@ html[dir=ltr] .terms-condition-section ul, html[dir=ltr] .terms-condition-sectio
 .terms-condition-section ul li, .terms-condition-section ol li {
   margin-bottom: 0.5rem;
   color: rgba(0, 0, 0, 0.6);
+}
+
+/*-----------------------
+    Styles
+-------------------------*/
+.complete-order {
+  padding: 60px 0;
+}
+.complete-order .complete-order-box {
+  box-shadow: 0px 0px 34px 0px rgba(219, 219, 219, 0.15);
+  background: #F4F7F8;
+  border: 1px solid #ff5800;
+  border-radius: 8px;
+}
+@media (min-width: 992px) {
+  .complete-order .complete-order-box {
+    padding: 32px;
+  }
+}
+@media (max-width: 991.98px) {
+  .complete-order .complete-order-box {
+    padding: 16px;
+  }
+}
+.complete-order .complete-order-box img {
+  width: 80px;
+  margin: auto;
+}
+.complete-order .complete-order-box p {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.complete-order .complete-order-box span {
+  color: rgb(16, 16, 16);
+  font-size: 1.2rem;
+}
+.complete-order .complete-order-box .btn-primary {
+  min-height: 55px;
+  border-radius: 0;
+  width: calc(100% - 55px);
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.complete-order .complete-order-box .btn-primary img {
+  width: 16px;
+  margin: 0;
+}
+.complete-order .complete-order-box .watsapp-btn {
+  min-width: 55px;
+  min-height: 55px;
+  font-size: 29px;
+  background: transparent;
+  border: 1px solid #ff5800;
 }/*# sourceMappingURL=general.css.map */

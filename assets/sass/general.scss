@@ -3427,3 +3427,53 @@ terms-condition-section
         }
     }
 }
+/*-----------------------
+    Styles
+-------------------------*/
+.complete-order {
+    padding: 60px 0;
+    .complete-order-box {
+        box-shadow: 0px 0px 34px 0px rgba(219, 219, 219, 0.15);
+        background: #F4F7F8;
+        border: 1px solid map_get($theme-colors, primary);
+        border-radius: 8px;
+        
+        @media (min-width: 992px){
+            padding: 32px;
+        }
+        @media (max-width: 991.98px){
+            padding: 16px;
+        }
+        img{
+            width: 80px;
+            margin: auto;
+        }
+        p {
+            font-size: 24px;
+            line-height: 30px;
+            color: #000000;
+            font-family: $font-family-Bold;
+        }
+        span {
+            color: rgba(16, 16, 16, 1);
+            font-size: 1.2rem;
+        }
+        .btn-primary{
+            min-height: 55px;
+            border-radius: 0;
+            width: calc(100% - 55px);
+            font-family: $font-family-Bold;
+            img{
+                width:16px;
+                margin: 0;
+            }
+        }
+        .watsapp-btn{
+            min-width: 55px;
+            min-height: 55px;
+            font-size: 29px;
+            background: transparent;
+            border: 1px solid map_get($theme-colors, primary);
+        }
+    }
+}
