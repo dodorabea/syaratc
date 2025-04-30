@@ -424,13 +424,28 @@ $breakpoint: 992px;
     height: auto;
     margin: 0 auto;
     background-color: map_get($theme-colors, white);
-
+    .btn-fav{
+        border: 1px solid #2C5E79;
+        color: #2C5E79;
+        background: transparent;
+        text-transform: capitalize;
+        font-family: $font-family-Bold;
+        border-radius: 0.5rem;
+        @media (max-width: 991.98px) {
+            font-size: 1rem;
+            justify-content: center;
+            width: 95%;
+            margin: 1rem auto;
+            min-height: 42px;
+        }
+    }
     .btn-login {
         border-radius: 0.5rem;
         color: #fff;
         background: linear-gradient(94.36deg, #2C5E79 -12.7%, #0074B2 129.91%);
         text-transform: capitalize;
         font-family: $font-family-Bold;
+        
 
         @media (min-width: 992px) {
             font-size: 0.875rem;
