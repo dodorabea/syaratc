@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Syaratc</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/image/logo/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/logo/fav.png">
+    <!-- bootstrap v5.3.3 css -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+    <!-- AOS animation css -->
+    <link rel="stylesheet" type="text/css" href="assets/AOS/aos.css">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="preloader-background">
+        <div id="circle-loader"></div>
+        <img id="centre-logo" src="assets/image/logo/logo.png" alt="logo" />
+    </div>
+    <!-- ============================================================== -->
+    <!-- Header -->
+    <!-- ============================================================== -->
+    <header class="header p-1" id="header">
+        <nav class="navbar container">
+            <section class="navbar__left">
+                <a href="#" class="brand">
+                    <img src="assets/image/logo/logo.png" alt="brand" />
+                </a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+            </section>
+            <section class="navbar__center">
+                <span class="overlay"></span>
+                <div class="menu" id="menu">
+                    <div class="menu__header">
+                        <span class="menu__arrow"><i class="fa fa-chevron-left"></i></span>
+                        <span class="menu__title"></span>
+                    </div>
+                    <ul class="menu__inner">
+                        <li class="menu__item position-relative"><a href="index.html" class="menu__link"> الرئيسية </a>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="cars.html" class="menu__link">سيارات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="blogs.html" class="menu__link">المدونات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="about.html" class="menu__link active">من نحن</a></li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="offers.html" class="menu__link">العروض</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="request.html" class="menu__link">طلباتي</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="company.html" class="menu__link">الشركات</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item">
+                            <a href="contactus.html" class="menu__link">تواصل معنا</a>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a class="menu__link">
+                                المزيد
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="submenu megamenu__normal">
+                                <ul class="submenu__list">
+                                    <li><a href="#">الشروط والأحكام</a></li>
+                                    <li><a href="#">سياسة الخصوصية</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link mobile-screen">
+                                English
+                                <img src="assets/image/icon/lang.svg" alt="icon" />
+                            </a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="navbar__right">
+                <a href="#" class="btn btn-language d-flex gap-1 align-items-center">
+                    <span>English</span>
+                    <img src="assets/image/icon/lang.svg" alt="icon" />
+                </a>
+            </section>
+        </nav>
+    </header>
+    <!-- ============================================================== -->
+    <!-- Compare Section -->
+    <!-- ============================================================== -->
+    <section class="car-comparison py-5">
+        <div class="container">
+            <div class="row row-gap-3">
+                <div class="col-lg-5">
+                    <div class="car-comparison-text">
+                        <h3 class="d-flex align-items-center gap-1 mb-4">
+                            <img src="assets/image/icon/compare.svg" alt="icon" />
+                            <span>مقارنة السيارات</span>
+                        </h3>
+                        <h4 class="mb-2">قارن بين سيارتين واختَر الأفضل بسهولة!</h4>
+                        <p>
+                            اختيار السيارة صار أسهل! قارن بين سيارتين من حيث السعر، الحالة، المواصفات، واطلع على كل
+                            التفاصيل اللي تهمّك قبل الشراء.
+                        </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-7 position-relative">
+                    <div class="vs-compare d-flex align-items-center justify-content-center">
+                        <span class="d-flex align-items-center justify-content-center">vs</span>
+                    </div>
+                    <div class="row row-gap-2 align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="car-comparison-card overflow-hidden">
+                                <div class="card-header position-relative">
+                                    <button
+                                        class="btn btn-dismiss p-0 bg-transparent d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                    <img class="img-fluid w-100 h-100" src="assets/image/cars/compare-img.png"
+                                        alt="image" />
+                                </div>
+                                <div class="card-body position-relative d-flex p-3">
+                                    <div class="text">
+                                        <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        <span class="d-block car-price">95,000 ﷼</span>
+                                    </div>
+                                    <button class="btn btn-edit p-0 bg-transparent">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="col-lg-6 col-md-6">
+                            <div class="car-comparison-card overflow-hidden">
+                                <div class="card-header position-relative">
+                                    <button
+                                        class="btn btn-dismiss p-0 bg-transparent d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                    <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                        alt="image" />
+                                </div>
+                                <div class="card-body position-relative d-flex p-3">
+                                    <div class="text">
+                                        <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        <span class="d-block car-price">95,000 ﷼</span>
+                                    </div>
+                                    <button class="btn btn-edit p-0 bg-transparent">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- Car Details Section -->
+    <!-- ============================================================== -->
+    <section class="car-details-collapsed py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="accordion d-flex flex-column row-gap-3" id="accordionExample">
+                        <div class="accordion-item overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span>أولاً: البيانات الأساسية</span>
+                                    <img src="assets/image/icon/car.svg" alt="icon"/>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body overflow-hidden p-0">
+                                    <table class="table table-striped m-0">
+                                        <tbody>
+                                            <tr>
+                                                <td>اسم السيارة</td>
+                                                <td>تويوتا كامري 2022</td>
+                                                <td>تويوتا كامري 2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>سنة الصنع</td>
+                                                <td>2022</td>
+                                                <td>2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td>نوع الوقود</td>
+                                                <td>بنزين</td>
+                                                <td>بنزين</td>
+                                            </tr>
+                                            <tr>
+                                                <td>نوع ناقل الحركة</td>
+                                                <td>أوتوماتيك</td>
+                                                <td>أوتوماتيك</td>
+                                            </tr>
+                                            <tr>
+                                                <td>المالك</td>
+                                                <td>المالك الأول</td>
+                                                <td>المالك الثاني</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  <span>ثانيًا: مواصفات الأداء</span>
+                                  <i class="fa-solid fa-gear"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body overflow-hidden p-0">
+                                    <table class="table table-striped m-0">
+                                        <tbody>
+                                            <tr>
+                                                <td>المحرك/ سعة البطارية</td>
+                                                <td>4 سلندر	</td>
+                                                <td>6سلندر</td>
+                                            </tr>
+                                            <tr>
+                                                <td>عدد الكيلومترات</td>
+                                                <td>0 كم</td>
+                                                <td>30,000 كم</td>
+                                            </tr>
+                                            <tr>
+                                                <td>نوع الدفع</td>
+                                                <td>أمامي</td>
+                                                <td>رباعي</td>
+                                            </tr>
+                                            <tr>
+                                                <td>القوة الحصانية</td>
+                                                <td>200 حصان</td>
+                                                <td>180 حصان</td>
+                                            </tr>
+                                            <tr>
+                                                <td>المالك</td>
+                                                <td>المالك الأول</td>
+                                                <td>المالك الثاني</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="accordion-item overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  <span>ثالثًا: الراحة والمواصفات الداخلية</span>
+                                  <i class="fa-solid fa-face-smile"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body overflow-hidden p-0">
+                                    <table class="table table-striped m-0">
+                                        <tbody>
+                                            <tr>
+                                                <td>نوع المقاعد</td>
+                                                <td>جلد</td>
+                                                <td>مخمل</td>
+                                            </tr>
+                                            <tr>
+                                                <td>شاشة لمس</td>
+                                                <td>7 إنش</td>
+                                                <td> 8 إنش</td>
+                                            </tr>
+                                            <tr>
+                                                <td>فتحة سقف</td>
+                                                <td class="check-true text-success"><i class="fa-solid fa-square-check"></i></td>
+                                                <td class="check-false text-danger"><i class="fa-solid fa-rectangle-xmark"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>بلوتوث + USB</td>
+                                                <td class="check-true text-success"><i class="fa-solid fa-square-check"></i></td>
+                                                <td class="check-false text-danger"><i class="fa-solid fa-rectangle-xmark"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>مثبت سرعة</td>
+                                                <td class="check-true text-success"><i class="fa-solid fa-square-check"></i></td>
+                                                <td class="check-true text-success"><i class="fa-solid fa-square-check"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>شاشة لمس</td>
+                                                <td>أوتوماتيك</td>
+                                                <td>أوتوماتيك</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- common-comparisons Section -->
+    <!-- ============================================================== -->
+    <section class="common-comparisons py-5">
+        <div class="container">
+            <h3 class="mb-4 main-title">مقارنات شائعة</h3>
+            <div class="row row-gap-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="main-card p-3 position-relative">
+                        <div class="vs-compare d-flex align-items-center justify-content-center">
+                            <span class="d-flex align-items-center justify-content-center">vs</span>
+                        </div>
+                        <div class="row row-gap-2 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="main-card p-3 position-relative">
+                        <div class="vs-compare d-flex align-items-center justify-content-center">
+                            <span class="d-flex align-items-center justify-content-center">vs</span>
+                        </div>
+                        <div class="row row-gap-2 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="main-card p-3 position-relative">
+                        <div class="vs-compare d-flex align-items-center justify-content-center">
+                            <span class="d-flex align-items-center justify-content-center">vs</span>
+                        </div>
+                        <div class="row row-gap-2 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="main-card p-3 position-relative">
+                        <div class="vs-compare d-flex align-items-center justify-content-center">
+                            <span class="d-flex align-items-center justify-content-center">vs</span>
+                        </div>
+                        <div class="row row-gap-2 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="main-card p-3 position-relative">
+                        <div class="vs-compare d-flex align-items-center justify-content-center">
+                            <span class="d-flex align-items-center justify-content-center">vs</span>
+                        </div>
+                        <div class="row row-gap-2 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="main-card p-3 position-relative">
+                        <div class="vs-compare d-flex align-items-center justify-content-center">
+                            <span class="d-flex align-items-center justify-content-center">vs</span>
+                        </div>
+                        <div class="row row-gap-2 align-items-center">
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-6">
+                                <div class="common-comparisons-card overflow-hidden">
+                                    <div class="card-header position-relative">
+                                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png"
+                                            alt="image" />
+                                    </div>
+                                    <div class="card-body position-relative px-2 py-3">
+                                        <div class="text">
+                                            <span class="d-block car-name">تويوتا كامري 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- Footer -->
+    <!-- ============================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="top-footer">
+                <div class="row row-gap-3">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-logo mb-2">
+                            <img class="d-block" src="assets/image/logo/logo.png" alt="logo" />
+                        </div>
+                        <p class="describtion">
+                            بدأت شركة سيارتك نشاطها في عام 2018 بالكثير من الخبرة و الشغف في مجال السيارات و على أمل أن
+                            تكون ضمن أفضل الشركات التمويلية محليا وعلى مستوى الشرق الوسط..
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h5 class="main-title mb-3">تصفح موقعنا</h5>
+                        <ul class="two-column-list">
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    الرئيسية
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    من نحن
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    تواصل معنا
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    الشروط والأحكام
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    العروض المميزة للسيارات
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    التواصل الاجتماعي
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    سيارات
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="#">
+                                    <i class="fa fa-angle-left"></i>
+                                    المدونات
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-subscribe d-flex flex-column gap-3">
+                            <h5 class="main-title">الاشتراك في النشرة الإخبارية</h5>
+                            <div class="input-group align-items-center gap-2 px-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-transparent border-0 p-0">
+                                        <img src="assets/image/icon/sms.svg" alt="icom" />
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control bg-transparent border-0 p-0"
+                                    placeholder="ادخل البريد الالكتروني...">
+                            </div>
+                            <button
+                                class="btn btn-subscribe w-100 d-flex align-items-center justify-content-center gap-2">
+                                <span>اشترك الان</span>
+                                <i class="fa fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer d-flex flex-wrap align-items-center">
+                <p>كل حقوق محفوظة © 2025 سيارتك</p>
+                <ul class="social-media d-flex align-items-center gap-3">
+                    <li>
+                        <span>تواصل معنا: </span>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/fb.svg" alt="icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/insta.svg" alt="icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex align-items-center justify-content-center" href="#">
+                            <img src="assets/image/icon/twitter.svg" alt="icon" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--JQuery Js-->
+    <script src="assets/jq/jQuery.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/swiper/js/swiper.min.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/AOS/aos.js"></script>
+    <!--Main Js-->
+    <script src="assets/jq/main.js"></script>
+
+</body>
+
+</html>

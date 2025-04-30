@@ -1750,6 +1750,29 @@ html[dir=ltr] #preloader-background {
   margin: 0 auto;
   background-color: #ffffff;
 }
+.header .btn-login {
+  border-radius: 0.5rem;
+  color: #fff;
+  background: linear-gradient(94.36deg, #2C5E79 -12.7%, #0074B2 129.91%);
+  text-transform: capitalize;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+@media (min-width: 992px) {
+  .header .btn-login {
+    font-size: 0.875rem;
+    padding: 0.44rem;
+    min-height: 1.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .header .btn-login {
+    font-size: 1rem;
+    justify-content: center;
+    width: 95%;
+    margin: 1rem auto;
+    min-height: 42px;
+  }
+}
 
 .brand {
   display: flex;
@@ -1802,8 +1825,8 @@ html[dir=ltr] #preloader-background {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 @media (max-width: 991px) {
   .navbar .navbar__right {
@@ -1818,15 +1841,23 @@ html[dir=ltr] #preloader-background {
   color: #fff;
   font-family: "Tajawal-Bold", sans-serif;
 }
-.navbar .navbar__right .btn-language {
+.navbar .navbar__right .circle-btn {
   padding: 0;
-  font-size: 15px;
-  color: #000;
-  font-weight: 700;
+  color: #0c78a7;
+  font-size: 16px;
 }
-.navbar .navbar__right .btn-language img {
-  width: 17px;
-  filter: brightness(0) saturate(100%) invert(44%) sepia(95%) saturate(2634%) hue-rotate(356deg) brightness(95%) contrast(114%);
+.navbar .navbar__right .circle-btn img {
+  width: 20px;
+}
+@media (min-width: 992px) {
+  .navbar .navbar__right .circle-btn {
+    min-inline-size: 40px;
+    max-inline-size: 40px;
+    block-size: 40px;
+    border-radius: 100%;
+    border: 0.3px solid rgba(3, 80, 111, 0.5);
+    background: rgb(244, 244, 244);
+  }
 }
 
 @media (max-width: 991px) {
@@ -1850,6 +1881,7 @@ html[dir=ltr] #preloader-background {
     color: #000 !important;
   }
   .menu.is-active .menu__link img {
+    width: 20px;
     filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(127deg) brightness(90%) contrast(109%);
   }
   .menu.is-active .submenu {
@@ -1966,7 +1998,7 @@ html[dir=ltr] #preloader-background {
   font-family: "Tajawal-Bold", sans-serif;
 }
 .menu .menu__inner .menu__item .menu__link.active {
-  color: #ff5800;
+  color: #0c78a7;
 }
 .menu .menu__inner .menu__item .menu__link > i {
   font-size: 12px;
@@ -2664,6 +2696,29 @@ html[dir=ltr] .breadcrumb-list li:not(:last-child)::after {
 .card.card-car .card-header img {
   width: 100%;
   height: 100%;
+}
+.card.card-car .card-header .fav-card {
+  position: absolute;
+  top: 1rem;
+  bottom: unset;
+  min-inline-size: 40px;
+  max-inline-size: 40px;
+  block-size: 40px;
+  border-radius: 100%;
+  border: 0.3px solid #ff5800;
+  background: #fff;
+}
+html[dir=rtl] .card.card-car .card-header .fav-card {
+  right: unset;
+  left: 1rem;
+}
+html[dir=ltr] .card.card-car .card-header .fav-card {
+  right: 1rem;
+  left: unset;
+}
+.card.card-car .card-header .fav-card img {
+  width: 18px;
+  filter: brightness(0) saturate(100%) invert(35%) sepia(62%) saturate(2442%) hue-rotate(2deg) brightness(105%) contrast(104%);
 }
 .card.card-car .card-body {
   height: 100%;
@@ -4522,7 +4577,12 @@ terms-condition-section
 .terms-condition-section {
   padding: 60px 0;
 }
-.terms-condition-section h1, .terms-condition-section h2, .terms-condition-section h3, .terms-condition-section h4, .terms-condition-section h5, .terms-condition-section h6 {
+.terms-condition-section h1,
+.terms-condition-section h2,
+.terms-condition-section h3,
+.terms-condition-section h4,
+.terms-condition-section h5,
+.terms-condition-section h6 {
   margin-bottom: 1rem;
   color: #2b2e91;
   font-family: "Tajawal-Bold", sans-serif;
@@ -4534,13 +4594,16 @@ terms-condition-section
 .terms-condition-section p:not(:last-child) {
   margin-bottom: 1rem;
 }
-html[dir=rtl] .terms-condition-section ul, html[dir=rtl] .terms-condition-section ol {
+html[dir=rtl] .terms-condition-section ul,
+html[dir=rtl] .terms-condition-section ol {
   padding-right: 1rem;
 }
-html[dir=ltr] .terms-condition-section ul, html[dir=ltr] .terms-condition-section ol {
+html[dir=ltr] .terms-condition-section ul,
+html[dir=ltr] .terms-condition-section ol {
   padding-left: 1rem;
 }
-.terms-condition-section ul li, .terms-condition-section ol li {
+.terms-condition-section ul li,
+.terms-condition-section ol li {
   margin-bottom: 0.5rem;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -4597,4 +4660,261 @@ html[dir=ltr] .terms-condition-section ul, html[dir=ltr] .terms-condition-sectio
   font-size: 29px;
   background: transparent;
   border: 1px solid #ff5800;
+}
+
+/*-----------------------
+  comparison  Styles
+-------------------------*/
+@media (min-width: 768px) {
+  .car-comparison-text {
+    padding-inline-end: 5%;
+  }
+}
+.car-comparison-text h3 {
+  font-family: "Tajawal-Bold", sans-serif;
+}
+@media (min-width: 768px) {
+  .car-comparison-text h3 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .car-comparison-text h3 {
+    font-size: 1.75rem;
+  }
+}
+.car-comparison-text h4 {
+  font-family: "Tajawal-Bold", sans-serif;
+}
+@media (min-width: 768px) {
+  .car-comparison-text h4 {
+    font-size: 1.25rem;
+  }
+}
+.car-comparison-text p {
+  color: rgba(0, 0, 0, 0.7);
+}
+.car-comparison-card {
+  border: 0.5px solid rgb(177, 177, 177);
+  border-radius: 0.625rem;
+}
+.car-comparison-card .card-header {
+  height: 240px;
+}
+.car-comparison-card .card-header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.car-comparison-card .card-header .btn-dismiss {
+  inline-size: 18px;
+  min-inline-size: 18px;
+  max-inline-size: 18px;
+  block-size: 18px;
+  border-radius: 100%;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 10px;
+  position: absolute;
+  top: 1rem;
+  bottom: unset;
+}
+html[dir=rtl] .car-comparison-card .card-header .btn-dismiss {
+  right: 1rem;
+  left: unset;
+}
+html[dir=ltr] .car-comparison-card .card-header .btn-dismiss {
+  right: unset;
+  left: 1rem;
+}
+.car-comparison-card .card-body .text {
+  width: calc(100% - 60px);
+  font-size: 1rem;
+  color: rgb(86, 86, 86);
+}
+.car-comparison-card .card-body .btn-edit {
+  font-size: 1rem;
+  color: #2b2e91;
+  position: absolute;
+  top: 1.5rem;
+  bottom: unset;
+}
+html[dir=rtl] .car-comparison-card .card-body .btn-edit {
+  right: unset;
+  left: 1.5rem;
+}
+html[dir=ltr] .car-comparison-card .card-body .btn-edit {
+  right: 1.5rem;
+  left: unset;
+}
+.car-comparison .vs-compare {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  z-index: 11;
+}
+html[dir=rtl] .car-comparison .vs-compare {
+  right: 0;
+  left: 0;
+}
+html[dir=ltr] .car-comparison .vs-compare {
+  right: 0;
+  left: 0;
+}
+.car-comparison .vs-compare span {
+  inline-size: 58px;
+  min-inline-size: 58px;
+  max-inline-size: 58px;
+  block-size: 58px;
+  border: 0.3px solid rgba(3, 80, 111, 0.5);
+  border-radius: 100%;
+  background: rgb(244, 244, 244);
+  font-size: 28px;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+
+/*-------------------------*/
+.car-details-collapsed .accordion-item {
+  border: 1px solid #E9E9E9;
+  border-radius: 16px !important;
+}
+.car-details-collapsed .accordion-item .accordion-button {
+  color: rgb(36, 36, 36);
+  border-radius: 16px 16px 0 0;
+  box-shadow: unset;
+  outline: 0;
+  background: #f9f9f9;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.car-details-collapsed .accordion-item .accordion-button img {
+  width: 20px;
+}
+.car-details-collapsed .accordion-item .accordion-button i {
+  font-size: 18px;
+}
+.car-details-collapsed .accordion-item .accordion-button i.fa-face-smile {
+  color: rgb(0, 122, 255);
+}
+.car-details-collapsed .accordion-item .accordion-button i.fa-gear {
+  color: #ff5800;
+}
+.car-details-collapsed .check-true,
+.car-details-collapsed .check-false {
+  font-size: 20px;
+}
+.car-details-collapsed table {
+  font-weight: 500;
+}
+.car-details-collapsed .table-striped > tbody > tr:nth-of-type(even) > * {
+  color: rgb(36, 98, 132);
+  font-weight: 600;
+}
+.car-details-collapsed tr td:first-child {
+  font-weight: 500 !important;
+  color: #000 !important;
+}
+
+/*-------------------------*/
+.common-comparisons .main-title {
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.common-comparisons .main-card {
+  background: rgb(3, 80, 111);
+  border-radius: 8px;
+}
+.common-comparisons-card {
+  border: 0.5px solid rgb(177, 177, 177);
+  border-radius: 0.625rem;
+  background: #fff;
+}
+.common-comparisons-card .card-header {
+  height: 150px;
+}
+.common-comparisons-card .card-header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.common-comparisons-card .card-body .text {
+  font-size: 12px;
+  color: rgb(86, 86, 86);
+}
+.common-comparisons .vs-compare {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+  z-index: 11;
+}
+html[dir=rtl] .common-comparisons .vs-compare {
+  right: 0;
+  left: 0;
+}
+html[dir=ltr] .common-comparisons .vs-compare {
+  right: 0;
+  left: 0;
+}
+.common-comparisons .vs-compare span {
+  inline-size: 45px;
+  min-inline-size: 45px;
+  max-inline-size: 45px;
+  block-size: 45px;
+  border: 0.3px solid rgba(3, 80, 111, 0.5);
+  border-radius: 100%;
+  background: rgb(244, 244, 244);
+  font-size: 18px;
+}
+
+#hiddenSection {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  background: #f0f0f0;
+  margin-top: 10px;
+  transition: all 1s ease-out;
+  z-index: 11;
+}
+#hiddenSection h4 {
+  font-family: "Tajawal-Bold", sans-serif;
+}
+#hiddenSection .progress {
+  background: rgb(207, 207, 207);
+}
+#hiddenSection .progress-bar {
+  background: rgb(3, 80, 111);
+  transition: all 1s ease-out;
+}
+#hiddenSection:not(.open) {
+  overflow: hidden;
+}
+#hiddenSection.open {
+  position: fixed;
+  top: unset;
+  bottom: 0;
+  transition: max-height 0.5s ease-in;
+  padding: 2rem 0 0 0;
+  max-height: 500px;
+  border-radius: 45px 45px 0 0;
+}
+html[dir=rtl] #hiddenSection.open {
+  right: 0;
+  left: 0;
+}
+html[dir=ltr] #hiddenSection.open {
+  right: 0;
+  left: 0;
+}
+#hiddenSection.open .section-body {
+  padding: 1rem 1rem 1rem 1rem;
+  overflow-y: auto;
+  max-height: 400px;
+}
+#hiddenSection .car-comparison-card .card-header {
+  height: 190px;
+}
+#hiddenSection .car-comparison-card .card-body {
+  color: #fff;
+  background: rgb(3, 80, 111);
 }/*# sourceMappingURL=general.css.map */
