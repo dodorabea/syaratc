@@ -1463,6 +1463,7 @@ $breakpoint: 992px;
             height: 100%;
 
             h5 {
+                width: calc(100% - 2rem);
                 display: -webkit-box;
                 line-clamp: 1;
                 -webkit-line-clamp: 1;
@@ -3783,6 +3784,14 @@ terms-condition-section
 }
 
 /*-------------------------*/
+.favButton{
+    font-size: 20px;
+    @include position( absolute , 1rem, unset, unset, 1rem);
+}
+.fav {
+    color: red;
+    
+  }
 .common-comparisons {
     .main-title {
         font-family: $font-family-Bold;

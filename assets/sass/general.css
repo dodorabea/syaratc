@@ -2724,6 +2724,7 @@ html[dir=ltr] .card.card-car .card-header .fav-card {
   height: 100%;
 }
 .card.card-car .card-body h5 {
+  width: calc(100% - 2rem);
   display: -webkit-box;
   line-clamp: 1;
   -webkit-line-clamp: 1;
@@ -4817,6 +4818,25 @@ html[dir=ltr] .car-comparison .vs-compare {
 }
 
 /*-------------------------*/
+.favButton {
+  font-size: 20px;
+  position: absolute;
+  top: 1rem;
+  bottom: unset;
+}
+html[dir=rtl] .favButton {
+  right: unset;
+  left: 1rem;
+}
+html[dir=ltr] .favButton {
+  right: 1rem;
+  left: unset;
+}
+
+.fav {
+  color: red;
+}
+
 .common-comparisons .main-title {
   font-family: "Tajawal-Bold", sans-serif;
 }

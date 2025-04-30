@@ -279,8 +279,9 @@
                             <img class="img-fluid" src="assets/image/cars/test.PNG" alt="image" />
                             <span class="badge-span d-flex align-items-center justify-content-center  ">عرض مميز</span>
                         </div>
-                        <div class="card-body pb-2 d-flex flex-column row-gap-2 bg-transparent border-0">
+                        <div class="card-body position-relative pb-2 d-flex flex-column row-gap-2 bg-transparent border-0">
                             <h5>هونداى كريتا 2024-سمارات</h5>
+                            <button class="p-0 border-0 bg-transparent favButton d-flex align-items-center justify-content-end">❤</button>
                             <div class="price">
                                 <span class="amount">
                                     83,450.00
@@ -635,7 +636,15 @@
     <script src="assets/AOS/aos.js"></script>
     <!--Main Js-->
     <script src="assets/jq/main.js"></script>
+    <script>
+  const buttons = document.querySelectorAll('.favButton');
 
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        button.classList.toggle('fav');
+    });
+});
+    </script>
 </body>
 
 </html>
