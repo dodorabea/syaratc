@@ -42,6 +42,9 @@ normal,
 normal,
 woff2 woff ttf eot);
 
+@function rem($px-value) {
+	@return calc($px-value / 16) + rem;
+}
 
 //howToCall: @include dFlex(center, center, 0);
 @mixin dFlex($align, $justify, $colGap: 0) {

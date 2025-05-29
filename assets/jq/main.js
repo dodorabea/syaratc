@@ -98,7 +98,6 @@
   var swiper3 = new Swiper(".mySwiper.why-online", {
     slidesPerView: 1,
     spaceBetween: 10,
-    autoplay: true,
     loop: true,
     breakpoints: {
       1024: {
@@ -375,7 +374,7 @@ function toggleSubMenu(e) {
 
 // Fixed Navbar Menu on Window Resize
 window.addEventListener("resize", () => {
-  if (window.innerWidth >= 768 && menu?.classList.contains("is-active")) {
+  if (window.innerWidth >= 1500 && menu?.classList.contains("is-active")) {
     toggleMenu();
   }
 });

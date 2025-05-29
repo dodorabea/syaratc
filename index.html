@@ -55,7 +55,23 @@
                         <span class="menu__arrow"><i class="fa fa-chevron-left"></i></span>
                         <span class="menu__title"></span>
                     </div>
+
                     <ul class="menu__inner">
+
+                        <ul class="login-Section d-flex align-items-center justify-content-between gap-3 p-3">
+                            <li>
+                                <a class="btn-login mobile-screen d-flex align-items-center gap-2" href="#">
+                                    <span>تسجيل الدخول / إنشاء حساب</span>
+                                </a>
+                            </li>
+                            <li class="border-0">
+                                <a href="#" class="menu__link p-0">
+                                    English
+                                    <img src="assets/image/icon/lang.svg" alt="icon" />
+                                </a>
+                            </li>
+
+                        </ul>
                         <li class="menu__item position-relative"><a href="index.html" class="menu__link"> الرئيسية </a>
                         </li>
                         <!---->
@@ -90,23 +106,11 @@
                                 <ul class="submenu__list">
                                     <li><a href="#">الشروط والأحكام</a></li>
                                     <li><a href="#">سياسة الخصوصية</a></li>
-
                                 </ul>
                             </div>
                         </li>
                         <!---->
-                        <li class="menu__item">
-                            <a href="#" class="menu__link mobile-screen">
-                                English
-                                <img src="assets/image/icon/lang.svg" alt="icon" />
-                            </a>
-                        </li>
-                        <li>
-                            <a class="btn-login mobile-screen d-flex align-items-center gap-2"
-                                href="{{route('website.login')}}">
-                                <span>تسجيل الدخول</span>
-                            </a>
-                        </li>
+
                     </ul>
                 </div>
             </section>
@@ -130,7 +134,12 @@
     <!-- Hero Section -->
     <!-- ============================================================== -->
     <section class="hero-section">
-        <!-- Swiper -->
+        <!-- video -->
+        <video id="video-background" autoplay muted loop poster="https://i.postimg.cc/MppHXDQq/frame-0318.webp">
+            <source src="assets/image/video-banner.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <!--slider-->
         <div class="swiper mySwiper hero-section-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -148,6 +157,46 @@
             </div>
         </div>
     </section>
+    <!-- ============================================================== -->
+    <!-- new Section -->
+    <!-- ============================================================== -->
+    <section class="top-section">
+        <div class="container">
+            <div class="row row-gap-3">
+                <div class="col-lg-6">
+                    <div class="top-section-text overflow-hidden h-100"
+                        style="background:rgba(239, 91, 36, 1) url(assets/image/img/top-section-one.png);">
+                        <div class="top-section-text-maxcontent d-flex flex-column align-items-start row-gap-3">
+                            <h4 class="mb-0 text-white">اشتري عربية جديدة وأصلية</h4>
+                            <p class="mb-0 text-white">
+                                اختار من مجموعة كبيرة من العربيات المعتمدة، كل سياراتنا من كارزمي ومعتمدة رسميًا.
+                            </p>
+                            <a href="#"
+                                class="btn btn-subscribe bg-white fw-medium d-flex align-items-center justify-content-center">اشتري
+                                الآن</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-6">
+                    <div class="top-section-text overflow-hidden h-100"
+                        style="background:rgba(35, 37, 125, 1) url(assets/image/img/top-section-two.png);">
+                        <div class="top-section-text-maxcontent d-flex flex-column align-items-start row-gap-3">
+                            <h4 class="mb-0 text-white">احصل على تمويل بلمسة سريعة</h4>
+                            <p class="mb-0 text-white">
+                                وافق على قرضك خلال 48 ساعة واستلم سيارتك وتبدأ تجربتك بدون تأخير.
+                            </p>
+                            <a href="#"
+                                class="btn btn-subscribe bg-white fw-medium d-flex align-items-center justify-content-center">قسط
+                                الآن</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+    </section>
+
     <!-- ============================================================== -->
     <!-- Main Hero Section -->
     <!-- ============================================================== -->
@@ -253,7 +302,117 @@
             </div>
         </div>
     </section>
+   
     <!-- ============================================================== -->
+    <!-- new Section -->
+    <!-- ============================================================== -->
+    <section class="why-syaratc-store">
+        <div class="container">
+            <div class="why-syaratc-store--title text-center d-flex flex-column align-items-center mb-4 row-gap-1">
+                <h3 class="mb-0 text-primary">ليش سيارتك</h3>
+                <p class="mb-0">خلنا نسهّلها عليك، هذي الأسباب اللي تخلي تجربتك معنا مختلفة:</p>
+            </div>
+            <div class="row row-gap-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-syaratc-store-card h-100 overflow-hidden">
+                        <div class="card-header d-flex flex-column row-gap-3 mb-3">
+                            <div class="card-header-icon bg-white d-flex align-items-center justify-content-center">
+                                <img src="assets/image/icon/vector-one.svg" alt="image" />
+                            </div>
+                            <h3 class="text-white mb-0 text-center">شفافية</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-white mb-0 text-center">
+                                كل التفاصيل واضحة، من السعر إلى حالة السيارة – بدون لف ولا دوران.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-syaratc-store-card h-100 overflow-hidden">
+                        <div class="card-header d-flex flex-column row-gap-3 mb-3">
+                            <div class="card-header-icon bg-white d-flex align-items-center justify-content-center">
+                                <img src="assets/image/icon/vector-two.svg" alt="image" />
+                            </div>
+                            <h3 class="text-white mb-0 text-center">سرعة وسهولة</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-white mb-0 text-center">
+                                من التصفح للشراء، كل الخطوات سريعة وسلسة بدون تعقيد.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-syaratc-store-card h-100 overflow-hidden">
+                        <div class="card-header d-flex flex-column row-gap-3 mb-3">
+                            <div class="card-header-icon bg-white d-flex align-items-center justify-content-center">
+                                <img src="assets/image/icon/vector-three.svg" alt="image" />
+                            </div>
+                            <h3 class="text-white mb-0 text-center">أفضل سعر</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-white mb-0 text-center">
+                                نقارن لك ونوفر لك السعر الأفضل بكل أمان.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-syaratc-store-card h-100 overflow-hidden">
+                        <div class="card-header d-flex flex-column row-gap-3 mb-3">
+                            <div class="card-header-icon bg-white d-flex align-items-center justify-content-center">
+                                <img src="assets/image/icon/vector-four.svg" alt="image" />
+                            </div>
+                            <h3 class="text-white mb-0 text-center">دفع آمن</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-white mb-0 text-center">
+                                طرق دفع متعددة وآمنة تضمن راحة بالك.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-syaratc-store-card h-100 overflow-hidden">
+                        <div class="card-header d-flex flex-column row-gap-3 mb-3">
+                            <div class="card-header-icon bg-white d-flex align-items-center justify-content-center">
+                                <img src="assets/image/icon/vector-five.svg" alt="image" />
+                            </div>
+                            <h3 class="text-white mb-0 text-center">تجربة مضمونة</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-white mb-0 text-center">
+                                نضمن لك جودة الخدمة ورضاك هو هدفنا.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-syaratc-store-card h-100 overflow-hidden">
+                        <div class="card-header d-flex flex-column row-gap-3 mb-3">
+                            <div class="card-header-icon bg-white d-flex align-items-center justify-content-center">
+                                <img src="assets/image/icon/vector-six.svg" alt="image" />
+                            </div>
+                            <h3 class="text-white mb-0 text-center">معك من البداية للنهاية</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-white mb-0 text-center">
+                                ما نتركك، نضمن راحتك في كل تفصيلة.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+    </section>
+     <!-- ============================================================== -->
     <!-- special-car -->
     <!-- ============================================================== -->
     <section class="special-car" data-aos="fade-up">
@@ -291,12 +450,13 @@
                                     <ul class="info-cars-list d-flex flex-wrap gap-2">
                                         <li>
                                             <a href="#">
-                                                <img class="img-fluid" src="assets/image/brand/brand-icon.png" alt="img"/>
+                                                <img class="img-fluid" src="assets/image/brand/brand-icon.png"
+                                                    alt="img" />
                                             </a>
                                         </li>
                                         <li>
-                                            <span class="d-flex align-items-center justify-content-center"> 
-                                                <i class="fa-solid fa-calculator"></i> 
+                                            <span class="d-flex align-items-center justify-content-center">
+                                                <i class="fa-solid fa-calculator"></i>
                                                 بالتقسيط</span>
                                         </li>
                                         <li>
@@ -308,10 +468,12 @@
                                             </span>
                                         </li>
                                         <li>
-                                            <span class="d-flex align-items-center justify-content-center">كسر زيرو</span>
+                                            <span class="d-flex align-items-center justify-content-center">كسر
+                                                زيرو</span>
                                         </li>
                                         <li>
-                                            <span class="d-flex align-items-center justify-content-center">قابلة للبدل</span>
+                                            <span class="d-flex align-items-center justify-content-center">قابلة
+                                                للبدل</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -369,12 +531,13 @@
                                     <ul class="info-cars-list d-flex flex-wrap gap-2">
                                         <li>
                                             <a href="#">
-                                                <img class="img-fluid" src="assets/image/brand/brand-icon-2.png" alt="img"/>
+                                                <img class="img-fluid" src="assets/image/brand/brand-icon-2.png"
+                                                    alt="img" />
                                             </a>
                                         </li>
                                         <li>
-                                            <span class="d-flex align-items-center justify-content-center"> 
-                                                <i class="fa-solid fa-calculator"></i> 
+                                            <span class="d-flex align-items-center justify-content-center">
+                                                <i class="fa-solid fa-calculator"></i>
                                                 بالتقسيط</span>
                                         </li>
                                         <li>
@@ -386,10 +549,12 @@
                                             </span>
                                         </li>
                                         <li>
-                                            <span class="d-flex align-items-center justify-content-center">كسر زيرو</span>
+                                            <span class="d-flex align-items-center justify-content-center">كسر
+                                                زيرو</span>
                                         </li>
                                         <li>
-                                            <span class="d-flex align-items-center justify-content-center">قابلة للبدل</span>
+                                            <span class="d-flex align-items-center justify-content-center">قابلة
+                                                للبدل</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -420,12 +585,13 @@
                                     <ul class="info-cars-list d-flex flex-wrap gap-2">
                                         <li>
                                             <a href="#">
-                                                <img class="img-fluid" src="assets/image/brand/brand-icon.png" alt="img"/>
+                                                <img class="img-fluid" src="assets/image/brand/brand-icon.png"
+                                                    alt="img" />
                                             </a>
                                         </li>
                                         <li>
-                                            <span class="d-flex align-items-center justify-content-center"> 
-                                                <i class="fa-solid fa-calculator"></i> 
+                                            <span class="d-flex align-items-center justify-content-center">
+                                                <i class="fa-solid fa-calculator"></i>
                                                 بالتقسيط</span>
                                         </li>
                                         <li>
@@ -437,10 +603,12 @@
                                             </span>
                                         </li>
                                         <li>
-                                            <span class="d-flex align-items-center justify-content-center">كسر زيرو</span>
+                                            <span class="d-flex align-items-center justify-content-center">كسر
+                                                زيرو</span>
                                         </li>
                                         <li>
-                                            <span class="d-flex align-items-center justify-content-center">قابلة للبدل</span>
+                                            <span class="d-flex align-items-center justify-content-center">قابلة
+                                                للبدل</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -531,6 +699,60 @@
         </div>
     </section>
     <!-- ============================================================== -->
+    <!--new  purchase_order -->
+    <!-- ============================================================== -->
+    <section class="purchase_order" data-aos="fade-up">
+        <div class="container">
+            <div class="purchase_order--title mb-5">
+                <h3 class="text-primary text-center">اشتر سيارتك خلال 3 خطوات</h3>
+            </div>
+            <div class="row row-gap-3 align-items-center">
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="timeline-container">
+                        <ul class="tl">
+                            <li>
+                                <div class="item-icon"></div>
+                                <div class="item-text">
+                                    <div class="item-title text-primary">اختر سيارتك</div>
+                                    <div class="item-detail">
+                                        تصفح كل الموديلات الجديدة والمستعملة، وحدد اللي يناسب احتياجك ومزاجك
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="tl-item">
+                                <div class="item-icon"></div>
+                                <div class="item-text">
+                                    <div class="item-title text-primary">قدم طلبك أونلاين</div>
+                                    <div class="item-detail">تمويل أو كاش؟ كل الخيارات قدامك، بخطوات بسيطة، وأنت مرتاح
+                                        في بيتك.</div>
+                                </div>
+
+                            </li>
+                            <li class="tl-item  dashed">
+                                <div class="item-icon"></div>
+                                <div class="item-text">
+                                    <div class="item-title text-primary">توصلك لين باب بيتك</div>
+                                    <div class="item-detail">استلام سريع وآمن في أي مدينة داخل المملكة، مع ضمان جودة
+                                        وتوصيل مضمون.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="purchase_order-image-part">
+                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png" alt="image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!--new  purchase_order -->
+    <!-- ============================================================== -->
+    ابحث عن السيارة التي ترغب بها
+    <!-- ============================================================== -->
     <!-- special-products -->
     <!-- ============================================================== -->
     <section class="special-products" data-aos="fade-up">
@@ -566,12 +788,12 @@
                             <ul class="info-cars-list d-flex flex-wrap gap-2">
                                 <li>
                                     <a href="#">
-                                        <img class="img-fluid" src="assets/image/brand/brand-icon-2.png" alt="img"/>
+                                        <img class="img-fluid" src="assets/image/brand/brand-icon-2.png" alt="img" />
                                     </a>
                                 </li>
                                 <li>
-                                    <span class="d-flex align-items-center justify-content-center"> 
-                                        <i class="fa-solid fa-calculator"></i> 
+                                    <span class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-calculator"></i>
                                         بالتقسيط</span>
                                 </li>
                                 <li>
@@ -617,12 +839,12 @@
                             <ul class="info-cars-list d-flex flex-wrap gap-2">
                                 <li>
                                     <a href="#">
-                                        <img class="img-fluid" src="assets/image/brand/brand-icon.png" alt="img"/>
+                                        <img class="img-fluid" src="assets/image/brand/brand-icon.png" alt="img" />
                                     </a>
                                 </li>
                                 <li>
-                                    <span class="d-flex align-items-center justify-content-center"> 
-                                        <i class="fa-solid fa-calculator"></i> 
+                                    <span class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-calculator"></i>
                                         بالتقسيط</span>
                                 </li>
                                 <li>
@@ -757,6 +979,10 @@
         </div>
     </section>
     <!-- ============================================================== -->
+    <!-- special-products -->
+    <!-- ============================================================== -->
+    بيع سيارتك بأفضل سعر
+    <!-- ============================================================== -->
     <!-- brand-navigation -->
     <!-- ============================================================== -->
     <section class="brand-navigation" data-aos="fade-up">
@@ -856,7 +1082,7 @@
         </div>
     </section>
     <!-- ============================================================== -->
-    <!-- purchase_order -->
+    <!--new  purchase_order -->
     <!-- ============================================================== -->
     <section class="purchase_order" data-aos="fade-up">
         <div class="container">
@@ -895,6 +1121,128 @@
         </div>
     </section>
     <!-- ============================================================== -->
+    <!-- popular-cars-list -->
+    <!-- ============================================================== -->
+    <section class="popular__cars__list">
+        <div class="container">
+            <h3 class="popular__cars__list--title text-center mb-4">السيارات الأكثر بحثًا بدون تعب</h3>
+            <div class="row row-gap-3">
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                 <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                 <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                 <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
     <!-- why-online-section -->
     <!-- ============================================================== -->
     <section class="why-online-section" data-aos="fade-up">
@@ -909,50 +1257,259 @@
             </h2>
             <img class="w-auto mt-3" src="assets/image/icon/Shape.svg" alt="icon" />
         </div>
+
         <!-- Swiper -->
         <div class="container">
             <div class="swiper mySwiper why-online">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="why-online-section-card bg-white text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <img src="assets/image/icon/house.svg" alt="icon" />
-                            </div>
-                            <div class="text">
-                                <h4 class="one-line">تمويل عقاري</h4>
-                                <p class="three-line">
-                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المسابى
-                                </p>
+                        <div class="flip-card">
+                            <div class="flip-card-inner position-relative">
+                                <div class="flip-card-front">
+                                    <div class="flip-card-front">
+                                        <div class="flip-card-front--inner position-relative">
+                                            <div class="q-card__section q-card__section--vert position-relative p-3">
+                                                <div class="px-3 pt-2 pb-4">
+                                                    <span>
+                                                        <div class="q-img q-img--menu"
+                                                            style="width: 85px; height: auto;">
+                                                            <div class="q-img__container">
+                                                                <img class="q-img__image q-img__image--with-transition q-img__image--loaded"
+                                                                    alt="gif" loading="lazy" width="86px" height="auto"
+                                                                    src="assets/image/gif/cards-gif-one.gif">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                    <div class="flib-card-title">
+                                                        تصفح السيارات حسب الماركة
+                                                    </div>
+                                                    <p class="flib-card-subtitle">
+                                                        قم بإرفاق البيانات المطلوبة ، وسنساعدك فورًا على شراء السيارة
+                                                        التي تريدها ، بأقل معدل ربح وأفضل عرض تمويلي من البنوك وشركات
+                                                        التمويل المختلفة المعتمدة من قبلنا.</p>
+                                                    <button class="flib-card-button">
+                                                        المزيد من تفاصيل
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--الابيض الي بيظهر-->
+                                <div class="secondCard-flip">
+                                    <div class="secondCard-flip--content q-card bg-white position-relative">
+                                        <div class="q-card__section q-card__section--vert position-relative p-3">
+                                            <div class="px-3 pt-2 pb-4">
+                                                <span class="my-3 d-block">
+                                                    <div class="q-img q-img--menu position-relative d-inline-block overflow-hidden"
+                                                        style="width: 40px;">
+                                                        <div class="q-img__container">
+                                                            <img class="q-img__image q-img__image--with-transition q-img__image--loaded"
+                                                                alt="gif" loading="lazy" width="86px" height="auto"
+                                                                src="assets/image/gif/cards-gif-one.gif">
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <div class="secondCard-flip-main-text">
+                                                    تصفح السيارات حسب الماركة</div>
+                                                <p class="secondCard-flip-sub-text">
+                                                    قم بإرفاق البيانات المطلوبة ، وسنساعدك فورًا على شراء السيارة التي
+                                                    تريدها ، بأقل معدل ربح وأفضل عرض تمويلي من البنوك وشركات التمويل
+                                                    المختلفة المعتمدة من قبلنا.
+                                                </p>
+                                                <button class="secondCard-flip-action">
+                                                    المزيد من تفاصيل
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--المستخبيه ورا -->
+                                <div class="flip-card-back">
+                                    <div class="q-card bg-main-card filpCardImg no-shadow br-20 q-mb-xl cursor-pointer">
+                                        <div class="q-card__section q-card__section--vert  fit">
+                                            <div class="q-img q-img--menu" role="img"
+                                                aria-label="itInfrastructuredesccard" style="height: 400px;">
+                                                <div style="padding-bottom: 50%;"></div>
+                                                <div class="q-img__container absolute-full"><img
+                                                        class="q-img__image q-img__image--with-transition q-img__image--loaded"
+                                                        alt="itInfrastructuredesccard" crossorigin="anonymous"
+                                                        decoding="async" height="400px" loading="lazy"
+                                                        fetchpriority="low" aria-hidden="true" draggable="false"
+                                                        src="assets/image/gif/filp-image.webp"></div>
+                                                <div class="q-img__content absolute-full q-anchor--skip"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!---->
                     <div class="swiper-slide">
-                        <div class="why-online-section-card bg-white text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <img src="assets/image/icon/car.svg" alt="icon" />
-                            </div>
-                            <div class="text">
-                                <h4 class="one-line">تمويل و شراء سيارات</h4>
-                                <p class=" three-line">
-                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى د تم توليد هذا النص من مولد النص العربى
-                                </p>
+                        <div class="flip-card">
+                            <div class="flip-card-inner position-relative">
+                                <div class="flip-card-front">
+                                    <div class="flip-card-front">
+                                        <div class="flip-card-front--inner position-relative">
+                                            <div class="q-card__section q-card__section--vert position-relative p-3">
+                                                <div class="px-3 pt-2 pb-4">
+                                                    <span>
+                                                        <div class="q-img q-img--menu"
+                                                            style="width: 85px; height: auto;">
+                                                            <div class="q-img__container">
+                                                                <img class="q-img__image q-img__image--with-transition q-img__image--loaded"
+                                                                    alt="gif" loading="lazy" width="86px" height="auto"
+                                                                    src="assets/image/gif/cards-gif-one.gif">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                    <div class="flib-card-title">
+                                                        تصفح السيارات حسب الماركة
+                                                    </div>
+                                                    <p class="flib-card-subtitle">
+                                                        قم بإرفاق البيانات المطلوبة ، وسنساعدك فورًا على شراء السيارة
+                                                        التي تريدها ، بأقل معدل ربح وأفضل عرض تمويلي من البنوك وشركات
+                                                        التمويل المختلفة المعتمدة من قبلنا.</p>
+                                                    <button class="flib-card-button">
+                                                        المزيد من تفاصيل
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--الابيض الي بيظهر-->
+                                <div class="secondCard-flip">
+                                    <div class="secondCard-flip--content q-card bg-white position-relative">
+                                        <div class="q-card__section q-card__section--vert position-relative p-3">
+                                            <div class="px-3 pt-2 pb-4">
+                                                <span class="my-3 d-block">
+                                                    <div class="q-img q-img--menu position-relative d-inline-block overflow-hidden"
+                                                        style="width: 40px;">
+                                                        <div class="q-img__container">
+                                                            <img class="q-img__image q-img__image--with-transition q-img__image--loaded"
+                                                                alt="gif" loading="lazy" width="86px" height="auto"
+                                                                src="assets/image/gif/cards-gif-one.gif">
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <div class="secondCard-flip-main-text">
+                                                    تصفح السيارات حسب الماركة</div>
+                                                <p class="secondCard-flip-sub-text">
+                                                    قم بإرفاق البيانات المطلوبة ، وسنساعدك فورًا على شراء السيارة التي
+                                                    تريدها ، بأقل معدل ربح وأفضل عرض تمويلي من البنوك وشركات التمويل
+                                                    المختلفة المعتمدة من قبلنا.
+                                                </p>
+                                                <button class="secondCard-flip-action">
+                                                    المزيد من تفاصيل
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--المستخبيه ورا -->
+                                <div class="flip-card-back">
+                                    <div class="q-card bg-main-card filpCardImg no-shadow br-20 q-mb-xl cursor-pointer">
+                                        <div class="q-card__section q-card__section--vert  fit">
+                                            <div class="q-img q-img--menu" role="img"
+                                                aria-label="itInfrastructuredesccard" style="height: 400px;">
+                                                <div style="padding-bottom: 50%;"></div>
+                                                <div class="q-img__container absolute-full"><img
+                                                        class="q-img__image q-img__image--with-transition q-img__image--loaded"
+                                                        alt="itInfrastructuredesccard" crossorigin="anonymous"
+                                                        decoding="async" height="400px" loading="lazy"
+                                                        fetchpriority="low" aria-hidden="true" draggable="false"
+                                                        src="assets/image/gif/filp-image.webp"></div>
+                                                <div class="q-img__content absolute-full q-anchor--skip"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!---->
                     <div class="swiper-slide">
-                        <div class="why-online-section-card bg-white text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <img src="assets/image/icon/buildings-blue.svg" alt="icon" />
-                            </div>
-                            <div class="text">
-                                <h4 class="one-line">تمويل شركات</h4>
-                                <p class=" three-line">
-                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                                    النص العربى د تم توليد هذا النص من مولد النص العربى
-                                </p>
+                        <div class="flip-card">
+                            <div class="flip-card-inner position-relative">
+                                <div class="flip-card-front">
+                                    <div class="flip-card-front">
+                                        <div class="flip-card-front--inner position-relative">
+                                            <div class="q-card__section q-card__section--vert position-relative p-3">
+                                                <div class="px-3 pt-2 pb-4">
+                                                    <span>
+                                                        <div class="q-img q-img--menu"
+                                                            style="width: 85px; height: auto;">
+                                                            <div class="q-img__container">
+                                                                <img class="q-img__image q-img__image--with-transition q-img__image--loaded"
+                                                                    alt="gif" loading="lazy" width="86px" height="auto"
+                                                                    src="assets/image/gif/cards-gif-one.gif">
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                    <div class="flib-card-title">
+                                                        تصفح السيارات حسب الماركة
+                                                    </div>
+                                                    <p class="flib-card-subtitle">
+                                                        قم بإرفاق البيانات المطلوبة ، وسنساعدك فورًا على شراء السيارة
+                                                        التي تريدها ، بأقل معدل ربح وأفضل عرض تمويلي من البنوك وشركات
+                                                        التمويل المختلفة المعتمدة من قبلنا.</p>
+                                                    <button class="flib-card-button">
+                                                        المزيد من تفاصيل
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--الابيض الي بيظهر-->
+                                <div class="secondCard-flip">
+                                    <div class="secondCard-flip--content q-card bg-white position-relative">
+                                        <div class="q-card__section q-card__section--vert position-relative p-3">
+                                            <div class="px-3 pt-2 pb-4">
+                                                <span class="my-3 d-block">
+                                                    <div class="q-img q-img--menu position-relative d-inline-block overflow-hidden"
+                                                        style="width: 40px;">
+                                                        <div class="q-img__container">
+                                                            <img class="q-img__image q-img__image--with-transition q-img__image--loaded"
+                                                                alt="gif" loading="lazy" width="86px" height="auto"
+                                                                src="assets/image/gif/cards-gif-one.gif">
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <div class="secondCard-flip-main-text">
+                                                    تصفح السيارات حسب الماركة</div>
+                                                <p class="secondCard-flip-sub-text">
+                                                    قم بإرفاق البيانات المطلوبة ، وسنساعدك فورًا على شراء السيارة التي
+                                                    تريدها ، بأقل معدل ربح وأفضل عرض تمويلي من البنوك وشركات التمويل
+                                                    المختلفة المعتمدة من قبلنا.
+                                                </p>
+                                                <button class="secondCard-flip-action">
+                                                    المزيد من تفاصيل
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--المستخبيه ورا -->
+                                <div class="flip-card-back">
+                                    <div class="q-card bg-main-card filpCardImg no-shadow br-20 q-mb-xl cursor-pointer">
+                                        <div class="q-card__section q-card__section--vert  fit">
+                                            <div class="q-img q-img--menu" role="img"
+                                                aria-label="itInfrastructuredesccard" style="height: 400px;">
+                                                <div style="padding-bottom: 50%;"></div>
+                                                <div class="q-img__container absolute-full"><img
+                                                        class="q-img__image q-img__image--with-transition q-img__image--loaded"
+                                                        alt="itInfrastructuredesccard" crossorigin="anonymous"
+                                                        decoding="async" height="400px" loading="lazy"
+                                                        fetchpriority="low" aria-hidden="true" draggable="false"
+                                                        src="assets/image/gif/filp-image.webp"></div>
+                                                <div class="q-img__content absolute-full q-anchor--skip"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -991,7 +1548,7 @@
 
             </div>
         </div>
-        <div class="swiper-pagination pt-5 position-relative"></div>
+        <div class="swiper-pagination pt-5 negative-margin-for-animation position-relative"></div>
     </section>
     <!-- ============================================================== -->
     <!-- financing-partners  -->
@@ -1153,6 +1710,26 @@
             </div>
         </div>
     </section>
+
+    <!-- ============================================================== -->
+    <!-- Modal -->
+    <!-- ============================================================== -->
+    <div class="modal gallary-modal fade" id="autoModal" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="autoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body position-relative p-0">
+                    <button type="button"
+                        class="btn-close position-absolute d-flex align-items-center justify-content-center"
+                        data-bs-dismiss="modal" aria-label="Close">x</button>
+                    <a href="#" class="image-link d-block w-100 overflow-hidden">
+                        <img class="w-100 d-block h-100" src="assets/image/slider/one.png" alt="image" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- ============================================================== -->
     <!-- Footer -->
     <!-- ============================================================== -->
@@ -1282,7 +1859,13 @@
     <script src="assets/AOS/aos.js"></script>
     <!--Main Js-->
     <script src="assets/jq/main.js"></script>
-
+    <script>
+        // Wait until DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            const modal = new bootstrap.Modal(document.getElementById('autoModal'));
+            modal.show();
+        });
+    </script>
 </body>
 
 </html>
