@@ -223,6 +223,59 @@
     },
   });
   //////////////
+  var swiper9 = new Swiper(".mySwiper.grid-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    grid: {
+      rows: 2,
+      fill: "row",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        grid: {
+          rows: 2,
+          fill: "row",
+        },
+      },
+      400: {
+        slidesPerView: 2,
+        grid: {
+          rows: 2,
+          fill: "row",
+        },
+      },
+      880: {
+        slidesPerView: 3,
+        grid: {
+          rows: 2,
+          fill: "row",
+        },
+      },
+      1025: {
+        slidesPerView: 3,
+        grid: {
+          rows: 2,
+          fill: "row",
+        },
+      },
+      1366: {
+        slidesPerView: 4,
+        grid: {
+          rows: 2,
+          fill: "row",
+        },
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
   $(document).ready(function () {
     // Check if select2 is defined and if the element exists
     if ($.fn.select2 && $(".single-select").length) {
@@ -244,67 +297,67 @@
   });
   ////////////////
 
-  $(document).ready(function() {
-    $('.not-human, .triangle').hide();
-    $('.verify').addClass('disabled');
-    
+  $(document).ready(function () {
+    $(".not-human, .triangle").hide();
+    $(".verify").addClass("disabled");
+
     function human(e) {
-      if ($('.checkbox-text').hasClass('robot')) {
+      if ($(".checkbox-text").hasClass("robot")) {
         return;
-      }
-      else {
-        $('.checkbox-text').text("You're human!").css("color", "green").addClass('human');
-        $('.checkbox').addClass('disabled');
-        $('.checkbox').click(function(e) {
+      } else {
+        $(".checkbox-text")
+          .text("You're human!")
+          .css("color", "green")
+          .addClass("human");
+        $(".checkbox").addClass("disabled");
+        $(".checkbox").click(function (e) {
           e.preventDefault();
         });
       }
-      
-      $('.not-human, .triangle').slideUp();
+
+      $(".not-human, .triangle").slideUp();
     }
-    
+
     function robot(event) {
-      if ($('.checkbox-text').hasClass('human')) {
+      if ($(".checkbox-text").hasClass("human")) {
         return;
-      }
-      else {
-        $('.checkbox-text').text("ROBOT").css("color", "red").addClass('robot');
-        $('.checkbox').addClass('disabled');
-        $('.checkbox').click(function(event) {
+      } else {
+        $(".checkbox-text").text("ROBOT").css("color", "red").addClass("robot");
+        $(".checkbox").addClass("disabled");
+        $(".checkbox").click(function (event) {
           event.preventDefault();
         });
-      
-        $('.not-human, .triangle').slideDown();
+
+        $(".not-human, .triangle").slideDown();
       }
     }
-    
-    $('.checkbox').click(function() {
-      if ($('.checkbox').is(":checked")) {
-        $(document).mousemove(function() {
-          window.setTimeout(function() {
+
+    $(".checkbox").click(function () {
+      if ($(".checkbox").is(":checked")) {
+        $(document).mousemove(function () {
+          window.setTimeout(function () {
             human();
           }, 250);
         });
-        
-        window.setTimeout(function() {
+
+        window.setTimeout(function () {
           robot();
         }, 1000);
-      };
-    });
-    
-    $('.captcha-code').keyup(function(event) {
-      if ($('.captcha-code').val().length <= 0) {
-        $('.verify').addClass('disabled');
       }
-      else {
-        $('.verify').removeClass('disabled');
-      };
     });
-    
-    $('.verify').click(function() {
-      if ($('.captcha-code').val() == "captcha code") {
-        $('.checkbox-text').removeClass('robot').addClass('human');
-        $('.not-human, .triangle').slideUp();
+
+    $(".captcha-code").keyup(function (event) {
+      if ($(".captcha-code").val().length <= 0) {
+        $(".verify").addClass("disabled");
+      } else {
+        $(".verify").removeClass("disabled");
+      }
+    });
+
+    $(".verify").click(function () {
+      if ($(".captcha-code").val() == "captcha code") {
+        $(".checkbox-text").removeClass("robot").addClass("human");
+        $(".not-human, .triangle").slideUp();
       }
     });
   });
@@ -332,7 +385,9 @@ function showSubMenu(children) {
     subMenu.classList.add("is-active");
     subMenu.style.animation = "slideLeft 0.35s ease forwards";
 
-    const menuTitleText = children.querySelector("i")?.parentNode.childNodes[0]?.textContent.trim();
+    const menuTitleText = children
+      .querySelector("i")
+      ?.parentNode.childNodes[0]?.textContent.trim();
     const menuTitleElement = menu.querySelector(".menu__title");
     const menuHeader = menu.querySelector(".menu__header");
 

@@ -5434,4 +5434,129 @@ html[dir=rtl] .flip-card-inner:not(:hover) .secondCard-flip {
   font-size: 1rem;
   color: #000000;
   font-weight: 500;
+}
+
+/*-----------------------
+ find__your__car
+-------------------------*/
+.find__your__car {
+  padding: 40px 0;
+}
+.find__your__car--title h3 {
+  font-family: "Tajawal-Bold", sans-serif;
+}
+@media (min-width: 768px) {
+  .find__your__car--title h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .find__your__car--title h3 {
+    font-size: 2rem;
+  }
+}
+.find__your__car--title p {
+  color: #000000;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+@media (min-width: 768px) {
+  .find__your__car--title p {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .find__your__car--title p {
+    font-size: 1rem;
+  }
+}
+.find__your__car--taps .nav-tabs {
+  margin-bottom: 3.4375rem;
+}
+.find__your__car--taps .nav-link {
+  border: 0.2px solid rgba(255, 88, 0, 0.3215686275) !important;
+  min-width: 8.4375rem;
+  min-height: 2.375rem;
+  border-radius: 3.125rem;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.find__your__car--taps .nav-link:not(.active) {
+  background: transparent;
+  color: #ff5800;
+}
+.find__your__car--taps .nav-link.active {
+  background: #ff5800;
+}
+.find__your__car--taps .brand-box-item {
+  padding: 0.625rem 1rem;
+  min-height: 170px;
+  border-radius: 24px;
+  background: linear-gradient(176.06deg, rgba(22, 135, 181, 0.1) 5.42%, rgba(201, 239, 255, 0.22) 89.24%, rgba(31, 159, 210, 0.23) 106.03%);
+}
+.find__your__car--taps .brand-box-item img {
+  height: 100px;
+}
+.find__your__car--taps .brand-box-item p {
+  font-size: 1.125rem;
+  color: #000000;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.find__your__car .swiper-pagination-clickable .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+.find__your__car .swiper-button-next,
+.find__your__car .swiper-button-prev {
+  top: var(--swiper-navigation-top-offset, 42%);
+}
+
+/*-----------------------
+ sell__car
+-------------------------*/
+.sell__car {
+  padding: 50px 0;
+}
+.sell__car__container {
+  padding: 2.5rem 2rem;
+  background: linear-gradient(96.67deg, #23257D 1.54%, #4043E3 95%);
+}
+.sell__car__container h3 {
+  color: #fff;
+  font-family: "Tajawal-Bold", sans-serif;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .sell__car__container h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .sell__car__container h3 {
+    font-size: 2rem;
+  }
+}
+.sell__car__container li img {
+  width: 28px;
+}
+.sell__car__container p {
+  color: #fff;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+@media (min-width: 992px) {
+  .sell__car__container .img-bg {
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    height: 300px;
+  }
+}
+@media (max-width: 991.98px) {
+  .sell__car__container .img-bg {
+    display: none;
+  }
 }/*# sourceMappingURL=general.css.map */
