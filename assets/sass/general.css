@@ -5514,6 +5514,14 @@ html[dir=rtl] .flip-card-inner:not(:hover) .secondCard-flip {
 .find__your__car .swiper-button-prev {
   top: var(--swiper-navigation-top-offset, 42%);
 }
+html[dir=ltr] .find__your__car .swiper-button-next,
+html[dir=ltr] .find__your__car .swiper-button-prev {
+  transform: scaleX(-1);
+}
+html[dir=rtl] .find__your__car .swiper-button-next,
+html[dir=rtl] .find__your__car .swiper-button-prev {
+  transform: scaleX(1);
+}
 
 /*-----------------------
  sell__car
@@ -5559,4 +5567,153 @@ html[dir=rtl] .flip-card-inner:not(:hover) .secondCard-flip {
   .sell__car__container .img-bg {
     display: none;
   }
+}
+
+/*-----------------------
+ popular__searc
+-------------------------*/
+.popular__search__title {
+  font-size: 2rem;
+  color: #000000;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.popular__search__title img {
+  width: 32px;
+}
+.popular__search__item span {
+  padding-inline: 0.625rem;
+  border: 1px solid #2b2e91;
+  min-height: 2.75rem;
+  border-radius: 4.375rem;
+  color: #2b2e91;
+}
+.popular__search__card {
+  padding: 2rem 1.5rem;
+  background: url(../image/general-image/popular-search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1.125rem;
+}
+.popular__search__card h4 {
+  font-size: 1.75rem;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.popular__search__card--item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-right: 5px solid #2b2e91;
+}
+.popular__search__card--item p {
+  font-size: 2rem;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.popular__search__card--item span {
+  color: rgba(35, 37, 125, 0.7);
+  font-size: 1.25rem;
+}
+.popular__search .btn-secondary {
+  min-height: 58px;
+  border-radius: 70px;
+  min-width: 200px;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+
+/*-----------------------
+ testimonials__section
+-------------------------*/
+.testimonials__section {
+  padding-block: 50px;
+  background: linear-gradient(118.34deg, #4043E3 50.52%, #3C40D7 73.38%, #23257D 96.75%);
+}
+.testimonials__section__card {
+  border-radius: 1.5rem;
+  padding: 16px 24px;
+}
+.testimonials__section__card--title h4 {
+  font-size: 2rem;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.testimonials__section__card--title p {
+  font-size: 0.875rem;
+}
+.testimonials__section--video {
+  height: 413px;
+  border-radius: 1rem;
+  border: 1px solid rgb(35, 37, 125);
+  transition: all 1s ease-out;
+}
+.testimonials__section--video .poster-video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonials__section--video .youtube-image {
+  margin: auto;
+  z-index: 11;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 1s ease-out;
+}
+.testimonials__section--video .span-text {
+  inset-inline-start: 0.5rem;
+  bottom: 1rem;
+  color: #ff5800;
+  border: 1px solid #ff5800;
+  background: #fff;
+  min-height: 2.6875rem;
+  min-width: 10rem;
+  border-radius: 3.75rem;
+  padding-inline: 0.625rem;
+}
+.testimonials__section--video:hover .youtube-image {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.testimonials__section--text h4 {
+  font-size: 1.25rem;
+  width: calc(100% - 8rem);
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: normal;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.testimonials__section--text img {
+  width: 1rem;
+}
+.testimonials__section--description {
+  font-size: 0.875rem;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transition: all 0.15s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
 }/*# sourceMappingURL=general.css.map */

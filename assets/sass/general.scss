@@ -4566,6 +4566,7 @@ html[dir="rtl"] {
     .swiper-button-next,
     .swiper-button-prev {
         top: var(--swiper-navigation-top-offset, 42%);
+        @include rtl(transform, scaleX(-1), scaleX(1));
     }
 }
 
@@ -4611,9 +4612,179 @@ html[dir="rtl"] {
                 inset-inline-end: 0;
                 height: 300px;
             }
+
             @media (max-width: 991.98px) {
-               display: none;
+                display: none;
             }
         }
     }
+}
+
+/*-----------------------
+ popular__searc
+-------------------------*/
+.popular__search {
+    &__title {
+        font-size: rem(32);
+        color: #000000;
+        font-family: $font-family-Bold;
+
+        img {
+            width: 32px;
+        }
+    }
+
+    &__item {
+        span {
+            padding-inline: rem(10);
+            border: 1px solid map_get($theme-colors, secondary);
+            min-height: rem(44);
+            border-radius: rem(70);
+            color: map_get($theme-colors, secondary);
+        }
+    }
+
+    &__card {
+        padding: rem(32) rem(24);
+        background: url(../image/general-image/popular-search.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: rem(18);
+
+        h4 {
+            font-size: rem(28);
+            font-family: $font-family-Bold;
+        }
+
+        &--item {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 1rem;
+            border-right: 5px solid map_get($theme-colors, secondary);
+
+            p {
+                font-size: rem(32);
+                font-family: $font-family-Bold;
+            }
+
+            span {
+                color: rgb(35 37 125 / 70%);
+                font-size: rem(20);
+            }
+        }
+    }
+
+    .btn-secondary {
+        min-height: 58px;
+        border-radius: 70px;
+        min-width: 200px;
+        font-family: $font-family-Bold;
+    }
+}
+
+/*-----------------------
+ testimonials__section
+-------------------------*/
+.testimonials__section {
+    padding-block: 50px;
+    background: linear-gradient(118.34deg, #4043E3 50.52%, #3C40D7 73.38%, #23257D 96.75%);
+
+    &__card {
+        border-radius: rem(24);
+        padding: 16px 24px;
+
+        &--title {
+            h4 {
+                font-size: rem(32);
+                font-family: $font-family-Bold;
+            }
+            p{
+                font-size: rem(14);
+            }
+        }
+    }
+    &--video{
+        height: 413px;
+        border-radius: 1rem;
+        border: 1px solid rgba(35, 37, 125);
+        -webkit-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+        .poster-video{
+            object-fit: cover;
+        }
+        .youtube-image{
+            margin: auto;
+            z-index: 11;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            -webkit-transition: all 1s ease-out;
+            transition: all 1s ease-out;
+        }
+        .span-text{
+            inset-inline-start: 0.5rem;
+            bottom: 1rem;
+            color: map_get($theme-colors, primary);
+            border: 1px solid map_get($theme-colors, primary);
+            background: #fff;
+            min-height: rem(43);
+            min-width: rem(160);
+            border-radius: rem(60);
+            padding-inline: rem(10);
+        }
+        &:hover{
+            .youtube-image{
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+            }
+        }
+    }
+    &--text{
+        h4{
+            font-size: rem(20);
+            width:calc(100% - 8rem);
+            display: -webkit-box;
+            line-clamp: 1;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+            line-height: normal;
+            font-family: $font-family-Bold;
+        }
+        img{
+            width: 1rem;
+        }
+    }
+    &--description{
+        font-size: rem(14);
+        font-family: $font-family-Bold;
+    }
+}
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
 }
