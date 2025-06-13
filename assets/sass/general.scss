@@ -1718,44 +1718,203 @@ ul.tl li .item-detail {
 /*-----------------------
     about page
 -------------------------*/
-.about-hero-section {
-    padding: 60px 0;
+// .about-hero-section {
+//     padding: 60px 0;
 
-    h3 {
+//     h3 {
+//         font-family: $font-family-Bold;
+
+//         span {
+//             color: map_get($theme-colors, primary);
+//         }
+
+//         img {
+//             width: 18px;
+//         }
+//     }
+
+//     h5 {
+//         color: map_get($theme-colors, dark);
+//         font-weight: 600;
+
+//         span {
+//             color: map_get($theme-colors, primary);
+//             font-family: $font-family-Bold;
+//         }
+//     }
+
+//     p {
+//         color: map_get($theme-colors, grayColor);
+//         font-size: 18px;
+//     }
+// }
+.intro__section {
+    background: url(/assets/image/about/about_us.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px 0 115px 0;
+
+    &--img {
+        height: rem(32);
+    }
+
+    &--text {
+        color: #fff;
         font-family: $font-family-Bold;
 
-        span {
-            color: map_get($theme-colors, primary);
+        h3 {
+
+            @media (min-width: 992px) {
+                font-size: rem(32);
+                line-height: rem(44);
+            }
+
+            @media (max-width: 991.98px) {
+                font-size: rem(24);
+            }
         }
 
-        img {
-            width: 18px;
+        p {
+
+            @media (min-width: 992px) {
+                padding-inline-end: 10%;
+            }
+
+            @media (max-width: 991.98px) {
+                margin-bottom: rem(16);
+            }
+
+            @media (min-width: 400px) {
+                font-size: rem(20);
+            }
+
+            @media (max-width: 399px) {
+                font-size: rem(16);
+            }
         }
     }
 
-    h5 {
-        color: map_get($theme-colors, dark);
-        font-weight: 600;
+    &__img {
+        .box {
+            min-height: rem(266);
+            background: #EC8965;
+            border-radius: rem(16);
 
-        span {
-            color: map_get($theme-colors, primary);
-            font-family: $font-family-Bold;
+            @media (min-width: 400px) {
+                width: rem(400);
+            }
+
+            @media (max-width: 399px) {
+                width: 100%;
+            }
+
+            img {
+                border-radius: 1rem;
+                height: 270px;
+                display: block;
+                position: absolute;
+                object-fit: cover;
+
+                @media (min-width: 400px) {
+                    width: rem(390);
+                    margin-right: 28px;
+                    top: -20px;
+                }
+
+                @media (max-width: 399px) {
+                    width: 95%;
+                    margin-right: rem(16);
+                    top: -16px;
+                }
+            }
         }
-    }
-
-    p {
-        color: map_get($theme-colors, grayColor);
-        font-size: 18px;
     }
 }
-
+.about__section__mission{
+    padding: 48px 0;
+    &--text{
+        margin-bottom: rem(32);
+        h3{
+            font-family: $font-family-Bold;
+        @media (min-width: 768px) {
+            font-size: rem(40);
+        }
+        @media (max-width: 767.98px) {
+           font-size: rem(32);
+        }
+        }
+        p{
+            color: #696969;
+            font-weight: 500;
+        @media (min-width: 768px) {
+            padding: 0 10%;
+        }
+        }
+    }
+    &--box{
+        background: #F8F8F8;
+        box-shadow: 0px 4px 24px 0px #00000021;
+        border-radius: rem(8);
+        padding: rem(24);
+        img{
+            width: 32px;
+        }
+        h3{
+            font-size: rem(24);
+            font-family: $font-family-Bold;
+        @media (min-width: 768px) {
+            display: -webkit-box;
+            line-clamp: 1;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        }
+        p{
+            font-size: rem(14);
+        }
+    }
+}
+.car__features{
+    padding-block: rem(70);
+    background: linear-gradient(276.11deg, #23257D 0.57%, #4043E3 100%);
+    &__title{
+        color: #fff;
+        h3{
+            font-size: rem(32);
+            font-family: $font-family-Bold;
+        }
+        p{
+            font-weight: 500;
+        }
+    }
+    &__box{
+        background: #FFFFFF;
+        border-radius: rem(8);
+        padding: rem(16);
+        img{
+            height: rem(60);
+        }
+        h4{
+            font-size:24px;
+            font-family: $font-family-Bold;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
 /*-----------------------
     Common Question
 -------------------------*/
 .common-question {
     padding: 45px 0;
     background: linear-gradient(104.39deg, rgba(235, 240, 244, 0.2) -7.11%, rgba(250, 251, 252, 0.4) 118.38%);
-
+    &.bg-about-page{
+        background: #EBF0F4 !important;
+    }
     .accordion-button {
         border: 0;
         background: transparent;
@@ -4699,21 +4858,25 @@ html[dir="rtl"] {
                 font-size: rem(32);
                 font-family: $font-family-Bold;
             }
-            p{
+
+            p {
                 font-size: rem(14);
             }
         }
     }
-    &--video{
+
+    &--video {
         height: 413px;
         border-radius: 1rem;
         border: 1px solid rgba(35, 37, 125);
         -webkit-transition: all 1s ease-out;
         transition: all 1s ease-out;
-        .poster-video{
+
+        .poster-video {
             object-fit: cover;
         }
-        .youtube-image{
+
+        .youtube-image {
             margin: auto;
             z-index: 11;
             right: 0;
@@ -4723,7 +4886,8 @@ html[dir="rtl"] {
             -webkit-transition: all 1s ease-out;
             transition: all 1s ease-out;
         }
-        .span-text{
+
+        .span-text {
             inset-inline-start: 0.5rem;
             bottom: 1rem;
             color: map_get($theme-colors, primary);
@@ -4734,57 +4898,66 @@ html[dir="rtl"] {
             border-radius: rem(60);
             padding-inline: rem(10);
         }
-        &:hover{
-            .youtube-image{
+
+        &:hover {
+            .youtube-image {
                 transform: scale(1.1);
                 -webkit-transform: scale(1.1);
             }
         }
     }
-    &--text{
-        h4{
+
+    &--text {
+        h4 {
             font-size: rem(20);
-            width:calc(100% - 8rem);
+            width: calc(100% - 8rem);
             display: -webkit-box;
             line-clamp: 1;
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            text-overflow: ellipsis; 
+            text-overflow: ellipsis;
             line-height: normal;
             font-family: $font-family-Bold;
         }
-        img{
+
+        img {
             width: 1rem;
         }
     }
-    &--description{
+
+    &--description {
         font-size: rem(14);
         font-family: $font-family-Bold;
     }
 }
+
 .mfp-fade.mfp-bg {
-	opacity: 0;
-	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
-	transition: all 0.15s ease-out;
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
 }
+
 .mfp-fade.mfp-bg.mfp-ready {
-	opacity: 0.8;
+    opacity: 0.8;
 }
+
 .mfp-fade.mfp-bg.mfp-removing {
-	opacity: 0;
+    opacity: 0;
 }
 
 .mfp-fade.mfp-wrap .mfp-content {
-	opacity: 0;
-	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
-	transition: all 0.15s ease-out;
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
 }
+
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-	opacity: 1;
+    opacity: 1;
 }
+
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-	opacity: 0;
+    opacity: 0;
 }

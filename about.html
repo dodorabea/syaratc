@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <!-- Swiper Slider css -->
     <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
     <!--[if lt IE 9]>
@@ -82,7 +85,7 @@
                         </li>
                         <!---->
                         <li class="menu__item menu__dropdown position-relative">
-                            <a  class="menu__link">
+                            <a class="menu__link">
                                 المزيد
                                 <i class="fa fa-chevron-down"></i>
                             </a>
@@ -111,242 +114,425 @@
         </nav>
     </header>
     <!-- ============================================================== -->
-    <!-- Hero Section -->
-    <!-- ============================================================== -->
-    <section class="about-hero-section bg-white">
+    <section class="intro__section">
         <div class="container">
-            <div class="row align-items-center row-gap-3">
-                <div class="col-lg-7 col-md-6 col-sm-12">
-                    <h3 class="d-flex align-items-center gap-2 mb-4">
-                        <img src="assets/image/icon/title-star.svg" alt="icon">
-                        <span>من نحن ؟</span>
-                    </h3>
-                    <h5 class="mb-3">شركه <span>سيارتك</span> تقدم لكم جميع التسهيلات وخدمات التمويل</h5>
-                    <p>
-                        بدأت شركة سيارتك نشاطها في عام 2018 بالكثير من الخبرة و الشغف في مجال السيارات و على أمل أن تكون
-                        ضمن أفضل الشركات التمويلية محليا وعلى مستوى الشرق األوسط كافة من خالل استغالل ما تملكه الشركة من
-                        موارد و مستشارين مبيعات احترافيين يخلقون بيئة مالئمة لنمط الحياة السريع من خالل تجربة سريعة و
-                        مقنعة للعميل!
-                    </p>
-                </div>
-                <div class="col-lg-5 col-md-6 col-sm-12">
-                    <section class="images d-flex justify-content-end align-items-end">
-                        <img class="img-fluid" src="assets/image/about/about.png" alt="image" />
-                    </section>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ============================================================== -->
-    <!-- Counter Section -->
-    <!-- ============================================================== -->
-    <section class="statistics-section" data-aos="fade-up">
-        <div class="container position-relative">
-            <div class="swiper mySwiper four-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="statistics-item d-flex align-items-center justify-content-center gap-3">
-                            <span class="d-flex align-items-center justify-content-center">
-                                <img src="assets/image/icon/users.svg" alt="icon" />
-                            </span>
-                            <div class="statistics-desc">
-                                <h4 class="mb-2">+250</h4>
-                                <p class="one-line">عميل حتي الان</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="statistics-item d-flex align-items-center justify-content-center gap-3">
-                            <span class="d-flex align-items-center justify-content-center">
-                                <img src="assets/image/icon/document.svg" alt="icon" />
-                            </span>
-                            <div class="statistics-desc">
-                                <h4 class="mb-2">+250</h4>
-                                <p class="one-line">طلب تمويل</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="statistics-item d-flex align-items-center justify-content-center gap-3">
-                            <span class="d-flex align-items-center justify-content-center">
-                                <img src="assets/image/icon/building.svg" alt="icon" />
-                            </span>
-                            <div class="statistics-desc">
-                                <h4 class="mb-2">+15</h4>
-                                <p class="one-line">جهه تمويليه</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="statistics-item d-flex align-items-center justify-content-center gap-3">
-                            <span class="d-flex align-items-center justify-content-center">
-                                <img src="assets/image/icon/car.svg" alt="icon" />
-                            </span>
-                            <div class="statistics-desc">
-                                <h4 class="mb-2">+12</h4>
-                                <p class="one-line">معرض سيارات</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="statistics-item d-flex align-items-center justify-content-center gap-3">
-                            <span class="d-flex align-items-center justify-content-center">
-                                <img src="assets/image/icon/users.svg" alt="icon" />
-                            </span>
-                            <div class="statistics-desc">
-                                <h4 class="mb-2">+250</h4>
-                                <p class="one-line">عميل حتي الان</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!---->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ============================================================== -->
-    <!-- brand-navigation -->
-    <!-- ============================================================== -->
-    <section class="brand-navigation" data-aos="fade-up">
-        <div class="div-title text-center mb-5">
-            <h2 class="d-flex  align-items-center justify-content-center  gap-2">
-                <span>تصفح السيارات حسب الماركة</span>
-            </h2>
-            <img class="w-auto mt-3" src="assets/image/icon/Shape.svg" alt="icon" />
-        </div>
-        <div class="container position-relative">
-            <div class="swiper mySwiper brand-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="brand-box d-flex align-items-center flex-column justify-content-center row-gap-3">
-                            <img class="slider-img" src="assets/image/brand/one.jpg" alt="img" />
-                            <span class="brand-box-title">
-                                <span>تصفح السيارات</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
-                            </span>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="brand-box d-flex align-items-center flex-column justify-content-center row-gap-3">
-                            <img class="slider-img" src="assets/image/brand/two.png" alt="img" />
-                            <span class="brand-box-title">
-                                <span>تصفح السيارات</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
-                            </span>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="brand-box d-flex align-items-center flex-column justify-content-center row-gap-3">
-                            <img class="slider-img" src="assets/image/brand/three.png" alt="img" />
-                            <span class="brand-box-title">
-                                <span>تصفح السيارات</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
-                            </span>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="brand-box d-flex align-items-center flex-column justify-content-center row-gap-3">
-                            <img class="slider-img" src="assets/image/brand/four.jpg" alt="img" />
-                            <span class="brand-box-title">
-                                <span>تصفح السيارات</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
-                            </span>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="brand-box d-flex align-items-center flex-column justify-content-center row-gap-3">
-                            <img class="slider-img" src="assets/image/brand/one.jpg" alt="img" />
-                            <span class="brand-box-title">
-                                <span>تصفح السيارات</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
-                            </span>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="brand-box d-flex align-items-center flex-column justify-content-center row-gap-3">
-                            <img class="slider-img" src="assets/image/brand/two.png" alt="img" />
-                            <span class="brand-box-title">
-                                <span>تصفح السيارات</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
-                            </span>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="brand-box d-flex align-items-center flex-column justify-content-center row-gap-3">
-                            <img class="slider-img" src="assets/image/brand/three.png" alt="img" />
-                            <span class="brand-box-title">
-                                <span>تصفح السيارات</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
-                            </span>
-                        </div>
-                    </div>
-                    <!---->
-                    <div class="swiper-slide">
-                        <div class="brand-box d-flex align-items-center flex-column justify-content-center row-gap-3">
-                            <img class="slider-img" src="assets/image/brand/four.jpg" alt="img" />
-                            <span class="brand-box-title">
-                                <span>تصفح السيارات</span>
-                                <img src="assets/image/icon/arrow-left.svg" alt="icon" />
-                            </span>
-                        </div>
-                    </div>
-                    <!---->
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
-    <!-- ============================================================== -->
-    <!-- about_us -->
-    <!-- ============================================================== -->
-    <section class="about_us padding">
-        <div class="container">
-            <div class="row align-items-center row-gap-3">
-                <div class="col-md-6 col-sm-12 about-col">
-                    <div class="about_content mb-3">
-                        <h3> <span>رسالتنا </span></h3>
+            <div class="row align-items-center row-gap-4">
+                <div class="col-lg-6 col-md-6">
+                    <img class="intro__section--img d-block mb-3" src="assets/image/logo/logo.png" alt="Logo" />
+                    <div class="intro__section--text d-flex flex-column row-gap-4">
+                        <span>من نحن؟</span>
+                        <h3 class="mb-0">نحن هنا لنجعل رحلة شراءك للسيارة
+                            أسهل أسرع وأكثر أماناً</h3>
                         <p>
-                            كل شيء نسبي في الحياة ، ومهما ساءت الأمور فليست شرا كلها ، ولن تجد الناس جميعا يجمعون على
-                            أمر واحد ، خاصة إذا تعلق الأمر بالفنون التعبيرية ودورها في تثقيف الإنسان والتعبير عن قضاياه
-                            ، ومن هذه الفنون الأدب والسينما
-                        </p>
-                    </div>
-                    <div class="about_content mb-3">
-                        <h3> <span>إهدافنا </span></h3>
-                        <p>
-                            أن نكون ضمن أفضل الشركات التمويلية في مجال السيارات في المملكة
-                            العربية السعودية. <br>
-                            توفير حلول تمويلية مرنة تواكب تغيرات و ومستجدات السوق المالية . <br>
-                            توفير حلول ميسرة و سهلة لتمويل األفراد و المؤسسات والشركات. <br>
-                            أن يكون رضى العميل هو اولويتنا و الحرص على حصوله على أفضل
-                            تجربة ممكنة . <br>
-
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                            المساحة، لقد تم توليد هذا النص من مولد النص العربى د
+                            تم توليد هذا النص من مولد النص العربى
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 about-col">
-                    <div class="about_us-img" data-aos="fade-up">
-                        <img class="img-fluid w-100 h-100" src="assets/image/cars/car-order.png" alt="img"/>
+                <div class="col-lg-6 col-md-6">
+                    <div class="intro__section__img">
+                        <div class="box position-relative">
+                            <img src="assets/image/about/about-banner.png" alt="image" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <section class="about__section__mission">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-12">
+                    <div class="about__section__mission--text d-flex flex-column justify-content-center row-gap-3 text-center">
+                        <h3 class="mb-0">مهمتنا</h3>
+                        <p class="mb-0">أن نبني المنصة الأكثر موثوقية لشراء السيارات مدعومة بالتقنيات الحديثة والتي ستساعد العملاء في تسهيل عملية الشراء بكل ثقة وأمان</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-gap-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="about__section__mission--box d-flex flex-column row-gap-3 h-100">
+                        <img class="d-block" src="assets/image/about/more-choose.svg" alt="icon"/>
+                        <h3 class="mb-0">خيارات أكثر</h3>
+                        <p class="mb-0">أن نبني المنصة الأكثر موثوقية لشراء السيارات مدعومة بالتقنيات الحديثة والتي ستساعد العملاء في تسهيل عملية الشراء بكل ثقة وأمان</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="about__section__mission--box d-flex flex-column row-gap-3 h-100">
+                        <img class="d-block" src="assets/image/about/price.svg" alt="icon"/>
+                        <h3 class="mb-0">شفافية الأسعار</h3>
+                        <p class="mb-0">أن نبني المنصة الأكثر موثوقية لشراء السيارات مدعومة بالتقنيات الحديثة والتي ستساعد العملاء في تسهيل عملية الشراء بكل ثقة وأمان</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="about__section__mission--box d-flex flex-column row-gap-3 h-100">
+                        <img class="d-block" src="assets/image/about/more-easy.svg" alt="icon"/>
+                        <h3 class="mb-0">أكثر سهولة</h3>
+                        <p class="mb-0">أن نبني المنصة الأكثر موثوقية لشراء السيارات مدعومة بالتقنيات الحديثة والتي ستساعد العملاء في تسهيل عملية الشراء بكل ثقة وأمان</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <section class="car__features">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-7">
+                    <div class="car__features__title text-center d-flex flex-column row-gap-3">
+                        <h3 class="mb-0">مميزات سيارتك</h3>
+                        <p class="mb-0">أن نبني المنصة الأكثر موثوقية لشراء السيارات مدعومة بالتقنيات الحديثة والتي ستساعد العملاء في تسهيل عملية الشراء بكل ثقة وأمان</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-gap-3">
+                <div class="col-lg-3 col-md-4">
+                    <div class="car__features__box d-flex flex-column row-gap-3 text-center h-100">
+                        <img src="assets/image/about/selling.svg" alt="icon"/>
+                        <h4 class="mb-0">سرعة في البيع</h4>
+                        <p class="mb-0">نوصلك بأكبر عدد من المشترين الجادين في وقت قياسي.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="car__features__box d-flex flex-column row-gap-3 text-center h-100">
+                        <img src="assets/image/about/safety.svg" alt="icon"/>
+                        <h4 class="mb-0">موثوقية وأمان</h4>
+                        <p class="mb-0">كل الإعلانات تمر بمراجعة دقيقة عشان تتعامل وانت مرتاح البال.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="car__features__box d-flex flex-column row-gap-3 text-center h-100">
+                        <img src="assets/image/about/support.svg" alt="icon"/>
+                        <h4 class="mb-0">دعم عملاء 24/7</h4>
+                        <p class="mb-0">فريقنا جاهز يساعدك في أي وقت بخدمة سريعة واحترافية.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="car__features__box d-flex flex-column row-gap-3 text-center h-100">
+                        <img src="assets/image/about/technologies.svg" alt="icon"/>
+                        <h4 class="mb-0">تقنيات ذكية</h4>
+                        <p class="mb-0">نستخدم أدوات تحليل وتسعير ذكية تساعدك تسوّق سيارتك بأفضل شكل.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- testimonials-section -->
+    <!-- ============================================================== -->
+    <section class="testimonials__section">
+        <div class="container">
+            <div class="testimonials__section__card bg-white">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="testimonials__section__card--title text-center d-flex flex-column row-gap-3 mb-5">
+                            <h4 class="text-secondary mb-0">
+                                <span class="d-block">دع عنك ما قلناه عنا،️</span>
+                                <span class="d-block">وشاهد ما قاله العملاء</span>
+                            </h4>
+                            <p class="mb-0">
+                                أن نبني المنصة الأكثر موثوقية لشراء السيارات مدعومة بالتقنيات الحديثة والتي ستساعد
+                                العملاء أن نبني المنصة الأكثر موثوقية لشراء السيارات مدعومة بالتقنيات الحديثة والتي
+                                ستساعد العملاء
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-gap-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonials__section--video position-relative overflow-hidden mb-4">
+                            <a class="d-block w-100 h-100 popup-youtube"
+                                href="https://www.youtube.com/watch?v=TuoNvPPnr2o">
+                                <img class="w-100 h-100 poster-video" src="assets/image/img/video-poster.png"
+                                    alt="image" />
+                                <img class="position-absolute youtube-image" src="assets/image/icon/youtube.svg"
+                                    alt="icon" />
+                            </a>
+                            <span
+                                class="position-absolute span-text d-flex align-items-center justify-content-center">سهولة
+                                طلب التمويل</span>
+                        </div>
+                        <div
+                            class="testimonials__section--text d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3 column-gap-3">
+                            <h4 class="mb-0">ممدوح علي</h4>
+                            <div>
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <p class="testimonials__section--description mb-0">هذا النص يمكن استبداله هذا النص يمكن استبداله
+                            هذا النص يمكن استبداله هذا النص </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonials__section--video position-relative overflow-hidden mb-4">
+                            <a class="d-block w-100 h-100 popup-youtube"
+                                href="https://www.youtube.com/watch?v=TuoNvPPnr2o">
+                                <img class="w-100 h-100 poster-video" src="assets/image/img/video-poster.png"
+                                    alt="image" />
+                                <img class="position-absolute youtube-image" src="assets/image/icon/youtube.svg"
+                                    alt="icon" />
+                            </a>
+                            <span
+                                class="position-absolute span-text d-flex align-items-center justify-content-center">سهولة
+                                طلب التمويل</span>
+                        </div>
+                        <div
+                            class="testimonials__section--text d-flex align-items-center justify-content-between flex-wrap mb-3 row-gap-3 column-gap-3">
+                            <h4 class="mb-0">ممدوح علي</h4>
+                            <div>
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <p class="testimonials__section--description mb-0">هذا النص يمكن استبداله هذا النص يمكن استبداله
+                            هذا النص يمكن استبداله هذا النص </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonials__section--video position-relative overflow-hidden mb-4">
+                            <a class="d-block w-100 h-100 popup-youtube"
+                                href="https://www.youtube.com/watch?v=TuoNvPPnr2o">
+                                <img class="w-100 h-100 poster-video" src="assets/image/img/video-poster.png"
+                                    alt="image" />
+                                <img class="position-absolute youtube-image" src="assets/image/icon/youtube.svg"
+                                    alt="icon" />
+                            </a>
+                            <span
+                                class="position-absolute span-text d-flex align-items-center justify-content-center">سهولة
+                                طلب التمويل</span>
+                        </div>
+                        <div
+                            class="testimonials__section--text d-flex align-items-center justify-content-between flex-wrap row-gap-3 mb-3 column-gap-3">
+                            <h4 class="mb-0">ممدوح علي</h4>
+                            <div>
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <p class="testimonials__section--description mb-0">هذا النص يمكن استبداله هذا النص يمكن استبداله
+                            هذا النص يمكن استبداله هذا النص </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonials__section--video position-relative overflow-hidden mb-4">
+                            <a class="d-block w-100 h-100 popup-youtube"
+                                href="https://www.youtube.com/watch?v=TuoNvPPnr2o">
+                                <img class="w-100 h-100 poster-video" src="assets/image/img/video-poster.png"
+                                    alt="image" />
+                                <img class="position-absolute youtube-image" src="assets/image/icon/youtube.svg"
+                                    alt="icon" />
+                            </a>
+                            <span
+                                class="position-absolute span-text d-flex align-items-center justify-content-center">سهولة
+                                طلب التمويل</span>
+                        </div>
+                        <div
+                            class="testimonials__section--text d-flex align-items-center mb-3 justify-content-between flex-wrap row-gap-3 column-gap-3">
+                            <h4 class="mb-0">ممدوح علي</h4>
+                            <div>
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <p class="testimonials__section--description mb-0">هذا النص يمكن استبداله هذا النص يمكن استبداله
+                            هذا النص يمكن استبداله هذا النص </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonials__section--video position-relative overflow-hidden mb-4">
+                            <a class="d-block w-100 h-100 popup-youtube"
+                                href="https://www.youtube.com/watch?v=TuoNvPPnr2o">
+                                <img class="w-100 h-100 poster-video" src="assets/image/img/video-poster.png"
+                                    alt="image" />
+                                <img class="position-absolute youtube-image" src="assets/image/icon/youtube.svg"
+                                    alt="icon" />
+                            </a>
+                            <span
+                                class="position-absolute span-text d-flex align-items-center justify-content-center">سهولة
+                                طلب التمويل</span>
+                        </div>
+                        <div
+                            class="testimonials__section--text d-flex align-items-center justify-content-between mb-3 flex-wrap row-gap-3 column-gap-3">
+                            <h4 class="mb-0">ممدوح علي</h4>
+                            <div>
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <p class="testimonials__section--description mb-0">هذا النص يمكن استبداله هذا النص يمكن استبداله
+                            هذا النص يمكن استبداله هذا النص </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonials__section--video position-relative overflow-hidden mb-4">
+                            <a class="d-block w-100 h-100 popup-youtube"
+                                href="https://www.youtube.com/watch?v=TuoNvPPnr2o">
+                                <img class="w-100 h-100 poster-video" src="assets/image/img/video-poster.png"
+                                    alt="image" />
+                                <img class="position-absolute youtube-image" src="assets/image/icon/youtube.svg"
+                                    alt="icon" />
+                            </a>
+                            <span
+                                class="position-absolute span-text d-flex align-items-center justify-content-center">سهولة
+                                طلب التمويل</span>
+                        </div>
+                        <div
+                            class="testimonials__section--text d-flex align-items-center justify-content-between mb-3 flex-wrap row-gap-3 column-gap-3">
+                            <h4 class="mb-0">ممدوح علي</h4>
+                            <div>
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                                <img src="assets/image/icon/star.svg" alt="icon" />
+                            </div>
+                        </div>
+                        <p class="testimonials__section--description mb-0">هذا النص يمكن استبداله هذا النص يمكن استبداله
+                            هذا النص يمكن استبداله هذا النص </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- popular-cars-list -->
+    <!-- ============================================================== -->
+    <section class="popular__cars__list my-4">
+        <div class="container">
+            <h3 class="popular__cars__list--title text-center mb-4">السيارات الأكثر بحثًا بدون تعب</h3>
+            <div class="row row-gap-3">
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="popular__cars__list--card h-100">
+                        <p class="mb-0">
+                            سيارات مرسيدس بنز مستعملة للبيع
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
     <!-- Common Question  -->
     <!-- ============================================================== -->
-    <section class="common-question" data-aos="fade-up">
+    <section class="common-question bg-about-page my-4">
         <div class="container">
             <div class="div-title text-center mb-5">
                 <h2 class="text-secondary">
@@ -364,7 +550,8 @@
                                     السؤال هنا او الاستفسار السؤال هنا او الاستفسار ؟
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>
                                         هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
@@ -381,7 +568,8 @@
                                     السؤال هنا او الاستفسار السؤال هنا او الاستفسار ؟
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>
                                         هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
@@ -398,7 +586,8 @@
                                     السؤال هنا او الاستفسار السؤال هنا او الاستفسار ؟
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>
                                         هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من
@@ -416,7 +605,7 @@
     <!-- ============================================================== -->
     <!-- always_help_contact  -->
     <!-- ============================================================== -->
-    <section class="always_help_contact">
+    <!-- <section class="always_help_contact">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-md-10 col-sm-12">
@@ -428,7 +617,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ============================================================== -->
     <!-- Footer -->
     <!-- ============================================================== -->
@@ -554,7 +743,20 @@
     <script src="assets/AOS/aos.js"></script>
     <!--Main Js-->
     <script src="assets/jq/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                disableOn: 700,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
 
+                fixedContentPos: false
+            });
+        });
+    </script>
 </body>
 
 </html>
