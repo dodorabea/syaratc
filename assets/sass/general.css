@@ -2910,7 +2910,7 @@ html[dir=ltr] .info-cars-list li span i {
     about page
 -------------------------*/
 .intro__section {
-  background: url(/assets/image/about/about_us.svg);
+  background: url(../image/about/about_us.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
