@@ -5054,6 +5054,25 @@ html[dir="rtl"] {
     }
 }
 
+.partner__logos{
+    padding: 32px 0;
+    &__title{
+        h3{
+           font-size: 32px;
+           font-family: $font-family-Bold; 
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    &__box{
+        min-height: 160px;
+        img{
+            height: 125px;
+            filter: grayscale(100%);
+        }
+    }
+}
 /*-----------------------
  testimonials__section
 -------------------------*/

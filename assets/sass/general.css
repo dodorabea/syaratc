@@ -5969,6 +5969,24 @@ html[dir=rtl] .find__your__car .swiper-button-prev {
   font-family: "Tajawal-Bold", sans-serif;
 }
 
+.partner__logos {
+  padding: 32px 0;
+}
+.partner__logos__title h3 {
+  font-size: 32px;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.partner__logos__title p {
+  font-size: 16px;
+}
+.partner__logos__box {
+  min-height: 160px;
+}
+.partner__logos__box img {
+  height: 125px;
+  filter: grayscale(100%);
+}
+
 /*-----------------------
  testimonials__section
 -------------------------*/
